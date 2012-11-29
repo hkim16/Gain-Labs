@@ -22,12 +22,25 @@ body{margin:0px;}
 </head>
 <body>
   
-<div id="intro">
+<div class="yui3-skin-sam" id="intro">
   <h2>Gain Slice and Dice</h2>
-  <p>
-  This is the intro text
-  </p>
+  <div>
+    Tell me about:
+    <input id="ac-input" type="text" >
+  </div>
+<div id="intro-text">
+URL de autocomplete
+http://yuilibrary.com/yui/docs/autocomplete/
+
+URL de animation
+http://mbostock.github.com/d3/tutorial/circle.html
+
+URL de D3
+http://code.hazzens.com/d3tut/lesson_1.html
+
 </div>
+</div>
+
 
 <div id="GainMatrix">
 </div>
@@ -45,8 +58,9 @@ body{margin:0px;}
 </div>
 
 
-
 <script type="text/javascript" src="http://d3js.org/d3.v2.js"></script>
+
+<script src="http://yui.yahooapis.com/3.7.3/build/yui/yui-min.js"></script>
 
 <script>
 
@@ -57,11 +71,64 @@ addGainMatrix();
 
 readAllData();
 
-function readAllData(){
 
+// Create a new YUI instance and populate it with the required modules.
+function addCountryInput(csv){
+  YUI().use("autocomplete", "autocomplete-filters", "autocomplete-highlighters", function (Y) {
+    //skin
+    Y.one('body').addClass('yui3-skin-sam');
+    //Array source
+    var countries=getCountries(csv);
+    Y.one('#ac-input').plug(Y.Plugin.AutoComplete, {
+      resultFilters    : 'phraseMatch',
+      resultHighlighter: 'phraseMatch',
+      source: countries,
+      on: {
+        select : function(){
+          console.log("Select!");
+        }
+      },
+      after: {
+        select: function (o,csv) {
+          updateCountryText(o.result.raw);
+        }
+      }
+    });
+  });
+};
+
+function updateCountryText(country){
+  d3.select("#intro-text")
+  .text(country+" is a great place");
+}
+
+
+
+function checkEnter(e){
+  var key=e.keyCode || e.which;
+  if (key==13){
+    console.log('Enter!');
+  }
+}
+
+
+function getCountries(csv){
+  var countries= [];
+  for (var item in csv){
+    if (csv[item].hasOwnProperty("Country")){
+      countries[countries.length]=csv[item]["Country"];
+    }
+  }
+  return countries;
+}
+
+function readAllData(){
   d3.csv("2011.csv", function(csv) {
     fillGainMatrix(csv);
     appendTable(csv);
+    addCountryInput(csv);
+    countries= getCountries(csv);
+    csv=csv;
   })
 }
 
@@ -99,7 +166,6 @@ function appendTable(csv) {
     var td = tr.selectAll("td")
             .data(function(d) { return lineToArray(d); })
           .enter().append("td")
-            .attr("onclick", function (d, i) { return "transform('" + d[0] + "');";})
             .text(function(d) { return d[1]; });
 
 }
@@ -114,6 +180,15 @@ function lineToArray(line) {
         if (line.hasOwnProperty(key) && showScores.indexOf(key) != -1 ) {
             ret.push(lineKeyValueToArray(key, line[key]));
         }
+    }
+    return ret;
+};
+
+function lineToCountries(line) {
+    var ret = new Array();
+    var key;
+    if (line.hasOwnProperty("Country") && showScores.indexOf(key) != -1 ) {
+            ret.push(lineKeyValueToArray(key, line["Country"]));
     }
     return ret;
 };
