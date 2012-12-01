@@ -1,3 +1,3 @@
-[GAIN](http://gain.org) Labs.
+<a href="http://gain.org">GAIN</a> Labs.
 
-Visit [github repo](https://github.com/globalai/Gain-dev/tree/gh-pages) for directions.
+Visit <a href="https://github.com/globalai/Gain-dev/tree/gh-pages">Github repo</a>">Github repo</a> for directions.
