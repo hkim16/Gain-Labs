@@ -33,15 +33,18 @@ body{margin:0px;}
 <div class="yui3-skin-sam" id="intro">
  <div id="measure-table">
 
-    <table>
-      <tr align="center" >
+    <table width="100%">
+      	<tr align="center" >
+	        <td colspan="2" onclick="showMeasure('gain')"> Gain</td>
+	      </tr>
+	<tr align="center" >
         <td onclick="showMeasure('readiness')"> Readiness</td>
         <td onclick="showMeasure('vulnerability')">Vulnerability</td>
       </tr>
       <tr>
         <td>
 	
-			<table id="r-table">
+			<table id="r-table"  width="100%">
 			<tbody>
 			<tr>
 			  <td rowspan="7" onclick="showMeasure('economic')"> <b>Economic</b></td>
@@ -91,7 +94,7 @@ body{margin:0px;}
 	</td>
         <td>
         
-          	<table id="v-table">
+          	<table id="v-table"  width="100%">
 			    <tbody><tr>
 			        <td colspan="2"></td>
 			        <td onclick="showMeasure('exposure')">	
@@ -316,8 +319,7 @@ body{margin:0px;}
 
 <hr>
 <h2 id="m_name"> </h2> 
-It belongs to the <b id="m_index"></b> Axis, to <i id="m_component"></i>, and the  
-sector <i id="m_sector"></i> 
+It belongs to the <b id="m_index"></b> (<i id="m_component"></i>, <i id="m_sector"></i>) 
 
 <p id="m_description"></p>
 
