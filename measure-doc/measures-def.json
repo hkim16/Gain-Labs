@@ -61,7 +61,10 @@
         "index": "readiness",
         "sector": null,
         "component": "economic",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "Index of Economic Freedom",
             "link": "http://www.heritage.org/index/explore"
         }]
@@ -76,7 +79,10 @@
         "index": "vulnerability",
         "sector": "infrastructure",
         "component": "exposure",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "CIESIN",
             "link": "http://sedac.ciesin.columbia.edu/gpw/lecz.jsp "
         }]
@@ -91,7 +97,10 @@
         "index": "vulnerability",
         "sector": "infrastructure",
         "component": "sensitivity",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
            "name": "CIESIN",
            "link": "http://sedac.ciesin.columbia.edu/gpw/lecz.jsp "
         }]
@@ -106,7 +115,10 @@
         "index": "readiness",
         "sector": null,
         "component": "governance",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "Worldwide Governance Indicators",
             "link": "http://info.worldbank.org/governance/wgi/sc_country.asp"
         }]
@@ -121,7 +133,10 @@
         "index": "vulnerability",
         "sector": "water",
         "component": "exposure",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "Climatic Research Unit, University of East Anglia. Dataset TYN CY 3.0",
             "link": "http://www.cru.uea.ac.uk/cru/data/hrg/"
         }]
@@ -136,7 +151,10 @@
         "index": "vulnerability",
         "sector": "water",
         "component": "exposure",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "Climatic Research Unit, University of East Anglia. Dataset TYN CY 3.0",
             "link": "http://www.cru.uea.ac.uk/cru/data/hrg/"
         }]
@@ -151,7 +169,10 @@
         "index": "vulnerability",
         "sector": "health",
         "component": "exposure",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "Adaptation costs for climate change-related cases of diarrhoeal disease, malnutrition, and malaria in 2030, by Kristie L Ebi",
             "link": "http://www.globalizationandhealth.com/content/4/1/9"
         }]
@@ -166,6 +187,9 @@
        "index": "vulnerability",
        "sector": "ecosystems",
        "component": "exposure",
+"explanation": "",
+	   "rationale": "",
+	   "issues":"",
        "source": [{
            "name": "The Changing Wealth of Nations : Measuring Sustainable Development in the New Millennium. World Bank 2011",
            "link": "http://data.worldbank.org/sites/default/files/total_and_per_capita_wealth_of_nations.xls"
@@ -181,6 +205,9 @@
        "index": "vulnerability",
        "sector": "ecosystems",
        "component": "sensitivity",
+	   "explanation": "The ecological footprint measures the number of hectares of land and water, both within and outside the country, to supply the average demand on the ecosystems services by the lifestyles of the population of each country.  This is compared with the estimated capacity of a country’s ecosystems to regenerate and maintain ecosystem services for either internal use or export.  This measure uses the surplus or deficit of capacity to supply over the demand within each country.",
+	   "rationale": "A country with a surplus has the capacity to produce more from within its boundaries and thus is likely to have more options to adapt to a changing climate.",
+	   "issues":"(i)  The ecological footprint has been in use since 1992 and the subject of considerable scientific testing and debate.  The methods of calculation are becoming more standardized and it is gradually being taken into account in policy making and national reporting.  Here we use the data provided by the Global Footprint Network led by one of the originators of the idea, Mark Wakernagel. (ii) We also exclude the carbon footprint component of the Ecological Footprint since this does not directly affect sensitivity relating to adaptation.  The urban component is also effectively excluded as it appears in both the demand and supply side of the equation. (ii)  There is a similarity in concepts between the Ecological Footprint and the Natural Accounting approach used in ENC.  We have checked the correlations between the two measures and the data that goes into constructing them.  While there is a strong correlation between some of the components (e.g. Grazing land capital and footprint) as they are based on the same or similar data (Ha of grassland per capita), there is little correlation between the two measures used (r2 is -0.024 and Fig 5) as ultimately the data are used to calculate quite different measures – a measure of capital in one case and a measure of supply in the other. Technically available since 1961, but will require some effort to extract them. ",
        "source": [{
            "name": "National Footprint Accounts 2011 edition",
            "link": "http://www.footprintnetwork.org"
@@ -196,6 +223,9 @@
        "index": "vulnerability",
        "sector": "habitat",
        "component": "capacity",
+"explanation": "",
+	   "rationale": "",
+	   "issues":"",
        "source": [{
            "name": "World Development Indicators - Value lost due to electrical outages",
            "link": "http://data.worldbank.org/indicator/IC.FRM.OUTG.ZS"
@@ -211,7 +241,10 @@
         "index": "vulnerability",
         "sector": "infrastructure",
         "component": "exposure",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "WHO & UNPD",
             "link": "http://content.undp.org/go/cms-service/stream/asset/?asset_id=2205620 "
         }]
@@ -226,7 +259,10 @@
         "index": "vulnerability",
         "sector": "infrastructure",
         "component": "sensitivity",
-        "source": [
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [
         {
             "name": "World Development Indicators - Energy Imports",
             "link": "http://data.worldbank.org/indicator/EG.IMP.CONS.ZS"
@@ -247,7 +283,10 @@
         "index": "readiness",
         "sector": null,
         "component": "social",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "World Development Indicators",
             "link": "http://data.worldbank.org/indicator/SE.TER.ENRR"
         }]
@@ -262,7 +301,10 @@
         "index": "vulnerability",
         "sector": "health",
         "component": "sensitivity",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "World Development Indicators",
             "link": "http://data.worldbank.org/indicator/SH.XPD.EXTR.ZS"
         }]
@@ -277,7 +319,10 @@
 	       "index": "vulnerability",
 	       "sector": "ecosystems",
 	       "component": "exposure",
-	       "source": [{
+	"explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
 	           "name": "Gonzalez, et al. (2010), Global patterns in the vulnerability of ecosystems to vegetation shifts due to climate change. Global Ecology and Biogeography, 19: 755–768. doi: 10.1111/j.1466-8238.2010.00558.x Annex S3",
 	           "link": "http://pgonzalez.home.igc.org/Gonzalez_et_al_2010_GEB_SI.pdf",
 	           "name": "J. Hansen, et al., Global warming in the twenty-first century: An alternative scenario. Proc. Natl. Acad. Sci. 97, 9875-9880, doi:10.1073/pnas.170278997 (2000).",
@@ -294,7 +339,10 @@
         "index": "readiness",
         "sector": null,
         "component": "economic",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "Index of Economic Freedom",
             "link": "http://www.heritage.org/index/explore"
         }]
@@ -309,7 +357,10 @@
         "index": "readiness",
         "sector": null,
         "component": "economic",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "Index of Economic Freedom",
             "link": "http://www.heritage.org/index/explore"
         }]
@@ -324,7 +375,10 @@
         "index": "vulnerability",
         "sector": "food",
         "component": "capacity",
-        "source": [
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [
         {
             "name": "World Development Indicators - Fertilizer Consumption (kilograms per hectare of arable land)",
             "link": "http://data.worldbank.org/indicator/AG.CON.FERT.ZS"
@@ -360,7 +414,10 @@
         "index": "readiness",
         "sector": null,
         "component": "economic",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "Index of Economic Freedom",
             "link": "http://www.heritage.org/index/explore"
         }]
@@ -375,7 +432,10 @@
         "index": "vulnerability",
         "sector": "health",
         "component": "exposure",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "World Health Organization",
             "link": "http://apps.who.int/ghodata/?vid=99001#"
         }]
@@ -390,7 +450,10 @@
         "index": "vulnerability",
         "sector": "food",
         "component": "sensitivity",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "FAO",
             "link": "http://FAOStat.fao.org"
         }]
@@ -405,6 +468,9 @@
        "index": "vulnerability",
        "sector": "ecosystems",
        "component": "capacity",
+"explanation": "",
+	   "rationale": "",
+	   "issues":"",
        "source": [{
            "name": "Environmental Treaties and Resource Indicators",
            "link": "http://sedac.ciesin.columbia.edu/entri/index.jsp"
@@ -420,7 +486,10 @@
         "index": "readiness",
         "sector": null,
         "component": "economic",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "Index of Economic Freedom",
             "link": "http://www.heritage.org/index/explore"
         }]
@@ -435,7 +504,10 @@
         "index": "readiness",
         "sector": null,
         "component": "social",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "Index of Economic Freedom",
             "link": "http://www.heritage.org/index/explore"
         }]
@@ -450,7 +522,10 @@
         "index": "vulnerability",
         "sector": "health",
         "component": "capacity",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "World Development Indicators",
             "link": "http://data.worldbank.org/indicator/SP.DYN.LE00.IN"
         }]
@@ -465,7 +540,10 @@
         "index": "vulnerability",
         "sector": "food",
         "component": "capacity",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "World Development Indicators",
             "link": "http://data.worldbank.org/indicator/SH.STA.WAST.ZS"
         }]
@@ -480,7 +558,10 @@
         "index": "vulnerability",
         "sector": "health",
         "component": "capacity",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "World Development Indicators",
             "link": "http://data.worldbank.org/indicator/SH.MMR.RISK.ZS"
         }]
@@ -495,7 +576,10 @@
         "index": "readiness",
         "sector": null,
         "component": "social",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "World Development Indicators",
             "link": "http://data.worldbank.org/indicator/IT.CEL.SETS.P2"
         }]
@@ -510,7 +594,10 @@
         "index": "readiness",
         "sector": null,
         "component": "economic",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "Index of Economic Freedom",
             "link": "http://www.heritage.org/index/explore"
         }]
@@ -525,7 +612,10 @@
         "index": "readiness",
         "sector": null,
         "component": "governance",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "Worldwide Governance Indicators",
             "link": "http://info.worldbank.org/governance/wgi/index.asp"
         }]
@@ -551,6 +641,9 @@
        "index": "vulnerability",
        "sector": "ecosystems",
        "component": "capacity",
+       "explanation": "",
+	   "rationale": "",
+	   "issues":"",
        "source": [{
            "name": "Emerson, J.W. et al. 2012: 2012 Environmental Performance Index and Pilot Trend Environmental Performance Index.",
            "link": "http://epi.yale.edu/downloads"
@@ -566,7 +659,10 @@
         "index": "vulnerability",
         "sector": "infrastructure",
         "component": "exposure",
-        "source": [
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [
         {
             "name": "World Development Indicators - Land area (sq. km)",
             "link": "http://data.worldbank.org/indicator/AG.LND.TOTL.K2"
@@ -587,7 +683,10 @@
         "index": "vulnerability",
         "sector": "infrastructure",
         "component": "sensitivity",
-        "source": [
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [
         {
             "name": "World Development Indicators",
             "link": "http://data.worldbank.org/indicator/IS.ROD.PAVE.ZS"
@@ -603,7 +702,10 @@
         "index": "readiness",
         "sector": null,
         "component": "social",
-        "source": [{
+        "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "Worldwide Governance Indicators",
             "link": "http://info.worldbank.org/governance/wgi/sc_country.asp"
         }]
@@ -618,7 +720,10 @@
         "index": "vulnerability",
         "sector": "food",
         "component": "sensitivity",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "World Development Indicators - Rural Population",
             "link": "http://data.worldbank.org/indicator/SP.RUR.TOTL"
         },
@@ -638,7 +743,10 @@
         "index": "vulnerability",
         "sector": "water",
         "component": "capacity",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "World Development Indicators",
             "link": "http://data.worldbank.org/indicator/SH.STA.ACSN"
         }]
@@ -653,6 +761,9 @@
        "index": "vulnerability",
        "sector": "habitat",
        "component": "sensitivity",
+"explanation": "",
+	   "rationale": "",
+	   "issues":"",
        "source": [{
            "name": "United Nations Indicators - Millenium Development Goals",
            "link": "http://mdgs.un.org/unsd/mdg/SeriesDetail.aspx?srid=710"
@@ -668,7 +779,10 @@
         "index": "vulnerability",
         "sector": "health",
         "component": "sensitivity",
-        "source": [
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [
         {
             "name": "World Development Indicators - Physicians (per 1,000 people)",
             "link": "http://data.worldbank.org/indicator/SH.MED.PHYS.ZS"
@@ -689,6 +803,9 @@
        "index": "vulnerability",
        "sector": "ecosystems",
        "component": "sensitivity",
+"explanation": "",
+	   "rationale": "",
+	   "issues":"",
        "source": [{
            "name": "IUCN Red Book",
            "link": "http://www.iucnredlist.org/"
@@ -704,7 +821,10 @@
         "index": "readiness",
         "sector": null,
         "component": "economic",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "Index of Economic Freedom",
             "link": "http://www.heritage.org/index/explore"
         }]
@@ -719,6 +839,9 @@
        "index": "vulnerability",
        "sector": "habitat",
        "component": "capacity",
+"explanation": "",
+	   "rationale": "",
+	   "issues":"",
        "source": [{
            "name": "World Development Indicators -  Logistics Performance Index",
            "link": "http://data.worldbank.org/indicator/LP.LPI.INFR.XQ"
@@ -734,6 +857,9 @@
        "index": "vulnerability",
        "sector": "habitat",
        "component": "exposure",
+"explanation": "",
+	   "rationale": "",
+	   "issues":"",
        "source": [{
            "name": "World Development Indicators - Population in largest city",
            "link": "http://data.worldbank.org/indicator/EN.URB.LCTY.UR.ZS"
@@ -749,6 +875,9 @@
        "index": "vulnerability",
        "sector": "habitat",
        "component": "sensitivity",
+"explanation": "",
+	   "rationale": "",
+	   "issues":"",
        "source": [{
            "name": "World Development Indicators - Urban population growth",
            "link": "http://data.worldbank.org/indicator/SP.URB.GROW",
@@ -768,6 +897,9 @@
        "index": "vulnerability",
        "sector": "habitat",
        "component": "exposure",
+"explanation": "",
+	   "rationale": "",
+	   "issues":"",
        "source": [{
            "name": "UN Dept Economic & Social Affairs;",
            "link": "http://esa.un.org/unup/CD-ROM/Urban-Agglomerations.htm"
@@ -783,7 +915,10 @@
         "index": "readiness",
         "sector": null,
         "component": "governance",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "Worldwide Governance Indicators",
             "link": "http://info.worldbank.org/governance/wgi/sc_country.asp"
         }]
@@ -798,7 +933,10 @@
         "index": "vulnerability",
         "sector": "water",
         "component": "capacity",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "World Development Indicators",
             "link": "http://data.worldbank.org/indicator/SH.H2O.SAFE.ZS"
         }]
@@ -813,7 +951,10 @@
         "index": "vulnerability",
         "sector": "water",
         "component": "sensitivity",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "WHO",
             "link": "http://apps.who.int/ghodata/?vid=99001#"
         }]
@@ -828,7 +969,10 @@
         "index": "vulnerability",
         "sector": "water",
         "component": "sensitivity",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "UN Food and Agriculture Organization",
             "link": "http://www.fao.org/nr/water/aquastat/data/query/index.html?lang=en"
         }]
@@ -843,7 +987,10 @@
         "index": "vulnerability",
         "sector": "food",
         "component": "exposure",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "World Development Indicators",
             "link": "http://data.worldbank.org/indicator/AG.YLD.CREL.KG"
         }]
@@ -858,7 +1005,10 @@
         "index": "vulnerability",
         "sector": "food",
         "component": "exposure",
-        "source": [{
+ "explanation": "",
+	   "rationale": "",
+	   "issues":"",
+       "source": [{
             "name": "Center for Global Development",
             "link": "http://www.cgdev.org/content/publications/detail/1424986"
         }]
