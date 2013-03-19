@@ -133,9 +133,9 @@
         "index": "vulnerability",
         "sector": "water",
         "component": "exposure",
- "explanation": "",
+        "explanation": "Gross measure of threat to water.  This is the commonly used indicator in both the scientific and response communities.  However it is not a very effective measure as it does not take increased evaporative demand into account nor changes in the intensity and seasonality of the rainfall.  It might eventually be replaced by a more integrating measure such as run-off or even precipitation minus evapotranspiration.  The use of a single measure for an entire country is not very valid, especially for large countries where there are large gradients across the country.",
 	   "rationale": "",
-	   "issues":"",
+	   "issues":"An increase in PPT% is taken to indicate reduced vulnerability. However, this might be misleading for dry countries where a large % increase does not imply a large absolute increase in rainfall or in rainfall effectiveness.  The increased rain may come in flooding events.  Similarly increased PPT% for already wet countries probably provides little useful additional water and may add to flood loads.  There appears to be no objective way to correct for these problems but a subjective correction is suggested below. It can also be argued that PPT% is is a reasonable approximation – for countries with low current precipitation an increase will be disruptive especially if flood frequency increases; for high precipitation countries additional precipitation is also disruptive.  There is a range in the middle where additional rainfall might be beneficial but it is hard to adjust for this.  Note however, that this is partially taken up in the Food Measures dealing with the projected impact of climate change on crop yields.",
        "source": [{
             "name": "Climatic Research Unit, University of East Anglia. Dataset TYN CY 3.0",
             "link": "http://www.cru.uea.ac.uk/cru/data/hrg/"
@@ -151,9 +151,9 @@
         "index": "vulnerability",
         "sector": "water",
         "component": "exposure",
- "explanation": "",
+        "explanation": "Water quality issues rise in warmer conditions causing disease growth & spread; less water for sanitation etc. ",
 	   "rationale": "",
-	   "issues":"",
+	   "issues":"This brings the most commonly used climate change indicator into the index.  The use of a single measure for an entire country is not very valid, especially for large countries where there are large gradients across the country.",
        "source": [{
             "name": "Climatic Research Unit, University of East Anglia. Dataset TYN CY 3.0",
             "link": "http://www.cru.uea.ac.uk/cru/data/hrg/"
@@ -169,9 +169,9 @@
         "index": "vulnerability",
         "sector": "health",
         "component": "exposure",
- "explanation": "",
+        "explanation": "A model-based estimate of the quality adjusted loss of life years under several different climate scenarios.  The most extreme scenario and for 2100 was used here to achieve maximum discrimination between country exposures. ",
 	   "rationale": "",
-	   "issues":"",
+	   "issues":"This index is calculated for regions of the world and for sub-groupings of countries within these regions (eventually xx different groups).  Thus many countries share the same value of the measure as others.",
        "source": [{
             "name": "Adaptation costs for climate change-related cases of diarrhoeal disease, malnutrition, and malaria in 2030, by Kristie L Ebi",
             "link": "http://www.globalizationandhealth.com/content/4/1/9"
@@ -375,9 +375,9 @@
         "index": "vulnerability",
         "sector": "food",
         "component": "capacity",
- "explanation": "",
+ "explanation": "This is a combination of three separate measures of agricultural technology: the amount of fertilizer used per ha, the number of tractors per area of arable land and the proportion of arable land with irrigation facilities.  The measure used here takes two of the above that give the best (i.e. least vulnerable) score.  This allows for missing data but also for situations such as where irrigation or fertilizer is less necessary because of rainfall or good quality soils",
 	   "rationale": "",
-	   "issues":"",
+	   "issues":"Even with three elements it does not capture the full range of relevant agricultural technologies. Also, many countries reached the best (least vulnerable) score.",
        "source": [
         {
             "name": "World Development Indicators - Fertilizer Consumption (kilograms per hectare of arable land)",
@@ -450,9 +450,9 @@
         "index": "vulnerability",
         "sector": "food",
         "component": "sensitivity",
- "explanation": "",
+        "explanation": "Proportion of cereal consumption obtained from imports. This is taken as a measure of the countries sensitivities to food shocks in the future.  Taken with the CV in national cereal yields, both internal and import dependent countries are covered to some degree.",
 	   "rationale": "",
-	   "issues":"",
+	   "issues":"Clearly the Coefficient of Variation (CV) in  of cereal yields and this measure interact and could be part of a more complex measure of food security.  This may produce a conceptually more satisfying model but would do less well against simplicity and transparency tests.",
        "source": [{
             "name": "FAO",
             "link": "http://FAOStat.fao.org"
@@ -540,8 +540,8 @@
         "index": "vulnerability",
         "sector": "food",
         "component": "capacity",
- "explanation": "",
-	   "rationale": "",
+        "explanation": "A measure of malnutrition based on the percent of under 5 year-olds with a low weight for height ratio; usually taken as the best indicator of chronic malnutrition.  This is taken as an indication of the lack of capacity to deliver basic nutritional needs to the most sensitive group in society.",
+	   "rationale": "This was chosen as it is considered a good measure of chronic malnutrition and it does nor greatly overlap with measures in the health or water sectors.",
 	   "issues":"",
        "source": [{
             "name": "World Development Indicators",
@@ -743,9 +743,9 @@
         "index": "vulnerability",
         "sector": "water",
         "component": "capacity",
- "explanation": "",
-	   "rationale": "",
-	   "issues":"",
+        "explanation": "The percentage of the population with at least adequate access to excreta disposal facilities that can effectively prevent human, animal, and insect contact with excreta.",
+	   "rationale": "High % indicates capacity to deliver sanitation and quality water to the population and hence lower vulnerability.",
+	   "issues":"(i) Commonly used indicator.  However, it saturates quickly, although slightly slower than PIW%, with most countries with a GDP/cap of >$12000 having close to 100% coverage. (ii) Highly correlated with HDI (r2 = 75%) and with GDP/cap (r2 = 35% and r2 = 50% with Ln(GDP/cap)).  It is also correlated with PIS% (r2 = 60%) but there is still significant scatter among countries with low values of either variable.",
        "source": [{
             "name": "World Development Indicators",
             "link": "http://data.worldbank.org/indicator/SH.STA.ACSN"
@@ -933,9 +933,9 @@
         "index": "vulnerability",
         "sector": "water",
         "component": "capacity",
- "explanation": "",
-	   "rationale": "",
-	   "issues":"",
+ 		"explanation": "",
+	   "rationale": "High % indicates capacity to deliver water to the population and hence lower vulnerability.",
+	   "issues":"Commonly used indicator.  However, it saturates very quickly with most countries with a GDP/cap of >$5000 having close to 100% coverage.",
        "source": [{
             "name": "World Development Indicators",
             "link": "http://data.worldbank.org/indicator/SH.H2O.SAFE.ZS"
@@ -951,9 +951,9 @@
         "index": "vulnerability",
         "sector": "water",
         "component": "sensitivity",
- "explanation": "",
+        "explanation": "Measured as “Water, sanitation & hygiene deaths per 100'000 children<5 yr” to capture the effects on the most sensitive portion of the population.",
 	   "rationale": "",
-	   "issues":"",
+	   "issues":"There are similar data for all people affected but we have chosen to focus on children as they bear the bulk of the burden.  There is obviously an overlap with health measures, but this reflects the strong links between vulnerability arising within the water and health sectors.",
        "source": [{
             "name": "WHO",
             "link": "http://apps.who.int/ghodata/?vid=99001#"
@@ -969,11 +969,11 @@
         "index": "vulnerability",
         "sector": "water",
         "component": "sensitivity",
- "explanation": "",
+  		"explanation": "An indication of how much of the nationally available water resource (originating internally or externally such as from inflowing rivers) is already being used. In the Index a high % extraction is taken as an indicator of vulnerability. ",
 	   "rationale": "",
-	   "issues":"",
+	   "issues":"(i) Some countries (especially arid) use well over 100% of their internal water as it is either supplemented by desalination for example.  These are capped to 100%. (ii) Could exclude external water, but this leads to the anomaly of countries such as Zambia, with major river systems flowing through them, show as very water scare.  Zambia uses only 2% of its total available water, but this greatly exceeds the amount of internally generated water.  Could also include the volume of dam storage to give some idea of buffering capacity.",
        "source": [{
-            "name": "UN Food and Agriculture Organization",
+            "name": "UN Food and Agriculture Organization / Aquastats",
             "link": "http://www.fao.org/nr/water/aquastat/data/query/index.html?lang=en"
         }]
     },
@@ -987,9 +987,9 @@
         "index": "vulnerability",
         "sector": "food",
         "component": "exposure",
- "explanation": "",
+        "explanation": "Based on reported year to year variation in cereal yields. High variability is taken as indicating inherent exposure of yields to climate and non-climate variables (e.g. prices affecting inputs to crops).  Cereals are the best available indicator of agricultural production for most countries, but clearly not valid or measurable for others.  For each country the 19xx to 20xx data was detrended via an exponential function to allow for technological increases in yield and then the standard deviation of the yield calculated to give an estimate of the CV (Stdev/mean).",
 	   "rationale": "",
-	   "issues":"",
+	   "issues":"The quality of data for some countries is poor; usually reporting almost constant or regularly increasing yields.  This will give these countries an artificially low vulnerability score.",
        "source": [{
             "name": "World Development Indicators",
             "link": "http://data.worldbank.org/indicator/AG.YLD.CREL.KG"
