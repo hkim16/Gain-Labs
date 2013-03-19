@@ -470,7 +470,7 @@
        "component": "capacity",
 	   "explanation": "A measure based on the country’s participation in international forums, which is taken as an indicator its capacity to engage in multilateral negotiations and to reach agreement on appropriate actions internally.",
 	   "rationale": "Although not a direct measure of capacity, the failure to take part in such forums is usually associated with either lack of technical capacity to deal with the issues and/or lack of political ability to reach decisions over appropriate engagement.",
-	   "issues":"(i) The outcome for this measure is strongly dependent on the process of selecting the agreements to be included (Table 1).  We sought to include <<environmental treaties>> in their broadest sense while avoiding any to do with military/warfare; gross marine pollution, safety at sea and other shipping controls.  We also excluded treaties directly setting up International organizations such as the World Bank etc.  We also excluded agreements with less than 20 signatories. (ii) Some agreements have a limited regional scope (e.g. dealing with Atlantic tuna).  We could have excluded them, but this would have limited the list (16 out of 54 have clear regional scope of application), but many are signed by countries beyond the region (e.g those with fishing fleets in the Atlantic).  Many (17 out of 54) also deal with the agreements on oceans and this may disadvantage land-locked countries, however, land-locked countries are sometimes signatories to such conventions (e.g. those relating to whaling).  It could similarly be argued that some agreements are not relevant to many countries on other grounds (e.g. those to do with desertification).  Thus we chose to retain a wide set of agreements rather than begin a culling process that would have reduced the list to only 10 to 20 or so.",
+	   "issues":"(i) The outcome for this measure is strongly dependent on the process of selecting the agreements to be included (Table 1).  We sought to include 'environmental treaties' in their broadest sense while avoiding any to do with military/warfare; gross marine pollution, safety at sea and other shipping controls.  We also excluded treaties directly setting up International organizations such as the World Bank etc.  We also excluded agreements with less than 20 signatories. (ii) Some agreements have a limited regional scope (e.g. dealing with Atlantic tuna).  We could have excluded them, but this would have limited the list (16 out of 54 have clear regional scope of application), but many are signed by countries beyond the region (e.g those with fishing fleets in the Atlantic).  Many (17 out of 54) also deal with the agreements on oceans and this may disadvantage land-locked countries, however, land-locked countries are sometimes signatories to such conventions (e.g. those relating to whaling).  It could similarly be argued that some agreements are not relevant to many countries on other grounds (e.g. those to do with desertification).  Thus we chose to retain a wide set of agreements rather than begin a culling process that would have reduced the list to only 10 to 20 or so.",
        "source": [{
            "name": "Environmental Treaties and Resource Indicators",
            "link": "http://sedac.ciesin.columbia.edu/entri/index.jsp"
@@ -641,7 +641,7 @@
        "index": "vulnerability",
        "sector": "ecosystems",
        "component": "capacity",
-       "explanation": "Taken directly from the Yale Environmental Performance Index (EPI) which defines it as follows … <<The weighted percentage of biomes under protected status, where the weight is determined by the size of biomes within a country. Countries are not rewarded for protecting beyond 17% of any given biome (i.e., scores are capped at 17% per biome) so that higher levels of protection of some biomes cannot be used to offset lower levels of protection of other biomes.>>",
+       "explanation": "Taken directly from the Yale Environmental Performance Index (EPI) which defines it as follows … 'The weighted percentage of biomes under protected status, where the weight is determined by the size of biomes within a country. Countries are not rewarded for protecting beyond 17% of any given biome (i.e., scores are capped at 17% per biome) so that higher levels of protection of some biomes cannot be used to offset lower levels of protection of other biomes.'",
 	   "rationale": "Countries with good protection of their core ecosystem types are likely to have the capacity to implement a wider range of actions to continue to protect and manage ecosystem services under a changing climate.",
 	   "issues":" (i) The measure does not take into account the quality of the management of the protected area.  The Yale team also acknowledges this and they are working towards gathering improved data.",
        "source": [{
@@ -857,9 +857,9 @@
        "index": "vulnerability",
        "sector": "habitat",
        "component": "exposure",
-"explanation": "",
-	   "rationale": "",
-	   "issues":"",
+       "explanation": "Percentage of the population living in the largest city.",
+	   "rationale": "A high concentration of people in one city creates challenges in adapting to climate change.  The concentration suggests stressed services, few choices for displaced rural poor and vulnerability to major losses in a single extreme climate event.",
+	   "issues":":  (i) An alternative measure is the proportion of the population living in cities with a population of 0.75 million or more (this is the threshold used by UNESA).  But this approach would exclude the 71 countries with no city reaching the UNESA threshold.",
        "source": [{
            "name": "World Development Indicators - Population in largest city",
            "link": "http://data.worldbank.org/indicator/EN.URB.LCTY.UR.ZS"
@@ -897,9 +897,9 @@
        "index": "vulnerability",
        "sector": "habitat",
        "component": "exposure",
-"explanation": "",
-	   "rationale": "",
-	   "issues":"",
+"explanation": "A natural disaster risk index for populations living in large cities (i.e. >0.75M people).",
+	   "rationale": "The large cities of a country are the centres of attraction for rural to urban migration and the economic drivers in most countries.  Severe human suffering and social and economic disruption can occur if these cities are struck by natural disasters.  This measure seeks to capture that risk based on a data set from the UNESA statistical data.  See the Annex for a detailed description of its derivation.",
+	   "issues":"(i) See the Annex for issues associated with its derivation. (ii)  The data used in this measure indirectly brings in information from the databases of recent frequency and impacts of disasters.  We have tried to exclude these data as much as possible from the GAIN Index as we wanted to maintain them as a largely independent source of corroborative data for assessing the validity of the Index. (ii) What value be given to should countries without a city of 0.75 million people?  Here the default is zero, since we are trying to measure the threat to large conurbations and all that depend on them.",
        "source": [{
            "name": "UN Dept Economic & Social Affairs;",
            "link": "http://esa.un.org/unup/CD-ROM/Urban-Agglomerations.htm"
