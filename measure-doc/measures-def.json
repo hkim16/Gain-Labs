@@ -223,8 +223,8 @@
        "index": "vulnerability",
        "sector": "habitat",
        "component": "capacity",
-"explanation": "",
-	   "rationale": "",
+       "explanation": "Percentage of sale lost due to electrical outages (% of sales).",
+	   "rationale": "This is a measure of the capacity to provide a stable supply of electricity, which is fundamental to production, life support and comfort.  It is likely to be indicative of the capacity to provide other essential services. Analysis of other possible measures relating to the provision of services (e.g. road provision, travel times, the efficiency various business transactions etc) show them to be correlated with electrical outages but not as comprehensively reported in many cases, or used elsewhere in the Readiness Axis.",
 	   "issues":"",
        "source": [{
            "name": "World Development Indicators - Value lost due to electrical outages",
@@ -761,9 +761,9 @@
        "index": "vulnerability",
        "sector": "habitat",
        "component": "sensitivity",
-"explanation": "",
-	   "rationale": "",
-	   "issues":"",
+       "explanation": "A slum household is defined as a group of individuals living under the same roof lacking one or more1 of the following conditions: Access to improved water; Access to improved sanitation; Sufficient-living area; Durability of housing (Tenure is included as a 5th element, but insufficient data is available).",
+	   "rationale": "Slums impose a great challenge to successful adaptation especially in cities.",
+	   "issues":"(i) This is an indirect estimate and includes some measures that overlap with those used elsewhere in the Index.  However correlation analysis shows that correlations are low.  It is related to GDP/cap but still conveys useful information especially at intermediate levels of GDP/cap (Fig 7). (ii) The assumption that wealthy countries (not estimated as part of the MDG) have no people in slums is probably technically correct by the UN MDG definition, but an underestimate in practice. ",
        "source": [{
            "name": "United Nations Indicators - Millenium Development Goals",
            "link": "http://mdgs.un.org/unsd/mdg/SeriesDetail.aspx?srid=710"
@@ -839,9 +839,9 @@
        "index": "vulnerability",
        "sector": "habitat",
        "component": "capacity",
-"explanation": "",
-	   "rationale": "",
-	   "issues":"",
+       "explanation": "Logistics professionals' perception of country's quality of trade and transport related infrastructure (e.g. ports, railroads, roads, information technology), on a rating ranging from 1 (very low) to 5 (very high). Scores are averaged across all respondents.",
+	   "rationale": "The quality of this infrastructure is indicative of capacity to effectively supply and manage essential infrastructure by the public and private sectors.  It is assumed here that same capacity is indicative of a capacity to sustain that infrastructure in the face of future changes, including climate change.",
+	   "issues":":  (i) This measure is close to some of those used directly or indirectly in the Readiness axis, which is indicative of the overlap between ‘capacity’ and ‘readiness’ as we have discussed before.",
        "source": [{
            "name": "World Development Indicators -  Logistics Performance Index",
            "link": "http://data.worldbank.org/indicator/LP.LPI.INFR.XQ"
@@ -875,9 +875,9 @@
        "index": "vulnerability",
        "sector": "habitat",
        "component": "sensitivity",
-"explanation": "",
-	   "rationale": "",
-	   "issues":"",
+"explanation": " Excess rate of population growth in urban centres compared with the population growth rate in the whole country. Formulae: Expected urban popn growth = Urban popn * Country Popn growth . Excess urban popn growth = (Urban Popn * Urban Popn growth – Expected urban popn growth) / Expected urban popn growth",
+	   "rationale": "If the urban population is growing considerably faster than the country as a whole, this is likely to be putting additional strain on urban services and making it difficult for city managers to also consider and plan for the effects of climate change.",
+	   "issues":"None???",
        "source": [{
            "name": "World Development Indicators - Urban population growth",
            "link": "http://data.worldbank.org/indicator/SP.URB.GROW",
