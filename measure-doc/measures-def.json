@@ -943,7 +943,7 @@
         "index": "vulnerability",
         "sector": null,
         "component": null,
-		"explanation": "Ecosystem services are the multitude of processes that humans rely upon to support their lives and livelihoods.  These processes provide food and clean water, regulate the climate, support nutrient cycling and provide cultural experiences.  In developing the GAIN vulnerability measures we have sought to choose sets of measures that are tangible, simple but directly relevant to the concept to be captured.  It is obviously difficult to capture ecosystem services in six simple measures so the use of integrative, synthetic measures was also considered. "
+		"explanation": "Ecosystem services are the multitude of processes that humans rely upon to support their lives and livelihoods.  These processes provide food and clean water, regulate the climate, support nutrient cycling and provide cultural experiences.  In developing the GAIN vulnerability measures we have sought to choose sets of measures that are tangible, simple but directly relevant to the concept to be captured.  It is obviously difficult to capture ecosystem services in six simple measures so the use of integrative, synthetic measures was also considered."
     },
     "exposure": {
         "id": "exposure",
@@ -976,7 +976,8 @@
         "unit": null,
         "index": "vulnerability",
         "sector": null,
-        "component": null
+        "component": null,
+		"explanation" : "The urban sector is of particular importance in effective adaptation to a changing climate as it is also the focus of many other social and economic changes.  Internally generated rapid economic and population growth in cities is a challenge in its own right, but it is often exacerbated by substantial migration from rural areas driven as much by the poverty of rural regions as by the attractiveness and opportunities of the cities.  In selecting the measures and in seeking feedback from our technical advisors, we decided to modify our approach to recognize the ‘Human Habitat’ as a 5th life support sector. \n The measures selected do place more direct emphasis on urban habitats than rural.  However, many rural challenges are already covered in the other life support sectors and increasingly the challenge of the future will be creating sustainable cities in a changing world. Cities are usually the financial, administrative and intellectual hubs of society so disruption to their smooth running has significant flow on effects to the rest of the country."
     },
     "health": {
         "id": "health",

@@ -1,0 +1,476 @@
+<html>
+   
+<head>
+
+<style>
+body{margin:0px;}
+
+#v-table {
+  background-color: #FFFF66;
+}
+#r-table {
+  background-color: #FCCFA6;
+}
+
+.h,.v{stroke:black;stroke-dasharray:4 4;stroke-width:1;stroke-opacity:.5;}
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+}
+</style>
+
+
+</head>
+<body>
+  
+<div class="yui3-skin-sam" id="intro">
+ <div id="measure-table">
+
+    <table>
+      <tr align="center" >
+        <td onclick="showMeasure('readiness')"> Readiness</td>
+        <td onclick="showMeasure('readiness')">Vulnerability</td>
+      </tr>
+      <tr>
+        <td>
+	
+			<table id="r-table">
+			<tbody>
+			<tr>
+			  <td rowspan="7" onclick="showMeasure('economic')"> <b>Economic</b></td>
+			  <td onclick="showMeasure('business')"> <span title="IEF Business freedom">business</span></td>
+			</tr>
+			<tr>
+			  <td onclick="showMeasure('trade')"> <span title="IEF Trade freedom">trade</span>
+			</td></tr>
+			<tr>
+			  <td onclick="showMeasure('fiscal')">  <span title="IEF Fiscal freedom">fiscal</span>
+			</td></tr>
+			<tr>
+			  <td onclick="showMeasure('gov_spend')"> <span title="IEF Government Spending">gov_spend</span>
+			</td></tr>
+			<tr>
+			  <td onclick="showMeasure('monetary')"> <span title="IEF Monetary freedom">monetary</span></td></tr>
+			<tr>
+			  <td onclick="showMeasure('invest')"> <span title="IEF Investment freedom">investment</span>
+			</td></tr>
+			<tr>
+			  <td onclick="showMeasure('finan')"> <span title="Financial freedom"> financial</span>
+			</td></tr>
+			<tr>
+			  <td rowspan="3" onclick="showMeasure('governance')"> <b>Governance</b> </td>
+			  <td onclick="showMeasure('voice_accountability')"> <span title="WGI Voice &amp; Accountability">accountability</span></td>
+			</tr>
+			<tr>
+			  <td onclick="showMeasure('non_violance')"> <span title="WGI Political Stability &amp; Non-Violence">stability</span></td>
+			</tr>
+			<tr>
+			  <td onclick="showMeasure('corruption')"> <span title="WGI Control of Corruption">corruption</span></td>
+			</tr>
+			<tr>
+			  <td rowspan="4" onclick="showMeasure('social')"> <b>Social</b> </td>
+			  <td onclick="showMeasure('mobiles')">  <span title="Mobiles per 100 persons ">mobiles</span></td>
+			</tr>
+			<tr>
+			  <td onclick="showMeasure('labor')"> <span title="Labor freedom">labor</span></td></tr>
+			<tr>
+			  <td onclick="showMeasure('enrollment')"> <span title="Tertiary Education">enrollment</span></td>
+			</tr>
+			<tr>
+			 <td onclick="showMeasure('rule_of_law')"> <span title="WGI Rule of Law ">rule_of_law</span></td>
+			</tr>
+			</tbody></table>
+	
+	</td>
+        <td>
+        
+          	<table id="v-table">
+			    <tbody><tr>
+			        <td colspan="2"></td>
+			        <td onclick="showMeasure('exposure')">	
+			                <b>Exposure </b>	
+			        </td>
+			        <td  onclick="showMeasure('sensitivity')">	
+			                <b>Sensitivity</b>	
+			        </td>
+			        <td onclick="showMeasure('capacity')">	
+			                <b>Capacity </b>	
+			        </td>
+			    </tr>
+			    <tr>
+			        <td rowspan="2" onclick="showMeasure('water')">	
+			                <b>Water</b>	
+			        </td>
+			        <td>	
+			                <b>Quant.</b>	
+			        </td>
+			        <td onclick="showMeasure('d-ppt')">	
+			                <span title="Projected change in precipitation">D-ppt</span>	
+			        </td>
+			        <td onclick="showMeasure('water_use')">	
+			                <span title="% internal and external freshwater water extracted for all uses">water_use</span>	
+			        </td>
+			        <td>	
+			                <span title="% Population with access to improved water supply">water_supply</span>	
+			        </td>
+			    </tr>
+			    <tr>
+			        <td>	
+			                <b>Qual.</b>	
+			        </td>
+			        <td onclick="showMeasure('d-temp')">>	
+			                <span title="Projected change in temperature">d-Temp</span>	
+			        </td>
+			        <td onclick="showMeasure('water_disease')">	
+			                <span title="Mortality among under 5 yr.-olds due to water-borne diseases">water_disease</span>	
+			        </td>
+			        <td onclick="showMeasure('sanit')">	
+			                <span title="% Population with access to improved sanitation">sanitation</span>	
+			        </td>
+			    </tr>
+			    <tr>
+			        <td rowspan="2"  onclick="showMeasure('food')">	
+			                <b>Food</b>	
+			        </td>
+			        <td>	
+			                <b>Quant.</b>	
+			        </td>
+			        <td onclick="showMeasure('yield_proj')">	
+			                <span title="Projected change in agricultural (cereal) yield">yield_proj</span>	
+			        </td>
+			        <td onclick="showMeasure('rural_popn')">	
+			                <span title="% of population living in rural areas">rural_popn</span>	
+			        </td>
+			        <td onclick="showMeasure('food_capacity')">	
+			                <span title="Agricultural capacity">food_capacity</span>	
+			        </td>
+			    </tr>
+			    <tr>
+			        <td>	
+			                <b>Qual.</b>	
+			        </td>
+			        <td onclick="showMeasure('yield_cv')">	
+			                <span title="Coefficient of variation in cereal crop yields">yield_cv</span>	
+			        </td>
+			        <td onclick="showMeasure('imports')">	
+			                <span title="Food import dependency">food_import</span>	
+			        </td>
+			        <td onclick="showMeasure('malnutr')">	
+			                <span title="Children under 5 suffering from malnutrition(%)">malnutrition</span>	
+			        </td>
+			    </tr>
+			    <tr>
+			        <td rowspan="2" onclick="showMeasure('health')">	
+			                <b>Health</b>	
+			        </td>
+			        <td>	
+			                <b>Quant.</b>	
+			        </td>
+			        <td onclick="showMeasure('daly')">	
+			                <span title="Estimated impact of future climate change on deaths from disease">daly</span>	
+			        </td>
+			        <td onclick="showMeasure('staff')">	
+			                <span title="Health workers per capita">health_workers</span> 	
+			        </td>
+			        <td onclick="showMeasure('life')">	
+			                <span title="Longevity">longevity</span>	
+			        </td>
+			    </tr>
+			    <tr>
+			        <td>	
+			                <b>Qual.</b>	
+			        </td>
+			        <td onclick="showMeasure('health_disease')">	
+			                <span title="Mortality due to communicable (infectious) diseases">infectious</span>	
+			        </td>
+			        <td onclick="showMeasure('external')">	
+			                <span title="Health expenditure derived from external resources (%)">health_external</span>	
+			        </td>
+			        <td onclick="showMeasure('matern')">	
+			                <span title="Maternal mortality">maternal_mortality</span>	
+			        </td>
+			    </tr>
+			    <tr>
+			        <td rowspan="2" onclick="showMeasure('habitat')">	
+			                <b>Human Habitat</b>	
+			        </td>
+			        <td>	
+			                <b>Quant.</b>	
+			        </td>
+			        <td onclick="showMeasure('urban_concentration')">	
+			                <span title="Urban concentration in largest city">urban_concentration</span>	
+			        </td>
+			        <td onclick="showMeasure('sulms')">	
+			                <span title="Urban population living in Slums">slums</span>	
+			        </td>
+			        <td onclick="showMeasure('electrical_outages')">	
+			                <span title="Value lost due to electrical outages">outages</span>	
+			        </td>
+			    </tr>
+			    <tr>
+			        <td>	
+			                <b>Qual.</b>	
+			        </td>
+			        <td onclick="showMeasure('>urban_risk')">	
+			                <span title="Urban Risk">urban_risk</span>	
+			        </td>
+			        <td onclick="showMeasure('urban_excess_growth')">	
+			                <span title="Excess urban growth">urban_growth</span>	
+			        </td>
+			        <td onclick="showMeasure('trade_transport')">	
+			                <span title="Quality of trade and transport infrastructure">trade</span>	
+			        </td>
+			    </tr>
+			    <tr>
+			        <td rowspan="2" onclick="showMeasure('ecosystems')" >	
+			                <b>Ecosystem Services</b>	
+			        </td>
+			        <td>	
+			                <b>Quant.</b>	
+			        </td>
+			        <td onclick="showMeasure('biome_threat')">	
+			                <span title="Projected Biome Threat">biome_threat</span>	
+			        </td>
+			        <td onclick="showMeasure('ecological_footprint')">	
+			                <span title="Ecological Footprint">eco_footprint</span>	
+			        </td>
+			        <td onclick="showMeasure('protected_biomes')">	
+			                <span title="Protected biomes">biomes</span>	
+			        </td>
+			    </tr>
+			    <tr>
+			        <td>	
+			                <b>Qual.</b>	
+			        </td>
+			        <td onclick="showMeasure('dependency_natural')">	
+			                <span title="Dependency on natural capital">dependency_natural</span>	
+			        </td>
+			        <td onclick="showMeasure('threatened_species')">	
+			                <span title="Threatened species">species</span>
+			        </td>
+			        <td onclick="showMeasure('international_treaties')">	
+			                <span title="International Environmental Conventions">international_treaties</span>	
+			        </td>
+			    </tr>
+			    <tr>
+			        <td rowspan="3"  onclick="showMeasure('infrastructure')" >	
+			                <b>Infrastructure</b>	
+			        </td>
+			        <td>	
+			                <b>Coast</b>	
+			        </td>
+			        <td onclick="showMeasure('coast_area')">	
+			                <span title="Land less than 5 m above sea-level (%)">low_land</span>
+			        </td>
+			        <td onclick="showMeasure('coast_popn')">	
+			                <span title="Population living less than 5 m above sea-level (%)">low_pop</span>	
+			        </td>
+			        <td rowspan="3">	
+			                <span title="On the Readiness Axis">N/A</span>
+			        </td>
+			    </tr>
+			    <tr>
+			        <td>	
+			                <b>Energy</b>	
+			        </td>
+			        <td onclick="showMeasure('energy_access')">	
+			                <span title="Population with access to reliable electricity (%)">access_elec</span>
+			        </td>
+			        <td onclick="showMeasure('energy_sensit')">	
+			                <span title="Energy at risk">energy_risk</span>
+			        </td>
+			    </tr>
+			    <tr>
+			        <td>	
+			                <b>Transport</b>	
+			        </td>
+			        <td onclick="showMeasure('road_floods')">	
+			                <span title="Frequency of floods per unit area">floods</span>	
+			        </td>
+			        <td onclick="showMeasure('road_paved')">	
+			                <span title="% of roads paved">paved</span>	
+			        </td>
+			    </tr>
+			</tbody></table>
+
+        </td>
+      </tr>
+
+    </table> 
+
+  <div>
+    Tell me about:
+    <input id="ac-input" type="text" >
+  </div>
+ 
+  </div>
+</div>
+
+
+<hr>
+<h2 id="m_name"> </h2> 
+It belongs to the <b id="m_index"></b> Axis, to <i id="m_component"></i>, and the  
+sector <i id="m_sector"></i> 
+
+<p id="m_description"></p>
+
+<h3> Description </h3> 
+<p id="m_explanation"></p>
+
+<h3> Rationale </h3> 
+<p id="m_rationale"></p>
+
+<h3>Sources </h3>
+<table id="m_sources_table"> 
+	
+<h3>Issues </h3>
+<table id="m_issues">
+		
+</table>
+
+
+<script type="text/javascript" src="http://d3js.org/d3.v2.js"></script>
+
+<script src="http://yui.yahooapis.com/3.7.3/build/yui/yui-min.js"></script>
+
+<script>
+
+readAllData();
+addMeasureInput();
+
+
+
+// Create a new YUI instance and populate it with the required modules.
+function addMeasureInput(){
+  YUI().use("autocomplete", "autocomplete-filters", "autocomplete-highlighters", function (Y) {
+    //skin
+    Y.one('body').addClass('yui3-skin-sam');
+    //Array source
+    var measures=getMeasuresList();
+    Y.one('#ac-input').plug(Y.Plugin.AutoComplete, {
+      resultFilters    : 'phraseMatch',
+      resultHighlighter: 'phraseMatch',
+      source: measures,
+      on: {
+        select : function(){
+          console.log("Measure Selected!");
+        }
+      },
+      after: {
+        select: function (o) {
+          showMeasure(o.result.raw);
+        }
+      }
+    });
+  });
+};
+
+
+
+function checkEnter(e){
+  var key=e.keyCode || e.which;
+  if (key==13){
+    console.log('Enter!');
+  }
+}
+
+
+function getMeasuresList(){
+  var measures = JSON.parse(localStorage.getItem('measures'));
+  var measures_list=[];
+  for (m in measures)
+  {
+    measures_list.push(measures[m]["name"]);
+  }
+  return measures_list;
+}
+
+
+
+function showMeasure(name){
+  var measures = JSON.parse(localStorage.getItem('measures'));
+
+  var id="";
+
+  if (measures.hasOwnProperty(name))
+    {
+    id=name;
+    } else{
+    for (m in measures)
+     {
+      if (measures[m]["name"]==name){
+       id=m;
+       console.log(m);
+      }
+    }
+  }
+
+  //update Measure  
+  for (prop in measures[id])
+  {
+    updateText('m_'+prop,measures[id][prop]);
+
+    if (prop=="source"){
+      console.log("source");
+      createSourcesTable(measures[id][prop]);
+    }
+
+  }
+
+}
+
+function updateText(id,text){
+  try{
+    document.getElementById(id).innerHTML = text;
+    }catch(err)
+    {
+      console.log("cannot find the html id tag "+id)
+    }
+}
+
+function createSourcesTable(sources)
+{
+ var m_id= "m_sources_table";
+ var table=document.getElementById(m_id);
+ 
+ //clean row
+ for (var i=0;i<table.rows.length;i++)
+ {
+    table.deleteRow(i);
+ }
+
+ for (var i=0, item; item=sources[i]; i++) {
+  var row=table.insertRow(-1);
+  var cell1=row.insertCell(0);
+  var cell2=row.insertCell(1);
+  cell1.innerHTML=i+1+".-";
+  cell2.innerHTML="<a href='"+item["link"]+"'>"+item["name"]+"</a>";
+ }
+
+ }
+
+function readAllData(){
+  d3.json("measures-def.json", function(json) {
+    // Put the object into storage
+    localStorage.setItem('measures', JSON.stringify(json));
+    // Retrieve the object from storage
+    var retrievedObject = localStorage.getItem('measures');
+    console.log('Measures saved in local storage: ', JSON.parse(retrievedObject));
+ })
+}
+
+
+
+</script>
+
+
+</body>
+
+</html>
