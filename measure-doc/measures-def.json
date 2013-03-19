@@ -187,9 +187,9 @@
        "index": "vulnerability",
        "sector": "ecosystems",
        "component": "exposure",
-"explanation": "",
-	   "rationale": "",
-	   "issues":"",
+       "explanation": "Based on Natural Capital accounting project of the World Bank.  This measure seeks to account for the use of natural capital in national accounting by including information on the change in natural capital such as mineral resources, forest stocks etc.  In this measure only those elements related to ecosystem services are counted.  These are crop, pasture, forest (timber), forest (non-timber) and protected areas.  Sub-surface capital such as oil, gas and mineral reserves are not included in this measure for GAIN.",
+	   "rationale": "This measure captures a country’s reliance on ecosystem services, which are themselves exposed to disruption by climate change.",
+	   "issues":"(i) This is a comprehensive treatment with strong academic input and institutional support but it is not widely used elsewhere probably due to its complexity.  The most recent estimate appeared this year but reflects data of 2005.  Although work on similar measures continues and is accelerating under the 'green accounting' umbrella, it is not certain that another comparable update will occur. (ii) With only 148 countries, this is one of the vulnerability measures with the weakest coverage. (iii) This measure includes GDP in its calculation as the natural capital is expressed as the net present value of the particular capital as a percentage of the GDP – something we have tried to avoid given it can impose a double jeopardy on poor countries.  However, its correlation with ln(GDP per capita) is R2=0.54 with a wide scatter among the poorer countries (Fig. 6) showing that it provides additional information.",
        "source": [{
            "name": "The Changing Wealth of Nations : Measuring Sustainable Development in the New Millennium. World Bank 2011",
            "link": "http://data.worldbank.org/sites/default/files/total_and_per_capita_wealth_of_nations.xls"
@@ -468,9 +468,9 @@
        "index": "vulnerability",
        "sector": "ecosystems",
        "component": "capacity",
-"explanation": "",
-	   "rationale": "",
-	   "issues":"",
+	   "explanation": "A measure based on the country’s participation in international forums, which is taken as an indicator its capacity to engage in multilateral negotiations and to reach agreement on appropriate actions internally.",
+	   "rationale": "Although not a direct measure of capacity, the failure to take part in such forums is usually associated with either lack of technical capacity to deal with the issues and/or lack of political ability to reach decisions over appropriate engagement.",
+	   "issues":"(i) The outcome for this measure is strongly dependent on the process of selecting the agreements to be included (Table 1).  We sought to include <<environmental treaties>> in their broadest sense while avoiding any to do with military/warfare; gross marine pollution, safety at sea and other shipping controls.  We also excluded treaties directly setting up International organizations such as the World Bank etc.  We also excluded agreements with less than 20 signatories. (ii) Some agreements have a limited regional scope (e.g. dealing with Atlantic tuna).  We could have excluded them, but this would have limited the list (16 out of 54 have clear regional scope of application), but many are signed by countries beyond the region (e.g those with fishing fleets in the Atlantic).  Many (17 out of 54) also deal with the agreements on oceans and this may disadvantage land-locked countries, however, land-locked countries are sometimes signatories to such conventions (e.g. those relating to whaling).  It could similarly be argued that some agreements are not relevant to many countries on other grounds (e.g. those to do with desertification).  Thus we chose to retain a wide set of agreements rather than begin a culling process that would have reduced the list to only 10 to 20 or so.",
        "source": [{
            "name": "Environmental Treaties and Resource Indicators",
            "link": "http://sedac.ciesin.columbia.edu/entri/index.jsp"
@@ -641,9 +641,9 @@
        "index": "vulnerability",
        "sector": "ecosystems",
        "component": "capacity",
-       "explanation": "",
-	   "rationale": "",
-	   "issues":"",
+       "explanation": "Taken directly from the Yale Environmental Performance Index (EPI) which defines it as follows … <<The weighted percentage of biomes under protected status, where the weight is determined by the size of biomes within a country. Countries are not rewarded for protecting beyond 17% of any given biome (i.e., scores are capped at 17% per biome) so that higher levels of protection of some biomes cannot be used to offset lower levels of protection of other biomes.>>",
+	   "rationale": "Countries with good protection of their core ecosystem types are likely to have the capacity to implement a wider range of actions to continue to protect and manage ecosystem services under a changing climate.",
+	   "issues":" (i) The measure does not take into account the quality of the management of the protected area.  The Yale team also acknowledges this and they are working towards gathering improved data.",
        "source": [{
            "name": "Emerson, J.W. et al. 2012: 2012 Environmental Performance Index and Pilot Trend Environmental Performance Index.",
            "link": "http://epi.yale.edu/downloads"
@@ -803,9 +803,9 @@
        "index": "vulnerability",
        "sector": "ecosystems",
        "component": "sensitivity",
-"explanation": "",
-	   "rationale": "",
-	   "issues":"",
+       "explanation": "Composite measure made up of (1) the percentage of mammal species recorded as threatened; (2) the percentage of plant species threatened; and (3) the number of bird species threatened.  These three groups (mammals, plants and birds) represent a good, but incomplete, coverage of the state of ecosystems.  Birds have to be treated differently from mammals and plants because the number of bird species within a country is difficult to determine as many are migratory over long distances and the source of the threat of extinction may arise from causes far distant from the country.",
+	   "rationale": "Threats of extinction arise from many pressures currently unrelated to climate change.  Further climate change is likely to exacerbate these pressures in many cases and thus this measure is an indication of the sensitivity of a country’s ecosystems services to change in the future.",
+	   "issues":"(i) There is some overlap with a country’s capacity to manage its natural resources. (ii) The measure does not include species that have passed from threatened to extinct.  There are data that could be used but they would have to be rescaled to be incorporated.  Extinction data also raised issues of equity; for example regions recently settled by technological societies such as North America and Australia will score disproportionately high while extinctions for areas with longer settlement of this type (e.g. Europe and China) many extinction would go unrecorded.",
        "source": [{
            "name": "IUCN Red Book",
            "link": "http://www.iucnredlist.org/"
