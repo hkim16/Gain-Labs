@@ -1,587 +1,633 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html lang="en">
+	<head>
+		<title>
+			Gain Measures documentation
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Bootstrap -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" type="text/css">
+		<link href="style.css" rel="stylesheet" media="screen" type="text/css">
+	</head>
+	<body class="span9">
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<a class="brand" href="#">Gain Measures documentation <span class="label label-important">In development</span></a>
+				<ul class="nav pull-right">
+					<li class="navbar-search">
+						<div class="yui3-skin-sam row">
+							<i class="icon-search"></i>Tell me about: <input id="ac-input" type="text" placeholder="Start typing">
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="intro">
+			<div id="measure-table" class="span9">
+				<table width="100%">
+					<tr align="center">
+						<td colspan="2" onclick="showMeasure('gain')">
+							<abbr title="Partial Score">Gain</abbr>
+						</td>
+					</tr>
+					<tr align="center">
+						<td onclick="showMeasure('readiness')">
+							<abbr title="Partial Score">Readiness</abbr>
+						</td>
+						<td onclick="showMeasure('vulnerability')">
+							<abbr title="Partial Score">Vulnerability</abbr>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<table id="r-table" width="100%">
+								<tbody>
+									<tr>
+										<td rowspan="7" onclick="showMeasure('economic')">
+											<b><abbr title="Partial Score">Economic</abbr></b>
+										</td>
+										<td onclick="showMeasure('business')">
+											<abbr title="IEF Business freedom">business</abbr>
+										</td>
+									</tr>
+									<tr>
+										<td onclick="showMeasure('trade')">
+											<abbr title="IEF Trade freedom">trade</abbr>
+										</td>
+									</tr>
+									<tr>
+										<td onclick="showMeasure('fiscal')">
+											<abbr title="IEF Fiscal freedom">fiscal</abbr>
+										</td>
+									</tr>
+									<tr>
+										<td onclick="showMeasure('gov_spend')">
+											<abbr title="IEF Government Spending">gov_spend</abbr>
+										</td>
+									</tr>
+									<tr>
+										<td onclick="showMeasure('monetary')">
+											<abbr title="IEF Monetary freedom">monetary</abbr>
+										</td>
+									</tr>
+									<tr>
+										<td onclick="showMeasure('invest')">
+											<abbr title="IEF Investment freedom">investment</abbr>
+										</td>
+									</tr>
+									<tr>
+										<td onclick="showMeasure('finan')">
+											<abbr title="Financial freedom">financial</abbr>
+										</td>
+									</tr>
+									<tr>
+										<td rowspan="3" onclick="showMeasure('governance')">
+											<b><abbr title="Partial Score">Governance</abbr></b>
+										</td>
+										<td onclick="showMeasure('voice_accountability')">
+											<abbr title="WGI Voice &amp; Accountability">accountability</abbr>
+										</td>
+									</tr>
+									<tr>
+										<td onclick="showMeasure('non_violence')">
+											<abbr title="WGI Political Stability &amp; Non-Violence">stability</abbr>
+										</td>
+									</tr>
+									<tr>
+										<td onclick="showMeasure('corruption')">
+											<abbr title="WGI Control of Corruption">corruption</abbr>
+										</td>
+									</tr>
+									<tr>
+										<td rowspan="4" onclick="showMeasure('social')">
+											<b><abbr title="Partial Score">Social</abbr></b>
+										</td>
+										<td onclick="showMeasure('mobiles')">
+											<abbr title="Mobiles per 100 persons ">mobiles</abbr>
+										</td>
+									</tr>
+									<tr>
+										<td onclick="showMeasure('labor')">
+											<abbr title="Labor freedom">labor</abbr>
+										</td>
+									</tr>
+									<tr>
+										<td onclick="showMeasure('enrollment')">
+											<abbr title="Tertiary Education">enrollment</abbr>
+										</td>
+									</tr>
+									<tr>
+										<td onclick="showMeasure('rule_of_law')">
+											<abbr title="WGI Rule of Law ">rule_of_law</abbr>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+						<td>
+							<table id="v-table" width="100%">
+								<tbody>
+									<tr>
+										<td colspan="2"></td>
+										<td onclick="showMeasure('exposure')">
+											<b><abbr title="Partial Score">Exposure</abbr></b>
+										</td>
+										<td onclick="showMeasure('sensitivity')">
+											<b><abbr title="Partial Score">Sensitivity</abbr></b>
+										</td>
+										<td onclick="showMeasure('capacity')">
+											<b><abbr title="Partial Score">Capacity</abbr></b>
+										</td>
+									</tr>
+									<tr>
+										<td rowspan="2" onclick="showMeasure('water')">
+											<b><abbr title="Partial Score">Water</abbr></b>
+										</td>
+										<td>
+											<b>Quant.</b>
+										</td>
+										<td onclick="showMeasure('d-ppt')">
+											<abbr title="Projected change in precipitation">D-ppt</abbr>
+										</td>
+										<td onclick="showMeasure('water_use')">
+											<abbr title="% internal and external freshwater water extracted for all uses">water_use</abbr>
+										</td>
+										<td>
+											<abbr title="% Population with access to improved water supply">water_supply</abbr>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<b>Qual.</b>
+										</td>
+										<td onclick="showMeasure('d-temp')">
+											<abbr title="Projected change in temperature">d-Temp</abbr>
+										</td>
+										<td onclick="showMeasure('water_disease')">
+											<abbr title="Mortality among under 5 yr.-olds due to water-borne diseases">water_disease</abbr>
+										</td>
+										<td onclick="showMeasure('sanit')">
+											<abbr title="% Population with access to improved sanitation">sanitation</abbr>
+										</td>
+									</tr>
+									<tr>
+										<td rowspan="2" onclick="showMeasure('food')">
+											<b><abbr title="Partial Score">Food</abbr></b>
+										</td>
+										<td>
+											<b>Quant.</b>
+										</td>
+										<td onclick="showMeasure('yld_proj')">
+											<abbr title="Projected change in agricultural (cereal) yield">yield_proj</abbr>
+										</td>
+										<td onclick="showMeasure('rural_popn')">
+											<abbr title="% of population living in rural areas">rural_popn</abbr>
+										</td>
+										<td onclick="showMeasure('food_capacity')">
+											<abbr title="Agricultural capacity">food_capacity</abbr>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<b>Qual.</b>
+										</td>
+										<td onclick="showMeasure('yield_cv')">
+											<abbr title="Coefficient of variation in cereal crop yields">yield_cv</abbr>
+										</td>
+										<td onclick="showMeasure('imports')">
+											<abbr title="Food import dependency">food_import</abbr>
+										</td>
+										<td onclick="showMeasure('malnutr')">
+											<abbr title="Children under 5 suffering from malnutrition(%)">malnutrition</abbr>
+										</td>
+									</tr>
+									<tr>
+										<td rowspan="2" onclick="showMeasure('health')">
+											<b><abbr title="Partial Score">Health</abbr></b>
+										</td>
+										<td>
+											<b>Quant.</b>
+										</td>
+										<td onclick="showMeasure('daly')">
+											<abbr title="Estimated impact of future climate change on deaths from disease">daly</abbr>
+										</td>
+										<td onclick="showMeasure('staff')">
+											<abbr title="Health workers per capita">health_workers</abbr>
+										</td>
+										<td onclick="showMeasure('life')">
+											<abbr title="Longevity">longevity</abbr>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<b>Qual.</b>
+										</td>
+										<td onclick="showMeasure('health_disease')">
+											<abbr title="Mortality due to communicable (infectious) diseases">infectious</abbr>
+										</td>
+										<td onclick="showMeasure('external')">
+											<abbr title="Health expenditure derived from external resources (%)">health_external</abbr>
+										</td>
+										<td onclick="showMeasure('matern')">
+											<abbr title="Maternal mortality">maternal_mortality</abbr>
+										</td>
+									</tr>
+									<tr>
+										<td rowspan="2" onclick="showMeasure('habitat')">
+											<b><abbr title="Partial Score">Human Habitat</abbr></b>
+										</td>
+										<td>
+											<b>Quant.</b>
+										</td>
+										<td onclick="showMeasure('urban_concentration')">
+											<abbr title="Urban concentration in largest city">urban_concentration</abbr>
+										</td>
+										<td onclick="showMeasure('slums')">
+											<abbr title="Urban population living in Slums">slums</abbr>
+										</td>
+										<td onclick="showMeasure('electrical_outages')">
+											<abbr title="Value lost due to electrical outages">outages</abbr>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<b>Qual.</b>
+										</td>
+										<td onclick="showMeasure('urban_risk')">
+											<abbr title="Urban Risk">urban_risk</abbr>
+										</td>
+										<td onclick="showMeasure('urban_excess_growth')">
+											<abbr title="Excess urban growth">urban_growth</abbr>
+										</td>
+										<td onclick="showMeasure('trade_transport')">
+											<abbr title="Quality of trade and transport infrastructure">trade</abbr>
+										</td>
+									</tr>
+									<tr>
+										<td rowspan="2" onclick="showMeasure('ecosystems')">
+											<b><abbr title="Partial Score">Ecosystem Services</abbr></b>
+										</td>
+										<td>
+											<b>Quant.</b>
+										</td>
+										<td onclick="showMeasure('biome_threat')">
+											<abbr title="Projected Biome Threat">biome_threat</abbr>
+										</td>
+										<td onclick="showMeasure('ecological_footprint')">
+											<abbr title="Ecological Footprint">eco_footprint</abbr>
+										</td>
+										<td onclick="showMeasure('protected_biomes')">
+											<abbr title="Protected biomes">biomes</abbr>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<b>Qual.</b>
+										</td>
+										<td onclick="showMeasure('dependency_natural')">
+											<abbr title="Dependency on natural capital">dependency_natural</abbr>
+										</td>
+										<td onclick="showMeasure('threatened_species')">
+											<abbr title="Threatened species">species</abbr>
+										</td>
+										<td onclick="showMeasure('international_treaties')">
+											<abbr title="International Environmental Conventions">international_treaties</abbr>
+										</td>
+									</tr>
+									<tr>
+										<td rowspan="3" onclick="showMeasure('infrastructure')">
+											<b><abbr title="Partial Score">Infrastructure</abbr></b>
+										</td>
+										<td>
+											<b>Coast</b>
+										</td>
+										<td onclick="showMeasure('coast_area')">
+											<abbr title="Land less than 5 m above sea-level (%)">low_land</abbr>
+										</td>
+										<td onclick="showMeasure('coast_popn')">
+											<abbr title="Population living less than 5 m above sea-level (%)">low_pop</abbr>
+										</td>
+										<td rowspan="3">
+											<abbr title="On the Readiness Axis">N/A</abbr>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<b>Energy</b>
+										</td>
+										<td onclick="showMeasure('energy_access')">
+											<abbr title="Population with access to reliable electricity (%)">access_elec</abbr>
+										</td>
+										<td onclick="showMeasure('energy_sensit')">
+											<abbr title="Energy at risk">energy_risk</abbr>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<b>Transport</b>
+										</td>
+										<td onclick="showMeasure('road_floods')">
+											<abbr title="Frequency of floods per unit area">floods</abbr>
+										</td>
+										<td onclick="showMeasure('road_paved')">
+											<abbr title="% of roads paved">paved</abbr>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="span9">
+			<hr>
+			<h2 id="m_name">
+				[Click on a measure or type above]
+			</h2>
+			<blockquote>
+				( <b id="m_index"></b>, <i id="m_component"></i>, <i id="m_sector"></i>)
+			</blockquote>
+			<p class="lead" id="m_description"></p>
+			<dl>
+				<dt>
+					Description
+				</dt>
+				<dd>
+					<p id="m_explanation"></p>
+				</dd>
+				<dt>
+					Rationale
+				</dt>
+				<dd>
+					<p id="m_rationale"></p>
+				</dd>
+				<dt>
+					Sources
+				</dt>
+				<dd>
+					<table id="m_sources_table"></table>
+				</dd>
+				<dt>
+					Data Stats
+				</dt>
+				<dd>
+					<dl class="dl-horizontal">
+						<dt>
+							# of Countries
+						</dt>
+						<dd>
+							TBD
+						</dd>
+						<dt>
+							Median # of years
+						</dt>
+						<dd>
+							TBD
+						</dd>
+					</dl>
+				</dd>
+				<dt>
+					Issues
+				</dt>
+				<dd>
+					<blockquote>
+						<p id="m_issues"></p>
+					</blockquote>
+				</dd>
+			</dl><script type="text/javascript" src="http://d3js.org/d3.v2.js">
+</script> <script src="http://yui.yahooapis.com/3.7.3/build/yui/yui-min.js" type="text/javascript">
+</script> <script type="text/javascript">
 
-<head>
-<title>Gain Measures documentation</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Bootstrap -->
-<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-<link href="style.css" rel="stylesheet" media="screen">
-
-
-
-</head>
-<body>
- 
-	<div class="navbar navbar-fixed-top">
-	  <div class="navbar-inner">
-	    <a class="brand" href="#">Gain Measures documentation  (in development)</a>
-	    <ul class="nav pull-right">
-	      <li class="navbar-search">
-			<div class="yui3-skin-sam row">
-		    <i class="icon-search"></i> Tell me about:
-		    <input id="ac-input" type="text" placeholder="Start typing">
-		  	</div>
-		  </li>
-	    </ul>
-	  </div>
-	</div>
- 
-<div  id="intro">
- <div id="measure-table" class="span8">
-
-    <table width="100%" >
-      	<tr align="center" >
-	        <td colspan="2" onclick="showMeasure('gain')"> <abbr title="Partial Score">Gain</td>
-	      </tr>
-	<tr align="center" >
-        <td onclick="showMeasure('readiness')"> <abbr title="Partial Score">Readiness</td>
-        <td onclick="showMeasure('vulnerability')"><abbr title="Partial Score">Vulnerability</td>
-      </tr>
-      <tr>
-        <td>
-	
-			<table id="r-table"  width="100%">
-			<tbody>
-			<tr>
-			  <td rowspan="7" onclick="showMeasure('economic')"> <b><abbr title="Partial Score">Economic</abbr></b></td>
-			  <td onclick="showMeasure('business')"> <abbr title="IEF Business freedom">business</abbr></td>
-			</tr>
-			<tr>
-			  <td onclick="showMeasure('trade')"> <abbr title="IEF Trade freedom">trade</abbr>
-			</td></tr>
-			<tr>
-			  <td onclick="showMeasure('fiscal')">  <abbr title="IEF Fiscal freedom">fiscal</abbr>
-			</td></tr>
-			<tr>
-			  <td onclick="showMeasure('gov_spend')"> <abbr title="IEF Government Spending">gov_spend</abbr>
-			</td></tr>
-			<tr>
-			  <td onclick="showMeasure('monetary')"> <abbr title="IEF Monetary freedom">monetary</abbr></td> 
-			</tr>
-			<tr>
-			  <td onclick="showMeasure('invest')"> <abbr title="IEF Investment freedom">investment</abbr>
-			</td></tr>
-			<tr>
-			  <td onclick="showMeasure('finan')"> <abbr title="Financial freedom"> financial</abbr>
-			</td></tr>
-			<tr>
-			  <td rowspan="3" onclick="showMeasure('governance')"> <b><abbr title="Partial Score">Governance</abbr></b> </td>
-			  <td onclick="showMeasure('voice_accountability')"> <abbr title="WGI Voice &amp; Accountability">accountability</abbr></td>
-			</tr>
-			<tr>
-			  <td onclick="showMeasure('non_violence')"> <abbr title="WGI Political Stability &amp; Non-Violence">stability</abbr></td>
-			</tr>
-			<tr>
-			  <td onclick="showMeasure('corruption')"> <abbr title="WGI Control of Corruption">corruption</abbr></td>
-			</tr>
-			<tr>
-			  <td rowspan="4" onclick="showMeasure('social')"> <b><abbr title="Partial Score">Social</b></abbr> </td>
-			  <td onclick="showMeasure('mobiles')">  <abbr title="Mobiles per 100 persons ">mobiles</abbr></td>
-			</tr>
-			<tr>
-			  <td onclick="showMeasure('labor')"> <abbr title="Labor freedom">labor</abbr></td></tr>
-			<tr>
-			  <td onclick="showMeasure('enrollment')"> <abbr title="Tertiary Education">enrollment</abbr></td>
-			</tr>
-			<tr>
-			 <td onclick="showMeasure('rule_of_law')"> <abbr title="WGI Rule of Law ">rule_of_law</abbr></td>
-			</tr>
-			</tbody>
-			</table>
-	
-	    </td>
-        <td>
-        
-          	<table id="v-table"  width="100%">
-			    <tbody><tr>
-			        <td colspan="2"></td>
-			        <td onclick="showMeasure('exposure')">	
-			                <b><abbr title="Partial Score">Exposure </b>	
-			        </td>
-			        <td  onclick="showMeasure('sensitivity')">	
-			                <b><abbr title="Partial Score">Sensitivity</b>	
-			        </td>
-			        <td onclick="showMeasure('capacity')">	
-			                <b><abbr title="Partial Score">Capacity </b>	
-			        </td>
-			    </tr>
-			    <tr>
-			        <td rowspan="2" onclick="showMeasure('water')">	
-			                <b><abbr title="Partial Score">Water</abbr></b>	
-			        </td>
-			        <td>	
-			                <b>Quant.</b>	
-			        </td>
-			        <td onclick="showMeasure('d-ppt')">	
-			                <abbr title="Projected change in precipitation">D-ppt</abbr>	
-			        </td>
-			        <td onclick="showMeasure('water_use')">	
-			                <abbr title="% internal and external freshwater water extracted for all uses">water_use</abbr>	
-			        </td>
-			        <td>	
-			                <abbr title="% Population with access to improved water supply">water_supply</abbr>	
-			        </td>
-			    </tr>
-			    <tr>
-			        <td>	
-			                <b>Qual.</b>	
-			        </td>
-			        <td onclick="showMeasure('d-temp')">	
-			                <abbr title="Projected change in temperature">d-Temp</abbr>	
-			        </td>
-			        <td onclick="showMeasure('water_disease')">	
-			                <abbr title="Mortality among under 5 yr.-olds due to water-borne diseases">water_disease</abbr>	
-			        </td>
-			        <td onclick="showMeasure('sanit')">	
-			                <abbr title="% Population with access to improved sanitation">sanitation</abbr>	
-			        </td>
-			    </tr>
-			    <tr>
-			        <td rowspan="2"  onclick="showMeasure('food')">	
-			                <b><abbr title="Partial Score">Food</abbr></b>	
-			        </td>
-			        <td>	
-			                <b>Quant.</b>	
-			        </td>
-			        <td onclick="showMeasure('yld_proj')">	
-			                <abbr title="Projected change in agricultural (cereal) yield">yield_proj</abbr>	
-			        </td>
-			        <td onclick="showMeasure('rural_popn')">	
-			                <abbr title="% of population living in rural areas">rural_popn</abbr>	
-			        </td>
-			        <td onclick="showMeasure('food_capacity')">	
-			                <abbr title="Agricultural capacity">food_capacity</abbr>	
-			        </td>
-			    </tr>
-			    <tr>
-			        <td>	
-			                <b>Qual.</b>	
-			        </td>
-			        <td onclick="showMeasure('yield_cv')">	
-			                <abbr title="Coefficient of variation in cereal crop yields">yield_cv</abbr>	
-			        </td>
-			        <td onclick="showMeasure('imports')">	
-			                <abbr title="Food import dependency">food_import</abbr>	
-			        </td>
-			        <td onclick="showMeasure('malnutr')">	
-			                <abbr title="Children under 5 suffering from malnutrition(%)">malnutrition</abbr>	
-			        </td>
-			    </tr>
-			    <tr>
-			        <td rowspan="2" onclick="showMeasure('health')">	
-			                <b><abbr title="Partial Score">Health</abbr></b>	
-			        </td>
-			        <td>	
-			                <b>Quant.</b>	
-			        </td>
-			        <td onclick="showMeasure('daly')">	
-			                <abbr title="Estimated impact of future climate change on deaths from disease">daly</abbr>	
-			        </td>
-			        <td onclick="showMeasure('staff')">	
-			                <abbr title="Health workers per capita">health_workers</abbr> 	
-			        </td>
-			        <td onclick="showMeasure('life')">	
-			                <abbr title="Longevity">longevity</abbr>	
-			        </td>
-			    </tr>
-			    <tr>
-			        <td>	
-			                <b>Qual.</b>	
-			        </td>
-			        <td onclick="showMeasure('health_disease')">	
-			                <abbr title="Mortality due to communicable (infectious) diseases">infectious</abbr>	
-			        </td>
-			        <td onclick="showMeasure('external')">	
-			                <abbr title="Health expenditure derived from external resources (%)">health_external</abbr>	
-			        </td>
-			        <td onclick="showMeasure('matern')">	
-			                <abbr title="Maternal mortality">maternal_mortality</abbr>	
-			        </td>
-			    </tr>
-			    <tr>
-			        <td rowspan="2" onclick="showMeasure('habitat')">	
-			                <b><abbr title="Partial Score">Human Habitat</abbr></b>	
-			        </td>
-			        <td>	
-			                <b>Quant.</b>	
-			        </td>
-			        <td onclick="showMeasure('urban_concentration')">	
-			                <abbr title="Urban concentration in largest city">urban_concentration</abbr>	
-			        </td>
-			        <td onclick="showMeasure('slums')">	
-			                <abbr title="Urban population living in Slums">slums</abbr>	
-			        </td>
-			        <td onclick="showMeasure('electrical_outages')">	
-			                <abbr title="Value lost due to electrical outages">outages</abbr>	
-			        </td>
-			    </tr>
-			    <tr>
-			        <td>	
-			                <b>Qual.</b>	
-			        </td>
-			        <td onclick="showMeasure('urban_risk')">	
-			                <abbr title="Urban Risk">urban_risk</abbr>	
-			        </td>
-			        <td onclick="showMeasure('urban_excess_growth')">	
-			                <abbr title="Excess urban growth">urban_growth</abbr>	
-			        </td>
-			        <td onclick="showMeasure('trade_transport')">	
-			                <abbr title="Quality of trade and transport infrastructure">trade</abbr>	
-			        </td>
-			    </tr>
-			    <tr>
-			        <td rowspan="2" onclick="showMeasure('ecosystems')" >	
-			                <b><abbr title="Partial Score">Ecosystem Services</abbr></b>	
-			        </td>
-			        <td>	
-			                <b>Quant.</b>	
-			        </td>
-			        <td onclick="showMeasure('biome_threat')">	
-			                <abbr title="Projected Biome Threat">biome_threat</abbr>	
-			        </td>
-			        <td onclick="showMeasure('ecological_footprint')">	
-			                <abbr title="Ecological Footprint">eco_footprint</abbr>	
-			        </td>
-			        <td onclick="showMeasure('protected_biomes')">	
-			                <abbr title="Protected biomes">biomes</abbr>	
-			        </td>
-			    </tr>
-			    <tr>
-			        <td>	
-			                <b>Qual.</b>	
-			        </td>
-			        <td onclick="showMeasure('dependency_natural')">	
-			                <abbr title="Dependency on natural capital">dependency_natural</abbr>	
-			        </td>
-			        <td onclick="showMeasure('threatened_species')">	
-			                <abbr title="Threatened species">species</abbr>
-			        </td>
-			        <td onclick="showMeasure('international_treaties')">	
-			                <abbr title="International Environmental Conventions">international_treaties</abbr>	
-			        </td>
-			    </tr>
-			    <tr>
-			        <td rowspan="3"  onclick="showMeasure('infrastructure')" >	
-			                <b><abbr title="Partial Score">Infrastructure</abbr></b>	
-			        </td>
-			        <td>	
-			                <b>Coast</b>	
-			        </td>
-			        <td onclick="showMeasure('coast_area')">	
-			                <abbr title="Land less than 5 m above sea-level (%)">low_land</abbr>
-			        </td>
-			        <td onclick="showMeasure('coast_popn')">	
-			                <abbr title="Population living less than 5 m above sea-level (%)">low_pop</abbr>	
-			        </td>
-			        <td rowspan="3">	
-			                <abbr title="On the Readiness Axis">N/A</abbr>
-			        </td>
-			    </tr>
-			    <tr>
-			        <td>	
-			                <b>Energy</b>	
-			        </td>
-			        <td onclick="showMeasure('energy_access')">	
-			                <abbr title="Population with access to reliable electricity (%)">access_elec</abbr>
-			        </td>
-			        <td onclick="showMeasure('energy_sensit')">	
-			                <abbr title="Energy at risk">energy_risk</abbr>
-			        </td>
-			    </tr>
-			    <tr>
-			        <td>	
-			                <b>Transport</b>	
-			        </td>
-			        <td onclick="showMeasure('road_floods')">	
-			                <abbr title="Frequency of floods per unit area">floods</abbr>	
-			        </td>
-			        <td onclick="showMeasure('road_paved')">	
-			                <abbr title="% of roads paved">paved</abbr>	
-			        </td>
-			    </tr>
-			</tbody></table>
-
-        </td>
-      </tr>
-
-    </table> 
-
-
-
-
-<hr>
-<h2 id="m_name">[Click on a measure or type above] </h2> 
-<blockquote>
-	( <b id="m_index"></b>, <i id="m_component"></i>, <i id="m_sector"></i>) 
-</blockquote>
-
-<p class="lead" id="m_description"></p>
-
-<dl>
-  <dt>Description</dt>
-  <dd><p id="m_explanation"></p></dd>
-  
-  <dt> Rationale </dt> 
-  <dd><p id="m_rationale"></p></dd>
-  
-  <dt> Sources </dt> 
-  <dd><table id="m_sources_table"> </table></dd>
-
-  <dt> Data Stats </dt> 
-  <dd>
-	<dl class="dl-horizontal">
-	  <dt># of Countries</dt>
-	  <dd>TBD</dd>
-	  <dt>Median # of years</dt>
-	  <dd>TBD</dd>
-	</dl>
-	</dd>
-	
-	<dt> Issues </dt> 
-	<dd><blockquote>
-		<p id="m_issues"></p>
-	</blockquote>
-	</dd>
-</dl>
-
-
-
-<script type="text/javascript" src="http://d3js.org/d3.v2.js"></script>
-
-<script src="http://yui.yahooapis.com/3.7.3/build/yui/yui-min.js"></script>
-
-<script>
-
-readAllData();
-addMeasureInput();
-
-
-// Create a new YUI instance and populate it with the required modules.
-function addMeasureInput(){
-  YUI().use("autocomplete", "autocomplete-filters", "autocomplete-highlighters", function (Y) {
-    //skin
-    Y.one('body').addClass('yui3-skin-sam');
-    //Array source
-    var measures=getMeasuresList();
-    Y.one('#ac-input').plug(Y.Plugin.AutoComplete, {
-      resultFilters    : 'phraseMatch',
-      resultHighlighter: 'phraseMatch',
-      source: measures,
-      on: {
-        select : function(){
-          console.log("Measure Selected!");
-        }
-      },
-      after: {
-        select: function (o) {
-          showMeasure(o.result.raw);
-        }
-      }
-    });
-  });
-};
-
-
-
-function checkEnter(e){
-  var key=e.keyCode || e.which;
-  if (key==13){
-    console.log('Enter!');
-  }
-}
-
-
-function getMeasuresList(){
-  var measures = JSON.parse(localStorage.getItem('measures'));
-  var measures_list=[];
-  for (m in measures)
-  {
-    measures_list.push(measures[m]["name"]);
-  }
-  return measures_list;
-}
-
+				readAllData();
+				addMeasureInput();
 
 
-function showMeasure(name){
-  var measures = JSON.parse(localStorage.getItem('measures'));
+				// Create a new YUI instance and populate it with the required modules.
+				function addMeasureInput(){
+				YUI().use("autocomplete", "autocomplete-filters", "autocomplete-highlighters", function (Y) {
+				//skin
+				Y.one('body').addClass('yui3-skin-sam');
+				//Array source
+				var measures=getMeasuresList();
+				Y.one('#ac-input').plug(Y.Plugin.AutoComplete, {
+				resultFilters    : 'phraseMatch',
+				resultHighlighter: 'phraseMatch',
+				source: measures,
+				on: {
+				select : function(){
+				console.log("Measure Selected!");
+				}
+				},
+				after: {
+				select: function (o) {
+				showMeasure(o.result.raw);
+				}
+				}
+				});
+				});
+				};
 
-  var id="";
 
-  if (measures.hasOwnProperty(name))
-    {
-    id=name;
-    } else{
-    for (m in measures)
-     {
-      if (measures[m]["name"]==name){
-       id=m;
-       console.log(m);
-      }
-    }
-  }
 
-  //update Measure  
-  for (prop in measures[id])
-  {
-    updateText('m_'+prop,measures[id][prop]);
+				function checkEnter(e){
+				var key=e.keyCode || e.which;
+				if (key==13){
+				console.log('Enter!');
+				}
+				}
 
-    if (prop=="source"){
-      console.log("source");
-      createSourcesTable(measures[id][prop]);
-    }
 
-  }
-  readMeasureData(id);
+				function getMeasuresList(){
+				var measures = JSON.parse(localStorage.getItem('measures'));
+				var measures_list=[];
+				for (m in measures)
+				{
+				measures_list.push(measures[m]["name"]);
+				}
+				return measures_list;
+				}
 
-}
 
-function updateText(id,text){
-  try{
-    document.getElementById(id).innerHTML = text;
-    }catch(err)
-    {
-      console.log("cannot find the html id tag "+id)
-    }
-}
 
-function createSourcesTable(sources)
-{
- var m_id= "m_sources_table";
- var table=document.getElementById(m_id);
- 
- //clean row
- for (var i=0;i<table.rows.length;i++)
- {
-    table.deleteRow(i);
- }
+				function showMeasure(name){
+				var measures = JSON.parse(localStorage.getItem('measures'));
 
- for (var i=0, item; item=sources[i]; i++) {
-  var row=table.insertRow(-1);
-  var cell1=row.insertCell(0);
-  var cell2=row.insertCell(1);
-  cell1.innerHTML=i+1+".-";
-  cell2.innerHTML="<a href='"+item["link"]+"'>"+item["name"]+"</a>";
- }
+				var id="";
 
- }
+				if (measures.hasOwnProperty(name))
+				{
+				id=name;
+				} else{
+				for (m in measures)
+				{
+				if (measures[m]["name"]==name){
+				id=m;
+				console.log(m);
+				}
+				}
+				}
 
-function readAllData(){
-  d3.json("measures-def.json", function(json) {
-    // Put the object into storage
-    localStorage.setItem('measures', JSON.stringify(json));
-    // Retrieve the object from storage
-    var retrievedObject = localStorage.getItem('measures');
-    console.log('Measures saved in local storage: ', JSON.parse(retrievedObject));
- })
-}
+				//update Measure  
+				for (prop in measures[id])
+				{
+				updateText('m_'+prop,measures[id][prop]);
 
-function readMeasureData(id)
-{
-	  d3.csv("resources/indicators/"+id+"/score.csv", function(csv) {
-	    scoreGraph(csv);
-	  })
-}
+				if (prop=="source"){
+				console.log("source");
+				createSourcesTable(measures[id][prop]);
+				}
 
-function scoreGraph(csv)
-{
-	var xdata = [1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012];
-	var ydata={1995:[],1996:[],1997:[],1998:[],1999:[],2000:[],2001:[],2002:[],2003:[],2004:[],2005:[],2006:[],2007:[],2008:[],2009:[],2010:[],2011:[],2012:[]};
-	
-	for (country in csv){
-		for (y in xdata){
-			var val=csv[country][xdata[y]];
-			if (val != 0.0)
-			{
+				}
+				readMeasureData(id);
+
+				}
+
+				function updateText(id,text){
+				try{
+				document.getElementById(id).innerHTML = text;
+				}catch(err)
+				{
+				console.log("cannot find the html id tag "+id)
+				}
+				}
+
+				function createSourcesTable(sources)
+				{
+				var m_id= "m_sources_table";
+				var table=document.getElementById(m_id);
+
+				//clean row
+				rows=table.rows.length;
+				for (var i=0;i<rows;i++)
+				{
+				table.deleteRow(i);
+				}
+
+				for (var i=0, item; item=sources[i]; i++) {
+				var row=table.insertRow(-1);
+				var cell1=row.insertCell(0);
+				var cell2=row.insertCell(1);
+				cell1.innerHTML=i+1+".-";
+				cell2.innerHTML="<a href='"+item["link"]+"'>"+item["name"]+"<\/a>";
+				}
+
+				}
+
+				function readAllData(){
+				d3.json("measures-def.json", function(json) {
+				// Put the object into storage
+				localStorage.setItem('measures', JSON.stringify(json));
+				// Retrieve the object from storage
+				var retrievedObject = localStorage.getItem('measures');
+				console.log('Measures saved in local storage: ', JSON.parse(retrievedObject));
+				})
+				}
+
+				function readMeasureData(id)
+				{
+				d3.csv("resources/indicators/"+id+"/score.csv", function(csv) {
+				scoreGraph(csv);
+				})
+				}
+
+				function scoreGraph(csv)
+				{
+				var xdata = [1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012];
+				var ydata={1995:[],1996:[],1997:[],1998:[],1999:[],2000:[],2001:[],2002:[],2003:[],2004:[],2005:[],2006:[],2007:[],2008:[],2009:[],2010:[],2011:[],2012:[]};
+
+				for (country in csv){
+				for (y in xdata){
+				var val=csv[country][xdata[y]];
+				if (val != 0.0)
+				{
 				ydata[xdata[y]].push(val);
-			}
-	}
+				}
+				}
 
-	}
-	var ydata_50=[];
-	var ydata_10=[];
-	var ydata_90=[];
-	
-	for (i in ydata)
-	{
-		var arr=ydata[i];
-		console.log(ydata);
-		ydata_50.push(d3.median(arr));
-		ydata_10.push(d3.quantile(arr,10));
-		ydata_90.push(d3.quantile(arr,90));
-	}
+				}
+				var ydata_50=[];
+				var ydata_10=[];
+				var ydata_90=[];
 
-	// size and margins for the chart
-	var margin = {top: 20, right: 15, bottom: 20, left: 30}
-	  , width = 600 - margin.left - margin.right
-	  , height = 200 - margin.top - margin.bottom;
+				for (i in ydata)
+				{
+				var arr=ydata[i];
+				console.log(ydata);
+				ydata_50.push(d3.median(arr));
+				ydata_10.push(d3.quantile(arr,10));
+				ydata_90.push(d3.quantile(arr,90));
+				}
 
-	// x and y scales, I've used linear here but there are other options
-	// the scales translate data values to pixel values for you
-	var x = d3.scale.linear()
-	          .domain([d3.min(xdata), d3.max(xdata)])  // the range of the values to plot
-	          .range([ 0, width ]);        // the pixel range of the x-axis
+				// size and margins for the chart
+				var margin = {top: 20, right: 15, bottom: 20, left: 30}
+				, width = 600 - margin.left - margin.right
+				, height = 200 - margin.top - margin.bottom;
 
-	var y = d3.scale.linear()
-	          .domain([0,1])
-	          .range([ height, 0 ]);
+				// x and y scales, I've used linear here but there are other options
+				// the scales translate data values to pixel values for you
+				var x = d3.scale.linear()
+				.domain([d3.min(xdata), d3.max(xdata)])  // the range of the values to plot
+				.range([ 0, width ]);        // the pixel range of the x-axis
 
-	//clean previous svg if any
-	//TODO
-	
-	// the chart object, includes all margins
-	var chart = d3.select('body')
-	.append('svg:svg')
-	.attr('width', width + margin.right + margin.left)
-	.attr('height', height + margin.top + margin.bottom)
-	.attr('class', 'chart')
+				var y = d3.scale.linear()
+				.domain([0,1])
+				.range([ height, 0 ]);
 
-	// the main object where the chart and axis will be drawn
-	var main = chart.append('g')
-	.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
-	.attr('width', width)
-	.attr('height', height)
-	.attr('class', 'main')   
+				//clean previous svg if any
+				//TODO
 
-	// draw the x axis
-	var xAxis = d3.svg.axis()
-	.scale(x)
-	.orient('bottom');
+				// the chart object, includes all margins
+				var chart = d3.select('body')
+				.append('svg:svg')
+				.attr('width', width + margin.right + margin.left)
+				.attr('height', height + margin.top + margin.bottom)
+				.attr('class', 'chart')
 
-	main.append('g')
-	.attr('transform', 'translate(0,' + height + ')')
-	.attr('class', 'main axis date')
-	.call(xAxis);
+				// the main object where the chart and axis will be drawn
+				var main = chart.append('g')
+				.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
+				.attr('width', width)
+				.attr('height', height)
+				.attr('class', 'main')   
 
-	// draw the y axis
-	var yAxis = d3.svg.axis()
-	.scale(y)
-	.orient('left');
+				// draw the x axis
+				var xAxis = d3.svg.axis()
+				.scale(x)
+				.orient('bottom');
 
-	main.append('g')
-	.attr('transform', 'translate(0,0)')
-	.attr('class', 'main axis date')
-	.call(yAxis);
+				main.append('g')
+				.attr('transform', 'translate(0,' + height + ')')
+				.attr('class', 'main axis date')
+				.call(xAxis);
 
-	// draw the graph object
-	var g = main.append("svg:g"); 
+				// draw the y axis
+				var yAxis = d3.svg.axis()
+				.scale(y)
+				.orient('left');
 
-	g.selectAll("scatter-dots")
-	  .data(ydata_50)  // using the values in the ydata array
-	  .enter().append("svg:circle")  // create a new circle for each value
-	      .attr("cy", function (d) { return y(d); } ) // translate y value to a pixel
-	      .attr("cx", function (d,i) { return x(xdata[i]); } ) // translate x value
-	      .attr("r", 2) // radius of circle
-	      .style("opacity", 0.4); // opacity of circle
-}
+				main.append('g')
+				.attr('transform', 'translate(0,0)')
+				.attr('class', 'main axis date')
+				.call(yAxis);
+
+				// draw the graph object
+				var g = main.append("svg:g"); 
+
+				g.selectAll("scatter-dots")
+				.data(ydata_50)  // using the values in the ydata array
+				.enter().append("svg:circle")  // create a new circle for each value
+				.attr("cy", function (d) { return y(d); } ) // translate y value to a pixel
+				.attr("cx", function (d,i) { return x(xdata[i]); } ) // translate x value
+				.attr("r", 2) // radius of circle
+				.style("opacity", 0.4); // opacity of circle
+				}
 
 
 
+			</script> <script src="http://code.jquery.com/jquery.js" type="text/javascript">
+//do I need this? 
+			</script> <script src="bootstrap/js/bootstrap.min.js" type="text/javascript">
 </script>
-
-<script src="http://code.jquery.com/jquery.js"> //do I need this? </script> 
-<script src="bootstrap/js/bootstrap.min.js"></script>
-</body>
-
+		</div>
+	</body>
 </html>
