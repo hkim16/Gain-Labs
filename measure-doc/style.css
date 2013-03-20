@@ -4,14 +4,17 @@ body{
 }
 
 #v-table {
-  background-color: #FFFF66;
+  background-color: rgb(145, 235, 74);
 }
 #r-table {
-  background-color: #FCCFA6;
+  background-color: rgb(253, 253, 74);
+}
+#measure-table {
+  background-color: rgb(197, 241, 243);
 }
 
 .row-bottom {
-	border-bottom: 1px solid;
+	border-bottom: 1px solid gray;
 }
 
 .h,.v{stroke:black;stroke-dasharray:4 4;stroke-width:1;stroke-opacity:.5;}

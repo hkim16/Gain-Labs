@@ -1,1202 +1,1193 @@
 {
-    "gain_delta": {
-        "id": "gain_delta",
-        "name": "GAIN Index, adjusted for GDP",
-        "description": "GDP adjusted GAIN Index scores represent how much better or worse the actual GAIN Index score is from its expected value, based on its GDP. A positive value means a country has a better GAIN Index score than other countries of a similar GDP. A negative value means a country has a worse score.",
-        "map_caption": "Countries of the world by GAIN Index, adjusted for GDP. Higher scores are better.",
-        "ranking_caption": "World wide ranking by GAIN Index, adjusted for GDP. Higher scores are better.",
-        "format": "number",
-        "decimals": "2",
-        "unit": null,
-        "index": "gain",
-        "sector": null,
-        "component": null
-    },
-    "gain": {
-        "id": "gain",
-        "name": "GAIN Index",
-        "description": "The GAIN Index captures a country's Vulnerability to climate change and other global challenges, and its Readiness to improve resilience.",
-        "map_caption": "Countries of the world by their position on the GAIN Index.",
-        "ranking_caption": "World wide ranking by GAIN Index, higher scores are better.",
-        "format": "number",
-        "decimals": "1",
-        "unit": null,
-        "index": null,
-        "sector": null,
-        "component": null
-    },
+	"gain_delta": {
+		"id": "gain_delta",
+		"name": "GAIN Index, adjusted for GDP",
+		"description": "GDP adjusted GAIN Index scores represent how much better or worse the actual GAIN Index score is from its expected value, based on its GDP. A positive value means a country has a better GAIN Index score than other countries of a similar GDP. A negative value means a country has a worse score.",
+		"map_caption": "Countries of the world by GAIN Index, adjusted for GDP. Higher scores are better.",
+		"ranking_caption": "World wide ranking by GAIN Index, adjusted for GDP. Higher scores are better.",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "gain",
+		"sector": null,
+		"component": null
+	},
+	"gain": {
+		"id": "gain",
+		"name": "GAIN Index",
+		"description": "The GAIN Index captures a country's Vulnerability to climate change and other global challenges, and its Readiness to improve resilience.",
+		"map_caption": "Countries of the world by their position on the GAIN Index.",
+		"ranking_caption": "World wide ranking by GAIN Index, higher scores are better.",
+		"format": "number",
+		"decimals": "1",
+		"unit": null,
+		"index": null,
+		"sector": null,
+		"component": null,
+		"explanation": "The GAIN Index captures a country's Vulnerability to climate change and other global challenges, and its Readiness to improve resilience.",
+		"rationale": "",
+		"issues": "",
+		"source": [{
+			"name": "Partial Score, see table for components",
+			"link": "#measure_table"
+		}]
+	},
 	"matrix": {
-        "id": "gain",
-        "name": "GAIN Matrix",
-        "description": "The Readiness Matrix illustrates the comparative resilience of countries. The vertical axis measures the relative vulnerability of countries. The horizontal axis measures to what degree a country is ready to deal with climatic and environmental changes.",
-        "map_caption": "Countries of the world by their quadrant position on the GAIN Index.",
-        "ranking_caption": "World wide ranking by GAIN Index, higher scores are better.",
-        "format": "number",
-        "decimals": "1",
-        "unit": null,
-        "index": null,
-        "sector": null,
-        "component": null
-    },
+		"id": "gain",
+		"name": "GAIN Matrix",
+		"description": "The Readiness Matrix illustrates the comparative resilience of countries. The vertical axis measures the relative vulnerability of countries. The horizontal axis measures to what degree a country is ready to deal with climatic and environmental changes.",
+		"map_caption": "Countries of the world by their quadrant position on the GAIN Index.",
+		"ranking_caption": "World wide ranking by GAIN Index, higher scores are better.",
+		"format": "number",
+		"decimals": "1",
+		"unit": null,
+		"index": null,
+		"sector": null,
+		"component": null
+	},
 	"matrix_delta": {
-        "id": "gain_delta",
-        "name": "GAIN Matrix",
-        "description": "GDP adjusted GAIN Index scores represent how much better or worse the actual GAIN Index score is from its expected value, based on its GDP. A positive value means a country has a better GAIN Index score than other countries of a similar GDP. A negative value means a country has a worse score.",
-        "map_caption": "No map available",
-        "ranking_caption": "World wide ranking by GAIN Index, higher scores are better.",
-        "format": "number",
-        "decimals": "1",
-        "unit": null,
-        "index": "gain",
-        "sector": null,
-        "component": null
-    },
-    "business": {
-        "id": "business",
-        "name": "Business freedom",
-        "description": "Individual’s right to create, operate, and close an enterprise without interference from the state.",
-        "format": "number",
-        "decimals": "0",
-        "unit": null,
-        "index": "readiness",
-        "sector": null,
-        "component": "economic",
- "explanation": "",
-	   "rationale": "",
-	   "issues":"",
-       "source": [{
-            "name": "Index of Economic Freedom",
-            "link": "http://www.heritage.org/index/explore"
-        }]
-    },
-    "coast_area": {
-        "id": "coast_area",
-        "name": "Coastal area",
-        "description": "Percent of land less than 10 meters above sea-level.",
-        "format": "number",
-        "decimals": "2",
-        "unit": "%s %",
-        "index": "vulnerability",
-        "sector": "infrastructure",
-        "component": "exposure",
- "explanation": "",
-	   "rationale": "",
-	   "issues":"",
-       "source": [{
-            "name": "CIESIN",
-            "link": "http://sedac.ciesin.columbia.edu/gpw/lecz.jsp "
-        }]
-    },
-    "coast_popn": {
-        "id": "coast_popn",
-        "name": "Coastal population",
-        "description": "Percent of population living less than 10 meters above sea-level.",
-        "format": "number",
-        "decimals": "2",
-        "unit": "%s %",
-        "index": "vulnerability",
-        "sector": "infrastructure",
-        "component": "sensitivity",
- "explanation": "",
-	   "rationale": "",
-	   "issues":"",
-       "source": [{
-           "name": "CIESIN",
-           "link": "http://sedac.ciesin.columbia.edu/gpw/lecz.jsp "
-        }]
-    },
-    "corruption": {
-        "id": "corruption",
-        "name": "Control of corruption",
-        "description": "Perceptions of public power exercised for private gain, including both petty and grand forms of corruption, as well as 'capture' of the state by elites and private interests.",
-        "format": "number",
-        "decimals": "2",
-        "unit": null,
-        "index": "readiness",
-        "sector": null,
-        "component": "governance",
- "explanation": "",
-	   "rationale": "",
-	   "issues":"",
-       "source": [{
-            "name": "Worldwide Governance Indicators",
-            "link": "http://info.worldbank.org/governance/wgi/sc_country.asp"
-        }]
-    },
-    "d-ppt": {
-        "id": "d-ppt",
-        "name": "Precipitation change",
-        "description": "Projected change in precipitation by late 21st century, i.e. 2070-99 compared to  1961-90.",
-        "format": "percent",
-        "decimals": "1",
-        "unit": "%s %",
-        "index": "vulnerability",
-        "sector": "water",
-        "component": "exposure",
-        "explanation": "Gross measure of threat to water.  This is the commonly used indicator in both the scientific and response communities.  However it is not a very effective measure as it does not take increased evaporative demand into account nor changes in the intensity and seasonality of the rainfall.  It might eventually be replaced by a more integrating measure such as run-off or even precipitation minus evapotranspiration.  The use of a single measure for an entire country is not very valid, especially for large countries where there are large gradients across the country.",
-	   "rationale": "",
-	   "issues":"An increase in PPT% is taken to indicate reduced vulnerability. However, this might be misleading for dry countries where a large % increase does not imply a large absolute increase in rainfall or in rainfall effectiveness.  The increased rain may come in flooding events.  Similarly increased PPT% for already wet countries probably provides little useful additional water and may add to flood loads.  There appears to be no objective way to correct for these problems but a subjective correction is suggested below. It can also be argued that PPT% is is a reasonable approximation – for countries with low current precipitation an increase will be disruptive especially if flood frequency increases; for high precipitation countries additional precipitation is also disruptive.  There is a range in the middle where additional rainfall might be beneficial but it is hard to adjust for this.  Note however, that this is partially taken up in the Food Measures dealing with the projected impact of climate change on crop yields.",
-       "source": [{
-            "name": "Climatic Research Unit, University of East Anglia. Dataset TYN CY 3.0",
-            "link": "http://www.cru.uea.ac.uk/cru/data/hrg/"
-        }]
-    },
-    "d-temp": {
-        "id": "d-temp",
-        "name": "Temperature change",
-        "description": "Projected change in temperature by late 21st century, i.e. 2070-99 compared to  1961-90.",
-        "format": "number",
-        "decimals": "1",
-        "unit": "%s °C",
-        "index": "vulnerability",
-        "sector": "water",
-        "component": "exposure",
-        "explanation": "Water quality issues rise in warmer conditions causing disease growth & spread; less water for sanitation etc. ",
-	   "rationale": "",
-	   "issues":"This brings the most commonly used climate change indicator into the index.  The use of a single measure for an entire country is not very valid, especially for large countries where there are large gradients across the country.",
-       "source": [{
-            "name": "Climatic Research Unit, University of East Anglia. Dataset TYN CY 3.0",
-            "link": "http://www.cru.uea.ac.uk/cru/data/hrg/"
-        }]
-    },
-    "daly": {
-        "id": "daly",
-        "name": "Disability adjusted life years",
-        "description": "Projected percent increase in DALY due to climate change in the late 21st century.",
-        "format": "percent",
-        "decimals": "2",
-        "unit": "%s %",
-        "index": "vulnerability",
-        "sector": "health",
-        "component": "exposure",
-        "explanation": "A model-based estimate of the quality adjusted loss of life years under several different climate scenarios.  The most extreme scenario and for 2100 was used here to achieve maximum discrimination between country exposures. ",
-	   "rationale": "",
-	   "issues":"This index is calculated for regions of the world and for sub-groupings of countries within these regions (eventually xx different groups).  Thus many countries share the same value of the measure as others.",
-       "source": [{
-            "name": "Adaptation costs for climate change-related cases of diarrhoeal disease, malnutrition, and malaria in 2030, by Kristie L Ebi",
-            "link": "http://www.globalizationandhealth.com/content/4/1/9"
-        }]
-    },
-    "dependency_natural": {
-       "id": "dependency_natural",
-       "name": "Dependency on natural capital",
-       "description": "Use of natural capital in national accounting. Specifically natural capital related to ecosystem services: crop, pasture, forest (timber), forest (non-timber) and protected areas. Sub-surface capital such as oil, gas and mineral reserves are not included in this measure for GAIN.",
-       "format": "number",
-       "decimals": "2",
-       "unit": "%s %",
-       "index": "vulnerability",
-       "sector": "ecosystems",
-       "component": "exposure",
-       "explanation": "Based on Natural Capital accounting project of the World Bank.  This measure seeks to account for the use of natural capital in national accounting by including information on the change in natural capital such as mineral resources, forest stocks etc.  In this measure only those elements related to ecosystem services are counted.  These are crop, pasture, forest (timber), forest (non-timber) and protected areas.  Sub-surface capital such as oil, gas and mineral reserves are not included in this measure for GAIN.",
-	   "rationale": "This measure captures a country’s reliance on ecosystem services, which are themselves exposed to disruption by climate change.",
-	   "issues":"(i) This is a comprehensive treatment with strong academic input and institutional support but it is not widely used elsewhere probably due to its complexity.  The most recent estimate appeared this year but reflects data of 2005.  Although work on similar measures continues and is accelerating under the 'green accounting' umbrella, it is not certain that another comparable update will occur. (ii) With only 148 countries, this is one of the vulnerability measures with the weakest coverage. (iii) This measure includes GDP in its calculation as the natural capital is expressed as the net present value of the particular capital as a percentage of the GDP – something we have tried to avoid given it can impose a double jeopardy on poor countries.  However, its correlation with ln(GDP per capita) is R2=0.54 with a wide scatter among the poorer countries (Fig. 6) showing that it provides additional information.",
-       "source": [{
-           "name": "The Changing Wealth of Nations : Measuring Sustainable Development in the New Millennium. World Bank 2011",
-           "link": "http://data.worldbank.org/sites/default/files/total_and_per_capita_wealth_of_nations.xls"
-       }]
-    },
-    "ecological_footprint": {
-       "id": "ecological_footprint",
-       "name": "Ecological footprint",
-       "description": "Measures the number of hectares of land and water, both within and outside the country, to supply the average demand on the ecosystems services by the lifestyles of the population of each country. This is compared with the estimated capacity of a country’s ecosystems to regenerate and maintain ecosystem services for either internal use or export. This measure uses the surplus or deficit of capacity to supply over the demand within each country.",
-       "format": "number",
-       "decimals": "2",
-       "unit": null,
-       "index": "vulnerability",
-       "sector": "ecosystems",
-       "component": "sensitivity",
-	   "explanation": "The ecological footprint measures the number of hectares of land and water, both within and outside the country, to supply the average demand on the ecosystems services by the lifestyles of the population of each country.  This is compared with the estimated capacity of a country’s ecosystems to regenerate and maintain ecosystem services for either internal use or export.  This measure uses the surplus or deficit of capacity to supply over the demand within each country.",
-	   "rationale": "A country with a surplus has the capacity to produce more from within its boundaries and thus is likely to have more options to adapt to a changing climate.",
-	   "issues":"(i)  The ecological footprint has been in use since 1992 and the subject of considerable scientific testing and debate.  The methods of calculation are becoming more standardized and it is gradually being taken into account in policy making and national reporting.  Here we use the data provided by the Global Footprint Network led by one of the originators of the idea, Mark Wakernagel. (ii) We also exclude the carbon footprint component of the Ecological Footprint since this does not directly affect sensitivity relating to adaptation.  The urban component is also effectively excluded as it appears in both the demand and supply side of the equation. (ii)  There is a similarity in concepts between the Ecological Footprint and the Natural Accounting approach used in ENC.  We have checked the correlations between the two measures and the data that goes into constructing them.  While there is a strong correlation between some of the components (e.g. Grazing land capital and footprint) as they are based on the same or similar data (Ha of grassland per capita), there is little correlation between the two measures used (r2 is -0.024 and Fig 5) as ultimately the data are used to calculate quite different measures – a measure of capital in one case and a measure of supply in the other. Technically available since 1961, but will require some effort to extract them. ",
-       "source": [{
-           "name": "National Footprint Accounts 2011 edition",
-           "link": "http://www.footprintnetwork.org"
-       }]
-    },
-    "electrical_outages": {
-       "id": "electrical_outages",
-       "name": "Value lost due to electrical outages",
-       "description": "Percentage of sale lost due to electrical outages (% of sales).",
-       "format": "number",
-       "decimals": "2",
-       "unit": "%s %",
-       "index": "vulnerability",
-       "sector": "habitat",
-       "component": "capacity",
-       "explanation": "Percentage of sale lost due to electrical outages (% of sales).",
-	   "rationale": "This is a measure of the capacity to provide a stable supply of electricity, which is fundamental to production, life support and comfort.  It is likely to be indicative of the capacity to provide other essential services. Analysis of other possible measures relating to the provision of services (e.g. road provision, travel times, the efficiency various business transactions etc) show them to be correlated with electrical outages but not as comprehensively reported in many cases, or used elsewhere in the Readiness Axis.",
-	   "issues":"",
-       "source": [{
-           "name": "World Development Indicators - Value lost due to electrical outages",
-           "link": "http://data.worldbank.org/indicator/IC.FRM.OUTG.ZS"
-       }]
-    },
-    "energy_access": {
-        "id": "energy_access",
-        "name": "Energy access",
-        "description": "Percent population with access to electricity.",
-        "format": "number",
-        "decimals": "1",
-        "unit": "%s %",
-        "index": "vulnerability",
-        "sector": "infrastructure",
-        "component": "exposure",
- "explanation": "",
-	   "rationale": "",
-	   "issues":"",
-       "source": [{
-            "name": "WHO & UNPD",
-            "link": "http://content.undp.org/go/cms-service/stream/asset/?asset_id=2205620 "
-        }]
-    },
-    "energy_sensit": {
-        "id": "energy_sensit",
-        "name": "Energy sensitivity",
-        "description": "Percent of energy derived from hydroelectricity and imported power.",
-        "format": "percent",
-        "decimals": "1",
-        "unit": "%s %",
-        "index": "vulnerability",
-        "sector": "infrastructure",
-        "component": "sensitivity",
- "explanation": "",
-	   "rationale": "",
-	   "issues":"",
-       "source": [
-        {
-            "name": "World Development Indicators - Energy Imports",
-            "link": "http://data.worldbank.org/indicator/EG.IMP.CONS.ZS"
-        },
-        {
-            "name": "World Development Indicators - Hydroelectric Power",
-            "link": "http://data.worldbank.org/indicator/EG.ELC.HYRO.ZS"
-        }
-        ]
-    },
-    "enrollment": {
-        "id": "enrollment",
-        "name": "Tertiary education",
-        "description": "The ratio of total enrollment, regardless of age, to the population in age range for tertiary education.",
-        "format": "number",
-        "decimals": "2",
-        "unit": "%s %",
-        "index": "readiness",
-        "sector": null,
-        "component": "social",
- "explanation": "",
-	   "rationale": "",
-	   "issues":"",
-       "source": [{
-            "name": "World Development Indicators",
-            "link": "http://data.worldbank.org/indicator/SE.TER.ENRR"
-        }]
-    },
-    "external": {
-        "id": "external",
-        "name": "External health dependence",
-        "description": "Percent of total expendature devoted to health funds or services in kind that are provided by entities external to the country.",
-        "format": "number",
-        "decimals": "1",
-        "unit": "%s %",
-        "index": "vulnerability",
-        "sector": "health",
-        "component": "sensitivity",
- "explanation": "",
-	   "rationale": "",
-	   "issues":"",
-       "source": [{
-            "name": "World Development Indicators",
-            "link": "http://data.worldbank.org/indicator/SH.XPD.EXTR.ZS"
-        }]
-    },
+		"id": "gain_delta",
+		"name": "GAIN Matrix",
+		"description": "GDP adjusted GAIN Index scores represent how much better or worse the actual GAIN Index score is from its expected value, based on its GDP. A positive value means a country has a better GAIN Index score than other countries of a similar GDP. A negative value means a country has a worse score.",
+		"map_caption": "No map available",
+		"ranking_caption": "World wide ranking by GAIN Index, higher scores are better.",
+		"format": "number",
+		"decimals": "1",
+		"unit": null,
+		"index": "gain",
+		"sector": null,
+		"component": null
+	},
+	"business": {
+		"id": "business",
+		"name": "Business freedom",
+		"description": "Individual’s right to create, operate, and close an enterprise without interference from the state.",
+		"format": "number",
+		"decimals": "0",
+		"unit": null,
+		"index": "readiness",
+		"sector": null,
+		"component": "economic",
+		"explanation": "",
+		"rationale": "",
+		"issues": "",
+		"source": [{
+			"name": "Index of Economic Freedom",
+			"link": "http://www.heritage.org/index/explore"
+		}]
+	},
+	"coast_area": {
+		"id": "coast_area",
+		"name": "Coastal area",
+		"description": "Percent of land less than 10 meters above sea-level.",
+		"format": "number",
+		"decimals": "2",
+		"unit": "%s %",
+		"index": "vulnerability",
+		"sector": "infrastructure",
+		"component": "exposure",
+		"explanation": "",
+		"rationale": "",
+		"issues": "",
+		"source": [{
+			"name": "CIESIN",
+			"link": "http://sedac.ciesin.columbia.edu/gpw/lecz.jsp "
+		}]
+	},
+	"coast_popn": {
+		"id": "coast_popn",
+		"name": "Coastal population",
+		"description": "Percent of population living less than 10 meters above sea-level.",
+		"format": "number",
+		"decimals": "2",
+		"unit": "%s %",
+		"index": "vulnerability",
+		"sector": "infrastructure",
+		"component": "sensitivity",
+		"explanation": "",
+		"rationale": "",
+		"issues": "",
+		"source": [{
+			"name": "CIESIN",
+			"link": "http://sedac.ciesin.columbia.edu/gpw/lecz.jsp "
+		}]
+	},
+	"corruption": {
+		"id": "corruption",
+		"name": "Control of corruption",
+		"description": "Perceptions of public power exercised for private gain, including both petty and grand forms of corruption, as well as 'capture' of the state by elites and private interests.",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "readiness",
+		"sector": null,
+		"component": "governance",
+		"explanation": "",
+		"rationale": "",
+		"issues": "",
+		"source": [{
+			"name": "Worldwide Governance Indicators",
+			"link": "http://info.worldbank.org/governance/wgi/sc_country.asp"
+		}]
+	},
+	"d-ppt": {
+		"id": "d-ppt",
+		"name": "Precipitation change",
+		"description": "Projected change in precipitation by late 21st century, i.e. 2070-99 compared to  1961-90.",
+		"format": "percent",
+		"decimals": "1",
+		"unit": "%s %",
+		"index": "vulnerability",
+		"sector": "water",
+		"component": "exposure",
+		"explanation": "Gross measure of threat to water.  This is the commonly used indicator in both the scientific and response communities.  However it is not a very effective measure as it does not take increased evaporative demand into account nor changes in the intensity and seasonality of the rainfall.  It might eventually be replaced by a more integrating measure such as run-off or even precipitation minus evapotranspiration.  The use of a single measure for an entire country is not very valid, especially for large countries where there are large gradients across the country.",
+		"rationale": "",
+		"issues": "An increase in PPT% is taken to indicate reduced vulnerability. However, this might be misleading for dry countries where a large % increase does not imply a large absolute increase in rainfall or in rainfall effectiveness.  The increased rain may come in flooding events.  Similarly increased PPT% for already wet countries probably provides little useful additional water and may add to flood loads.  There appears to be no objective way to correct for these problems but a subjective correction is suggested below. It can also be argued that PPT% is is a reasonable approximation – for countries with low current precipitation an increase will be disruptive especially if flood frequency increases; for high precipitation countries additional precipitation is also disruptive.  There is a range in the middle where additional rainfall might be beneficial but it is hard to adjust for this.  Note however, that this is partially taken up in the Food Measures dealing with the projected impact of climate change on crop yields.",
+		"source": [{
+			"name": "Climatic Research Unit, University of East Anglia. Dataset TYN CY 3.0",
+			"link": "http://www.cru.uea.ac.uk/cru/data/hrg/"
+		}]
+	},
+	"d-temp": {
+		"id": "d-temp",
+		"name": "Temperature change",
+		"description": "Projected change in temperature by late 21st century, i.e. 2070-99 compared to  1961-90.",
+		"format": "number",
+		"decimals": "1",
+		"unit": "%s °C",
+		"index": "vulnerability",
+		"sector": "water",
+		"component": "exposure",
+		"explanation": "Water quality issues rise in warmer conditions causing disease growth & spread; less water for sanitation etc. ",
+		"rationale": "",
+		"issues": "This brings the most commonly used climate change indicator into the index.  The use of a single measure for an entire country is not very valid, especially for large countries where there are large gradients across the country.",
+		"source": [{
+			"name": "Climatic Research Unit, University of East Anglia. Dataset TYN CY 3.0",
+			"link": "http://www.cru.uea.ac.uk/cru/data/hrg/"
+		}]
+	},
+	"daly": {
+		"id": "daly",
+		"name": "Disability adjusted life years",
+		"description": "Projected percent increase in DALY due to climate change in the late 21st century.",
+		"format": "percent",
+		"decimals": "2",
+		"unit": "%s %",
+		"index": "vulnerability",
+		"sector": "health",
+		"component": "exposure",
+		"explanation": "A model-based estimate of the quality adjusted loss of life years under several different climate scenarios.  The most extreme scenario and for 2100 was used here to achieve maximum discrimination between country exposures. ",
+		"rationale": "",
+		"issues": "This index is calculated for regions of the world and for sub-groupings of countries within these regions (eventually xx different groups).  Thus many countries share the same value of the measure as others.",
+		"source": [{
+			"name": "Adaptation costs for climate change-related cases of diarrhoeal disease, malnutrition, and malaria in 2030, by Kristie L Ebi",
+			"link": "http://www.globalizationandhealth.com/content/4/1/9"
+		}]
+	},
+	"dependency_natural": {
+		"id": "dependency_natural",
+		"name": "Dependency on natural capital",
+		"description": "Use of natural capital in national accounting. Specifically natural capital related to ecosystem services: crop, pasture, forest (timber), forest (non-timber) and protected areas. Sub-surface capital such as oil, gas and mineral reserves are not included in this measure for GAIN.",
+		"format": "number",
+		"decimals": "2",
+		"unit": "%s %",
+		"index": "vulnerability",
+		"sector": "ecosystems",
+		"component": "exposure",
+		"explanation": "Based on Natural Capital accounting project of the World Bank.  This measure seeks to account for the use of natural capital in national accounting by including information on the change in natural capital such as mineral resources, forest stocks etc.  In this measure only those elements related to ecosystem services are counted.  These are crop, pasture, forest (timber), forest (non-timber) and protected areas.  Sub-surface capital such as oil, gas and mineral reserves are not included in this measure for GAIN.",
+		"rationale": "This measure captures a country’s reliance on ecosystem services, which are themselves exposed to disruption by climate change.",
+		"issues": "(i) This is a comprehensive treatment with strong academic input and institutional support but it is not widely used elsewhere probably due to its complexity.  The most recent estimate appeared this year but reflects data of 2005.  Although work on similar measures continues and is accelerating under the 'green accounting' umbrella, it is not certain that another comparable update will occur. (ii) With only 148 countries, this is one of the vulnerability measures with the weakest coverage. (iii) This measure includes GDP in its calculation as the natural capital is expressed as the net present value of the particular capital as a percentage of the GDP – something we have tried to avoid given it can impose a double jeopardy on poor countries.  However, its correlation with ln(GDP per capita) is R2=0.54 with a wide scatter among the poorer countries (Fig. 6) showing that it provides additional information.",
+		"source": [{
+			"name": "The Changing Wealth of Nations : Measuring Sustainable Development in the New Millennium. World Bank 2011",
+			"link": "http://data.worldbank.org/sites/default/files/total_and_per_capita_wealth_of_nations.xls"
+		}]
+	},
+	"ecological_footprint": {
+		"id": "ecological_footprint",
+		"name": "Ecological footprint",
+		"description": "Measures the number of hectares of land and water, both within and outside the country, to supply the average demand on the ecosystems services by the lifestyles of the population of each country. This is compared with the estimated capacity of a country’s ecosystems to regenerate and maintain ecosystem services for either internal use or export. This measure uses the surplus or deficit of capacity to supply over the demand within each country.",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "vulnerability",
+		"sector": "ecosystems",
+		"component": "sensitivity",
+		"explanation": "The ecological footprint measures the number of hectares of land and water, both within and outside the country, to supply the average demand on the ecosystems services by the lifestyles of the population of each country.  This is compared with the estimated capacity of a country’s ecosystems to regenerate and maintain ecosystem services for either internal use or export.  This measure uses the surplus or deficit of capacity to supply over the demand within each country.",
+		"rationale": "A country with a surplus has the capacity to produce more from within its boundaries and thus is likely to have more options to adapt to a changing climate.",
+		"issues": "(i)  The ecological footprint has been in use since 1992 and the subject of considerable scientific testing and debate.  The methods of calculation are becoming more standardized and it is gradually being taken into account in policy making and national reporting.  Here we use the data provided by the Global Footprint Network led by one of the originators of the idea, Mark Wakernagel. (ii) We also exclude the carbon footprint component of the Ecological Footprint since this does not directly affect sensitivity relating to adaptation.  The urban component is also effectively excluded as it appears in both the demand and supply side of the equation. (ii)  There is a similarity in concepts between the Ecological Footprint and the Natural Accounting approach used in ENC.  We have checked the correlations between the two measures and the data that goes into constructing them.  While there is a strong correlation between some of the components (e.g. Grazing land capital and footprint) as they are based on the same or similar data (Ha of grassland per capita), there is little correlation between the two measures used (r2 is -0.024 and Fig 5) as ultimately the data are used to calculate quite different measures – a measure of capital in one case and a measure of supply in the other. Technically available since 1961, but will require some effort to extract them. ",
+		"source": [{
+			"name": "National Footprint Accounts 2011 edition",
+			"link": "http://www.footprintnetwork.org"
+		}]
+	},
+	"electrical_outages": {
+		"id": "electrical_outages",
+		"name": "Value lost due to electrical outages",
+		"description": "Percentage of sale lost due to electrical outages (% of sales).",
+		"format": "number",
+		"decimals": "2",
+		"unit": "%s %",
+		"index": "vulnerability",
+		"sector": "habitat",
+		"component": "capacity",
+		"explanation": "Percentage of sale lost due to electrical outages (% of sales).",
+		"rationale": "This is a measure of the capacity to provide a stable supply of electricity, which is fundamental to production, life support and comfort.  It is likely to be indicative of the capacity to provide other essential services. Analysis of other possible measures relating to the provision of services (e.g. road provision, travel times, the efficiency various business transactions etc) show them to be correlated with electrical outages but not as comprehensively reported in many cases, or used elsewhere in the Readiness Axis.",
+		"issues": "",
+		"source": [{
+			"name": "World Development Indicators - Value lost due to electrical outages",
+			"link": "http://data.worldbank.org/indicator/IC.FRM.OUTG.ZS"
+		}]
+	},
+	"energy_access": {
+		"id": "energy_access",
+		"name": "Energy access",
+		"description": "Percent population with access to electricity.",
+		"format": "number",
+		"decimals": "1",
+		"unit": "%s %",
+		"index": "vulnerability",
+		"sector": "infrastructure",
+		"component": "exposure",
+		"explanation": "Percent population with access to electricity.",
+		"rationale": "",
+		"issues": "",
+		"source": [{
+			"name": "WHO & UNPD",
+			"link": "http://content.undp.org/go/cms-service/stream/asset/?asset_id=2205620 "
+		}]
+	},
+	"energy_sensit": {
+		"id": "energy_sensit",
+		"name": "Energy sensitivity",
+		"description": "Percent of energy derived from hydroelectricity and imported power.",
+		"format": "percent",
+		"decimals": "1",
+		"unit": "%s %",
+		"index": "vulnerability",
+		"sector": "infrastructure",
+		"component": "sensitivity",
+		"explanation": "",
+		"rationale": "",
+		"issues": "",
+		"source": [{
+			"name": "World Development Indicators - Energy Imports",
+			"link": "http://data.worldbank.org/indicator/EG.IMP.CONS.ZS"
+		}, {
+			"name": "World Development Indicators - Hydroelectric Power",
+			"link": "http://data.worldbank.org/indicator/EG.ELC.HYRO.ZS"
+		}]
+	},
+	"enrollment": {
+		"id": "enrollment",
+		"name": "Tertiary education",
+		"description": "The ratio of total enrollment, regardless of age, to the population in age range for tertiary education.",
+		"format": "number",
+		"decimals": "2",
+		"unit": "%s %",
+		"index": "readiness",
+		"sector": null,
+		"component": "social",
+		"explanation": "",
+		"rationale": "",
+		"issues": "",
+		"source": [{
+			"name": "World Development Indicators",
+			"link": "http://data.worldbank.org/indicator/SE.TER.ENRR"
+		}]
+	},
+	"external": {
+		"id": "external",
+		"name": "External health dependence",
+		"description": "Percent of total expendature devoted to health funds or services in kind that are provided by entities external to the country.",
+		"format": "number",
+		"decimals": "1",
+		"unit": "%s %",
+		"index": "vulnerability",
+		"sector": "health",
+		"component": "sensitivity",
+		"explanation": "",
+		"rationale": "",
+		"issues": "",
+		"source": [{
+			"name": "World Development Indicators",
+			"link": "http://data.worldbank.org/indicator/SH.XPD.EXTR.ZS"
+		}]
+	},
 	"biome_threat": {
-	       "id": "biome_threat",
-	       "name": "Projected Biome Threat",
-	       "description": "The proportion of the land of a country on which the existing biome is no longer matched to the projected climate of the late 21st century.",
-	       "format": "number",
-	       "decimals": "2",
-	       "unit": null,
-	       "index": "vulnerability",
-	       "sector": "ecosystems",
-	       "component": "exposure",
-	"explanation": "",
-	   "rationale": "",
-	   "issues":"",
-       "source": [{
-	           "name": "Gonzalez, et al. (2010), Global patterns in the vulnerability of ecosystems to vegetation shifts due to climate change. Global Ecology and Biogeography, 19: 755–768. doi: 10.1111/j.1466-8238.2010.00558.x Annex S3",
-	           "link": "http://pgonzalez.home.igc.org/Gonzalez_et_al_2010_GEB_SI.pdf",
-	           "name": "J. Hansen, et al., Global warming in the twenty-first century: An alternative scenario. Proc. Natl. Acad. Sci. 97, 9875-9880, doi:10.1073/pnas.170278997 (2000).",
-	           "link": "http://pubs.giss.nasa.gov/docs/2000/2000_Hansen_etal_2.pdf"
-	       }]
-    },
-    "finan": {
-        "id": "finan",
-        "name": "Financial freedom",
-        "description": "Banking efficiency, independence from government control and interference in the financial sector.",
-        "format": "number",
-        "decimals": "0",
-        "unit": null,
-        "index": "readiness",
-        "sector": null,
-        "component": "economic",
- "explanation": "",
-	   "rationale": "",
-	   "issues":"",
-       "source": [{
-            "name": "Index of Economic Freedom",
-            "link": "http://www.heritage.org/index/explore"
-        }]
-    },
-    "fiscal": {
-        "id": "fiscal",
-        "name": "Fiscal freedom",
-        "description": "Tax burden imposed by government.",
-        "format": "number",
-        "decimals": "1",
-        "unit": null,
-        "index": "readiness",
-        "sector": null,
-        "component": "economic",
- "explanation": "",
-	   "rationale": "",
-	   "issues":"",
-       "source": [{
-            "name": "Index of Economic Freedom",
-            "link": "http://www.heritage.org/index/explore"
-        }]
-    },
-    "food_capacity": {
-        "id": "food_capacity",
-        "name": "Food capacity",
-        "description": "Measure of agricultural technological capacity as the average of the 2 best scores from the use of fertilizers, the level of mechanization and the use of irrigation in agriculture.",
-        "format": "number",
-        "decimals": "2",
-        "unit": null,
-        "index": "vulnerability",
-        "sector": "food",
-        "component": "capacity",
- "explanation": "This is a combination of three separate measures of agricultural technology: the amount of fertilizer used per ha, the number of tractors per area of arable land and the proportion of arable land with irrigation facilities.  The measure used here takes two of the above that give the best (i.e. least vulnerable) score.  This allows for missing data but also for situations such as where irrigation or fertilizer is less necessary because of rainfall or good quality soils",
-	   "rationale": "",
-	   "issues":"Even with three elements it does not capture the full range of relevant agricultural technologies. Also, many countries reached the best (least vulnerable) score.",
-       "source": [
-        {
-            "name": "World Development Indicators - Fertilizer Consumption (kilograms per hectare of arable land)",
-            "link": "http://data.worldbank.org/indicator/AG.CON.FERT.ZS"
-        },
-        {
-            "name": "World Development Indicators - Agricultural Machinery (tractors per 100 sq. km of arable land)",
-            "link": "http://data.worldbank.org/indicator/AG.LND.TRAC.ZS"
-        },
-        {
-            "name": "World Development Indicators - Agricultural Irrigated Land (percent of total agricultural land)",
-            "link": "http://data.worldbank.org/indicator/AG.LND.IRIG.AG.ZS"
-        }
-        ]
-    },
-    "gdp": {
-        "id": "gdp",
-        "name": "GDP (PPP) per capita",
-        "description": "Gross domestic product per capita based on purchasing power parity, in units of constant 2005 international dollar.",
-        "format": "number",
-        "decimals": "2",
-        "unit": "%s USD",
-        "index": null,
-        "sector": null,
-        "component": null
-    },
-    "gov_spend": {
-        "id": "gov_spend",
-        "name": "Government spending",
-        "description": "Level of government expenditures as a percentage of GDP.",
-        "format": "number",
-        "decimals": "1",
-        "unit": null,
-        "index": "readiness",
-        "sector": null,
-        "component": "economic",
- "explanation": "",
-	   "rationale": "",
-	   "issues":"",
-       "source": [{
-            "name": "Index of Economic Freedom",
-            "link": "http://www.heritage.org/index/explore"
-        }]
-    },
-    "health_disease": {
-        "id": "health_disease",
-        "name": "Disease mortality",
-        "description": "Percentage mortality due to infectious diseases.",
-        "format": "percent",
-        "decimals": "1",
-        "unit": "%s %",
-        "index": "vulnerability",
-        "sector": "health",
-        "component": "exposure",
- "explanation": "",
-	   "rationale": "",
-	   "issues":"",
-       "source": [{
-            "name": "World Health Organization",
-            "link": "http://apps.who.int/ghodata/?vid=99001#"
-        }]
-    },
-    "imports": {
-        "id": "imports",
-        "name": "Food import dependency",
-        "description": "Proportion of cereal consumption obtained from entities not part of the country in question.",
-        "format": "percent",
-        "decimals": "0",
-        "unit": "%s %",
-        "index": "vulnerability",
-        "sector": "food",
-        "component": "sensitivity",
-        "explanation": "Proportion of cereal consumption obtained from imports. This is taken as a measure of the countries sensitivities to food shocks in the future.  Taken with the CV in national cereal yields, both internal and import dependent countries are covered to some degree.",
-	   "rationale": "",
-	   "issues":"Clearly the Coefficient of Variation (CV) in  of cereal yields and this measure interact and could be part of a more complex measure of food security.  This may produce a conceptually more satisfying model but would do less well against simplicity and transparency tests.",
-       "source": [{
-            "name": "FAO",
-            "link": "http://FAOStat.fao.org"
-        }]
-    },
-    "international_treaties": {
-       "id": "international_treaties",
-       "name": "International Environmental Conventions",
-       "description": "The country’s participation in international forums, which is taken as an indicator its capacity to engage in multilateral negotiations and to reach agreement on appropriate actions internally.",
-       "format": "number",
-       "decimals": "0",
-       "unit": null,
-       "index": "vulnerability",
-       "sector": "ecosystems",
-       "component": "capacity",
-	   "explanation": "A measure based on the country’s participation in international forums, which is taken as an indicator its capacity to engage in multilateral negotiations and to reach agreement on appropriate actions internally.",
-	   "rationale": "Although not a direct measure of capacity, the failure to take part in such forums is usually associated with either lack of technical capacity to deal with the issues and/or lack of political ability to reach decisions over appropriate engagement.",
-	   "issues":"(i) The outcome for this measure is strongly dependent on the process of selecting the agreements to be included (Table 1).  We sought to include 'environmental treaties' in their broadest sense while avoiding any to do with military/warfare; gross marine pollution, safety at sea and other shipping controls.  We also excluded treaties directly setting up International organizations such as the World Bank etc.  We also excluded agreements with less than 20 signatories. (ii) Some agreements have a limited regional scope (e.g. dealing with Atlantic tuna).  We could have excluded them, but this would have limited the list (16 out of 54 have clear regional scope of application), but many are signed by countries beyond the region (e.g those with fishing fleets in the Atlantic).  Many (17 out of 54) also deal with the agreements on oceans and this may disadvantage land-locked countries, however, land-locked countries are sometimes signatories to such conventions (e.g. those relating to whaling).  It could similarly be argued that some agreements are not relevant to many countries on other grounds (e.g. those to do with desertification).  Thus we chose to retain a wide set of agreements rather than begin a culling process that would have reduced the list to only 10 to 20 or so.",
-       "source": [{
-           "name": "Environmental Treaties and Resource Indicators",
-           "link": "http://sedac.ciesin.columbia.edu/entri/index.jsp"
-       }]
-    },
-    "invest": {
-        "id": "invest",
-        "name": "Investment freedom",
-        "description": "Constraints on the flow of investment capital. Includes rules for foreign and domestic investment; restrictions on payments, transfers, and capital transactions; labor regulations, corruption, red tape, weak infrastructure, and political and security conditions.",
-        "format": "number",
-        "decimals": "0",
-        "unit": null,
-        "index": "readiness",
-        "sector": null,
-        "component": "economic",
- "explanation": "",
-	   "rationale": "",
-	   "issues":"",
-       "source": [{
-            "name": "Index of Economic Freedom",
-            "link": "http://www.heritage.org/index/explore"
-        }]
-    },
-    "labor": {
-        "id": "labor",
-        "name": "Labor freedom",
-        "description": "Legal and regulatory framework of a country’s labor market.",
-        "format": "number",
-        "decimals": "1",
-        "unit": null,
-        "index": "readiness",
-        "sector": null,
-        "component": "social",
- "explanation": "",
-	   "rationale": "",
-	   "issues":"",
-       "source": [{
-            "name": "Index of Economic Freedom",
-            "link": "http://www.heritage.org/index/explore"
-        }]
-    },
-    "life": {
-        "id": "life",
-        "name": "Life expectancy",
-        "description": "The number of years a newborn infant would live if prevailing patterns of mortality at the time of its birth were to stay the same throughout its life.",
-        "format": "number",
-        "decimals": "1",
-        "unit": null,
-        "index": "vulnerability",
-        "sector": "health",
-        "component": "capacity",
- "explanation": "",
-	   "rationale": "",
-	   "issues":"",
-       "source": [{
-            "name": "World Development Indicators",
-            "link": "http://data.worldbank.org/indicator/SP.DYN.LE00.IN"
-        }]
-    },
-    "malnutr": {
-        "id": "malnutr",
-        "name": "Malnutrition",
-        "description": "Percent of under 5 year-olds with low weight for their height.",
-        "format": "number",
-        "decimals": "1",
-        "unit": "%s %",
-        "index": "vulnerability",
-        "sector": "food",
-        "component": "capacity",
-        "explanation": "A measure of malnutrition based on the percent of under 5 year-olds with a low weight for height ratio; usually taken as the best indicator of chronic malnutrition.  This is taken as an indication of the lack of capacity to deliver basic nutritional needs to the most sensitive group in society.",
-	   "rationale": "This was chosen as it is considered a good measure of chronic malnutrition and it does nor greatly overlap with measures in the health or water sectors.",
-	   "issues":"",
-       "source": [{
-            "name": "World Development Indicators",
-            "link": "http://data.worldbank.org/indicator/SH.STA.WAST.ZS"
-        }]
-    },
-    "matern": {
-        "id": "matern",
-        "name": "Maternal mortality",
-        "description": "Life time risk of maternal death is the probability that a 15-year-old female will die eventually from a maternal cause assuming that current levels of fertility and mortality (including maternal mortality) do not change in the future, taking into account competing causes of death.",
-        "format": "number",
-        "decimals": "0",
-        "unit": "%s %",
-        "index": "vulnerability",
-        "sector": "health",
-        "component": "capacity",
- "explanation": "",
-	   "rationale": "",
-	   "issues":"",
-       "source": [{
-            "name": "World Development Indicators",
-            "link": "http://data.worldbank.org/indicator/SH.MMR.RISK.ZS"
-        }]
-    },
-    "mobiles": {
-        "id": "mobiles",
-        "name": "Mobile penetration",
-        "description": "Mobile telephone subscriptions per 100 people to a public mobile telephone service using cellular technology, which provide access to the public switched telephone network (post-paid and prepaid subscriptions are included).",
-        "format": "number",
-        "decimals": "2",
-        "unit": null,
-        "index": "readiness",
-        "sector": null,
-        "component": "social",
- "explanation": "",
-	   "rationale": "",
-	   "issues":"",
-       "source": [{
-            "name": "World Development Indicators",
-            "link": "http://data.worldbank.org/indicator/IT.CEL.SETS.P2"
-        }]
-    },
-    "monetary": {
-        "id": "monetary",
-        "name": "Monetary freedom",
-        "description": "Price stability with an assessment of price controls.",
-        "format": "number",
-        "decimals": "1",
-        "unit": null,
-        "index": "readiness",
-        "sector": null,
-        "component": "economic",
- "explanation": "",
-	   "rationale": "",
-	   "issues":"",
-       "source": [{
-            "name": "Index of Economic Freedom",
-            "link": "http://www.heritage.org/index/explore"
-        }]
-    },
-    "non_violence": {
-        "id": "non_violence",
-        "name": "Political stability & non-violence",
-        "description": "Perceptions of the likelihood that the government will be destabilized or overthrown by unconstitutional or violent means, including domestic violence and terrorism.",
-        "format": "number",
-        "decimals": "2",
-        "unit": null,
-        "index": "readiness",
-        "sector": null,
-        "component": "governance",
- "explanation": "",
-	   "rationale": "",
-	   "issues":"",
-       "source": [{
-            "name": "Worldwide Governance Indicators",
-            "link": "http://info.worldbank.org/governance/wgi/index.asp"
-        }]
-    },
-    "pop": {
-        "id": "pop",
-        "name": "Population",
-        "description": "Total population.",
-        "format": "number",
-        "decimals": "0",
-        "unit": null,
-        "index": null,
-        "sector": null,
-        "component": null
-    },
-    "protected_biomes": {
-       "id": "protected_biomes",
-       "name": "Protected biomes",
-       "description": "The weighted percentage of biomes under protected status, where the weight is determined by the size of biomes within a country. Countries are not rewarded for protecting beyond 17% of any given biome (i.e., scores are capped at 17% per biome) so that higher levels of protection of some biomes cannot be used to offset lower levels of protection of other biomes.",
-       "format": "number",
-       "decimals": "2",
-       "unit": null,
-       "index": "vulnerability",
-       "sector": "ecosystems",
-       "component": "capacity",
-       "explanation": "Taken directly from the Yale Environmental Performance Index (EPI) which defines it as follows … 'The weighted percentage of biomes under protected status, where the weight is determined by the size of biomes within a country. Countries are not rewarded for protecting beyond 17% of any given biome (i.e., scores are capped at 17% per biome) so that higher levels of protection of some biomes cannot be used to offset lower levels of protection of other biomes.'",
-	   "rationale": "Countries with good protection of their core ecosystem types are likely to have the capacity to implement a wider range of actions to continue to protect and manage ecosystem services under a changing climate.",
-	   "issues":" (i) The measure does not take into account the quality of the management of the protected area.  The Yale team also acknowledges this and they are working towards gathering improved data.",
-       "source": [{
-           "name": "Emerson, J.W. et al. 2012: 2012 Environmental Performance Index and Pilot Trend Environmental Performance Index.",
-           "link": "http://epi.yale.edu/downloads"
-       }]
-    },
-    "road_floods": {
-        "id": "road_floods",
-        "name": "Road flooding",
-        "description": "Frequency of floods calculated as flood disasters per decade per 100,000 km2 of land area.",
-        "format": "number",
-        "decimals": "2",
-        "unit": null,
-        "index": "vulnerability",
-        "sector": "infrastructure",
-        "component": "exposure",
- "explanation": "",
-	   "rationale": "",
-	   "issues":"",
-       "source": [
-        {
-            "name": "World Development Indicators - Land area (sq. km)",
-            "link": "http://data.worldbank.org/indicator/AG.LND.TOTL.K2"
-        },
-        {
-            "name": "EM-DAT: The OFDA/CRED International Disaster Database - Floods.",
-            "link": "http://www.emdat.be/"
-        }
-        ]
-    },
-    "road_paved": {
-        "id": "road_paved",
-        "name": "Paved roads",
-        "description": "Roads surfaced with crushed stone (macadam) and hydrocarbon binder or bituminized agents, with concrete, or with cobblestones, as a percentage of all the country's roads, measured in length.",
-        "format": "number",
-        "decimals": "2",
-        "unit": "%s %",
-        "index": "vulnerability",
-        "sector": "infrastructure",
-        "component": "sensitivity",
- "explanation": "",
-	   "rationale": "",
-	   "issues":"",
-       "source": [
-        {
-            "name": "World Development Indicators",
-            "link": "http://data.worldbank.org/indicator/IS.ROD.PAVE.ZS"
-        }]
-    },
-    "rule_of_law": {
-        "id": "rule_of_law",
-        "name": "Rule of law",
-        "description": "Confidence in and abide by the rules of society, and in particular the quality of contract enforcement, property rights, the police, and the courts, as well as the likelihood of crime and violence.",
-        "format": "number",
-        "decimals": "2",
-        "unit": null,
-        "index": "readiness",
-        "sector": null,
-        "component": "social",
-        "explanation": "",
-	   "rationale": "",
-	   "issues":"",
-       "source": [{
-            "name": "Worldwide Governance Indicators",
-            "link": "http://info.worldbank.org/governance/wgi/sc_country.asp"
-        }]
-    },
-    "rural_popn": {
-        "id": "rural_popn",
-        "name": "Rural population",
-        "description": "Total rural population as a percent of the total population.",
-        "format": "number",
-        "decimals": "1",
-        "unit": "%s %",
-        "index": "vulnerability",
-        "sector": "food",
-        "component": "sensitivity",
- "explanation": "",
-	   "rationale": "",
-	   "issues":"",
-       "source": [{
-            "name": "World Development Indicators - Rural Population",
-            "link": "http://data.worldbank.org/indicator/SP.RUR.TOTL"
-        },
-        {
-            "name": "World Development Indicators - Total Population",
-            "link": "http://data.worldbank.org/indicator/SP.POP.TOTL"
-        }
-        ]
-    },
-    "sanit": {
-        "id": "sanit",
-        "name": "Improved sanitation facilities",
-        "description": "The percentage of the population with at least adequate access to excreta disposal facilities that can effectively prevent human, animal, and insect contact with excreta.",
-        "format": "number",
-        "decimals": "1",
-        "unit": "%s %",
-        "index": "vulnerability",
-        "sector": "water",
-        "component": "capacity",
-        "explanation": "The percentage of the population with at least adequate access to excreta disposal facilities that can effectively prevent human, animal, and insect contact with excreta.",
-	   "rationale": "High % indicates capacity to deliver sanitation and quality water to the population and hence lower vulnerability.",
-	   "issues":"(i) Commonly used indicator.  However, it saturates quickly, although slightly slower than PIW%, with most countries with a GDP/cap of >$12000 having close to 100% coverage. (ii) Highly correlated with HDI (r2 = 75%) and with GDP/cap (r2 = 35% and r2 = 50% with Ln(GDP/cap)).  It is also correlated with PIS% (r2 = 60%) but there is still significant scatter among countries with low values of either variable.",
-       "source": [{
-            "name": "World Development Indicators",
-            "link": "http://data.worldbank.org/indicator/SH.STA.ACSN"
-        }]
-    },
-   "slums": {
-       "id": "slums",
-       "name": "Slums",
-       "description": "Urban Population Living in Slums.",
-       "format": "number",
-       "decimals": "2",
-       "unit": "%s %",
-       "index": "vulnerability",
-       "sector": "habitat",
-       "component": "sensitivity",
-       "explanation": "A slum household is defined as a group of individuals living under the same roof lacking one or more1 of the following conditions: Access to improved water; Access to improved sanitation; Sufficient-living area; Durability of housing (Tenure is included as a 5th element, but insufficient data is available).",
-	   "rationale": "Slums impose a great challenge to successful adaptation especially in cities.",
-	   "issues":"(i) This is an indirect estimate and includes some measures that overlap with those used elsewhere in the Index.  However correlation analysis shows that correlations are low.  It is related to GDP/cap but still conveys useful information especially at intermediate levels of GDP/cap (Fig 7). (ii) The assumption that wealthy countries (not estimated as part of the MDG) have no people in slums is probably technically correct by the UN MDG definition, but an underestimate in practice. ",
-       "source": [{
-           "name": "United Nations Indicators - Millenium Development Goals",
-           "link": "http://mdgs.un.org/unsd/mdg/SeriesDetail.aspx?srid=710"
-       }]
-   },
-    "staff": {
-        "id": "staff",
-        "name": "Health workers per capita",
-        "description": "Number of medical workers per 1000 people, based on (2 x Physicians) + (Nurses and Midwives).",
-        "format": "number",
-        "decimals": "2",
-        "unit": null,
-        "index": "vulnerability",
-        "sector": "health",
-        "component": "sensitivity",
- "explanation": "",
-	   "rationale": "",
-	   "issues":"",
-       "source": [
-        {
-            "name": "World Development Indicators - Physicians (per 1,000 people)",
-            "link": "http://data.worldbank.org/indicator/SH.MED.PHYS.ZS"
-        },
-        {
-            "name": "World Development Indicators - Nurses and midwives (per 1,000 people)",
-            "link": "http://data.worldbank.org/indicator/SH.MED.NUMW.P3"
-        }
-        ]
-    },
-    "threatened_species": {
-       "id": "threatened_species",
-       "name": "Threatened species",
-       "description": "Composite measure made up of (1) the percentage of mammal species recorded as threatened; (2) the percentage of plant species threatened; and (3) the number of bird species threatened.",
-       "format": "number",
-       "decimals": "2",
-       "unit": "%s %",
-       "index": "vulnerability",
-       "sector": "ecosystems",
-       "component": "sensitivity",
-       "explanation": "Composite measure made up of (1) the percentage of mammal species recorded as threatened; (2) the percentage of plant species threatened; and (3) the number of bird species threatened.  These three groups (mammals, plants and birds) represent a good, but incomplete, coverage of the state of ecosystems.  Birds have to be treated differently from mammals and plants because the number of bird species within a country is difficult to determine as many are migratory over long distances and the source of the threat of extinction may arise from causes far distant from the country.",
-	   "rationale": "Threats of extinction arise from many pressures currently unrelated to climate change.  Further climate change is likely to exacerbate these pressures in many cases and thus this measure is an indication of the sensitivity of a country’s ecosystems services to change in the future.",
-	   "issues":"(i) There is some overlap with a country’s capacity to manage its natural resources. (ii) The measure does not include species that have passed from threatened to extinct.  There are data that could be used but they would have to be rescaled to be incorporated.  Extinction data also raised issues of equity; for example regions recently settled by technological societies such as North America and Australia will score disproportionately high while extinctions for areas with longer settlement of this type (e.g. Europe and China) many extinction would go unrecorded.",
-       "source": [{
-           "name": "IUCN Red Book",
-           "link": "http://www.iucnredlist.org/"
-       }]
-    },
-    "trade": {
-        "id": "trade",
-        "name": "Trade freedom",
-        "description": "Absence of tariff and non-tariff barriers that affect imports and exports of goods and services.",
-        "format": "number",
-        "decimals": "1",
-        "unit": null,
-        "index": "readiness",
-        "sector": null,
-        "component": "economic",
- "explanation": "",
-	   "rationale": "",
-	   "issues":"",
-       "source": [{
-            "name": "Index of Economic Freedom",
-            "link": "http://www.heritage.org/index/explore"
-        }]
-    },
-    "trade_transport": {
-       "id": "trade_transport",
-       "name": "Trade and transport infrastructure",
-       "description": "Logistics professionals' perception of country's quality of trade and transport related infrastructure (e.g. ports, railroads, roads, information technology), on a rating ranging from 1 (very low) to 5 (very high). Scores are averaged across all respondents.",
-       "format": "number",
-       "decimals": "2",
-       "unit": null,
-       "index": "vulnerability",
-       "sector": "habitat",
-       "component": "capacity",
-       "explanation": "Logistics professionals' perception of country's quality of trade and transport related infrastructure (e.g. ports, railroads, roads, information technology), on a rating ranging from 1 (very low) to 5 (very high). Scores are averaged across all respondents.",
-	   "rationale": "The quality of this infrastructure is indicative of capacity to effectively supply and manage essential infrastructure by the public and private sectors.  It is assumed here that same capacity is indicative of a capacity to sustain that infrastructure in the face of future changes, including climate change.",
-	   "issues":":  (i) This measure is close to some of those used directly or indirectly in the Readiness axis, which is indicative of the overlap between ‘capacity’ and ‘readiness’ as we have discussed before.",
-       "source": [{
-           "name": "World Development Indicators -  Logistics Performance Index",
-           "link": "http://data.worldbank.org/indicator/LP.LPI.INFR.XQ"
-       }]
-    },
-    "urban_concentration": {
-       "id": "urban_concentration",
-       "name": "Urban concentration",
-       "description": "Percentage of the country population living in the largest city.",
-       "format": "number",
-       "decimals": "2",
-       "unit": "%s %",
-       "index": "vulnerability",
-       "sector": "habitat",
-       "component": "exposure",
-       "explanation": "Percentage of the population living in the largest city.",
-	   "rationale": "A high concentration of people in one city creates challenges in adapting to climate change.  The concentration suggests stressed services, few choices for displaced rural poor and vulnerability to major losses in a single extreme climate event.",
-	   "issues":":  (i) An alternative measure is the proportion of the population living in cities with a population of 0.75 million or more (this is the threshold used by UNESA).  But this approach would exclude the 71 countries with no city reaching the UNESA threshold.",
-       "source": [{
-           "name": "World Development Indicators - Population in largest city",
-           "link": "http://data.worldbank.org/indicator/EN.URB.LCTY.UR.ZS"
-       }]
-    },
-    "urban_excess_growth": {
-       "id": "urban_excess_growth",
-       "name": "Urban excess growth",
-       "description": "Excess rate of population growth in urban centres compared with the population growth rate in the whole country (annual %).",
-       "format": "number",
-       "decimals": "2",
-       "unit": "%s %",
-       "index": "vulnerability",
-       "sector": "habitat",
-       "component": "sensitivity",
-"explanation": " Excess rate of population growth in urban centres compared with the population growth rate in the whole country. Formulae: Expected urban popn growth = Urban popn * Country Popn growth . Excess urban popn growth = (Urban Popn * Urban Popn growth – Expected urban popn growth) / Expected urban popn growth",
-	   "rationale": "If the urban population is growing considerably faster than the country as a whole, this is likely to be putting additional strain on urban services and making it difficult for city managers to also consider and plan for the effects of climate change.",
-	   "issues":"None???",
-       "source": [{
-           "name": "World Development Indicators - Urban population growth",
-           "link": "http://data.worldbank.org/indicator/SP.URB.GROW",
-           "name": "World Development Indicators - Urban population",
-           "link": "http://data.worldbank.org/indicator/SP.URB.TOTL",
-           "name": "World Development Indicators - Population growth",
-           "link": "http://data.worldbank.org/indicator/SP.POP.GROW"
-       }]
-    },
-    "urban_risk": {
-       "id": "urban_risk",
-       "name": "Urban risk",
-       "description": "A natural disaster risk index for populations living in large cities (i.e. >0.75M people).",
-       "format": "number",
-       "decimals": "2",
-       "unit": null,
-       "index": "vulnerability",
-       "sector": "habitat",
-       "component": "exposure",
-"explanation": "A natural disaster risk index for populations living in large cities (i.e. >0.75M people).",
-	   "rationale": "The large cities of a country are the centres of attraction for rural to urban migration and the economic drivers in most countries.  Severe human suffering and social and economic disruption can occur if these cities are struck by natural disasters.  This measure seeks to capture that risk based on a data set from the UNESA statistical data.  See the Annex for a detailed description of its derivation.",
-	   "issues":"(i) See the Annex for issues associated with its derivation. (ii)  The data used in this measure indirectly brings in information from the databases of recent frequency and impacts of disasters.  We have tried to exclude these data as much as possible from the GAIN Index as we wanted to maintain them as a largely independent source of corroborative data for assessing the validity of the Index. (ii) What value be given to should countries without a city of 0.75 million people?  Here the default is zero, since we are trying to measure the threat to large conurbations and all that depend on them.",
-       "source": [{
-           "name": "UN Dept Economic & Social Affairs;",
-           "link": "http://esa.un.org/unup/CD-ROM/Urban-Agglomerations.htm"
-       }]
-    },
-    "voice_accountability": {
-        "id": "voice_accountability",
-        "name": "Voice & accountability",
-        "description": "Participation in selecting the government, as well as freedom of expression, freedom of association, and a free media.",
-        "format": "number",
-        "decimals": "2",
-        "unit": null,
-        "index": "readiness",
-        "sector": null,
-        "component": "governance",
- "explanation": "",
-	   "rationale": "",
-	   "issues":"",
-       "source": [{
-            "name": "Worldwide Governance Indicators",
-            "link": "http://info.worldbank.org/governance/wgi/sc_country.asp"
-        }]
-    },
-    "water_access": {
-        "id": "water_access",
-        "name": "Water access",
-        "description": "The percentage of the population with reasonable access to an adequate amount of water from an improved source, such as a household connection, public standpipe, borehole, protected well or spring, and rainwater collection.",
-        "format": "number",
-        "decimals": "1",
-        "unit": "%s %",
-        "index": "vulnerability",
-        "sector": "water",
-        "component": "capacity",
- 		"explanation": "",
-	   "rationale": "High % indicates capacity to deliver water to the population and hence lower vulnerability.",
-	   "issues":"Commonly used indicator.  However, it saturates very quickly with most countries with a GDP/cap of >$5000 having close to 100% coverage.",
-       "source": [{
-            "name": "World Development Indicators",
-            "link": "http://data.worldbank.org/indicator/SH.H2O.SAFE.ZS"
-        }]
-    },
-    "water_disease": {
-        "id": "water_disease",
-        "name": "Water disease",
-        "description": "Water, sanitation & hygiene related deaths per 100,000  children under 5 years old.",
-        "format": "number",
-        "decimals": "0",
-        "unit": null,
-        "index": "vulnerability",
-        "sector": "water",
-        "component": "sensitivity",
-        "explanation": "Measured as “Water, sanitation & hygiene deaths per 100'000 children<5 yr” to capture the effects on the most sensitive portion of the population.",
-	   "rationale": "",
-	   "issues":"There are similar data for all people affected but we have chosen to focus on children as they bear the bulk of the burden.  There is obviously an overlap with health measures, but this reflects the strong links between vulnerability arising within the water and health sectors.",
-       "source": [{
-            "name": "WHO",
-            "link": "http://apps.who.int/ghodata/?vid=99001#"
-        }]
-    },
-    "water_use": {
-        "id": "water_use",
-        "name": "Water use",
-        "description": "Percent of total internal and external water withdrawn for all uses.",
-        "format": "number",
-        "decimals": "1",
-        "unit": "%s %",
-        "index": "vulnerability",
-        "sector": "water",
-        "component": "sensitivity",
-  		"explanation": "An indication of how much of the nationally available water resource (originating internally or externally such as from inflowing rivers) is already being used. In the Index a high % extraction is taken as an indicator of vulnerability. ",
-	   "rationale": "",
-	   "issues":"(i) Some countries (especially arid) use well over 100% of their internal water as it is either supplemented by desalination for example.  These are capped to 100%. (ii) Could exclude external water, but this leads to the anomaly of countries such as Zambia, with major river systems flowing through them, show as very water scare.  Zambia uses only 2% of its total available water, but this greatly exceeds the amount of internally generated water.  Could also include the volume of dam storage to give some idea of buffering capacity.",
-       "source": [{
-            "name": "UN Food and Agriculture Organization / Aquastats",
-            "link": "http://www.fao.org/nr/water/aquastat/data/query/index.html?lang=en"
-        }]
-    },
-    "yield_cv": {
-        "id": "yield_cv",
-        "name": "Variation of cereal yield",
-        "description": "Coefficient of variation  (Stdev / mean) of cereal yield per hectare of harvested land, including wheat, rice, maize, barley, oats, rye, millet, sorghum, buckwheat, and mixed grains.",
-        "format": "number",
-        "decimals": "2",
-        "unit": null,
-        "index": "vulnerability",
-        "sector": "food",
-        "component": "exposure",
-        "explanation": "Based on reported year to year variation in cereal yields. High variability is taken as indicating inherent exposure of yields to climate and non-climate variables (e.g. prices affecting inputs to crops).  Cereals are the best available indicator of agricultural production for most countries, but clearly not valid or measurable for others.  For each country the 19xx to 20xx data was detrended via an exponential function to allow for technological increases in yield and then the standard deviation of the yield calculated to give an estimate of the CV (Stdev/mean).",
-	   "rationale": "",
-	   "issues":"The quality of data for some countries is poor; usually reporting almost constant or regularly increasing yields.  This will give these countries an artificially low vulnerability score.",
-       "source": [{
-            "name": "World Development Indicators",
-            "link": "http://data.worldbank.org/indicator/AG.YLD.CREL.KG"
-        }]
-    },
-    "yld_proj": {
-        "id": "yld_proj",
-        "name": "Yield change",
-        "description": "Projected percentage impact of climate change on agricultural yields.",
-        "format": "number",
-        "decimals": "2",
-        "unit": "%s %",
-        "index": "vulnerability",
-        "sector": "food",
-        "component": "exposure",
- "explanation": "",
-	   "rationale": "",
-	   "issues":"",
-       "source": [{
-            "name": "Center for Global Development",
-            "link": "http://www.cgdev.org/content/publications/detail/1424986"
-        }]
-    },
-    "economic": {
-        "id": "economic",
-        "name": "Economic",
-        "description": "Corresponds to 40% of Readiness and equally weights 7 measures related to goverment regulations, taxes and business enabling environment.",
-        "format": "number",
-        "decimals": "2",
-        "unit": null,
-        "index": "readiness",
-        "sector": null,
-        "component": null
-    },
-    "governance": {
-        "id": "governance",
-        "name": "Governance",
-        "description": "Corresponds to 30% of Readiness, equally weighting 'Voice and Accountability', government 'Stability' and 'Control of corruption'.",
-        "format": "number",
-        "decimals": "2",
-        "unit": null,
-        "index": "readiness",
-        "sector": null,
-        "component": null
-    },
-    "readiness_delta": {
-        "id": "readiness_delta",
-        "name": "Readiness, adjusted for GDP",
-        "description": "GDP adjusted Readiness scores represent how far the actual Readiness score is from its expected value based on its GDP. A positive value means a country has a higher Readiness score than other countries of a similar GDP. A negative value means a country has a worse score.",
-        "map_caption": "Countries of the world by Readiness, adjusted for GDP. Higher scores are better.",
-        "ranking_caption": "World wide ranking by Readiness, adjusted for GDP. Higher scores are better.",
-        "format": "number",
-        "decimals": "2",
-        "unit": null,
-        "index": "readiness_delta",
-        "sector": null,
-        "component": null
-    },
-    "readiness": {
-        "id": "readiness",
-        "name": "Readiness",
-        "description": "A country's GAIN Index score is composed of a Vulnerability score and a Readiness score. Readiness targets those portions of the economy, governance and society that affect the speed and efficiency of absorption and implementation of Adaptation projects.",
-        "map_caption": "Countries of the world by Readiness, higher scores are better.",
-        "ranking_caption": "World wide ranking by Readiness, higher scores are better.",
-        "format": "number",
-        "decimals": "2",
-        "unit": null,
-        "index": "readiness",
-        "sector": null,
-        "component": null
-    },
-    "social": {
-        "id": "social",
-        "name": "Social readiness",
-        "description": "Corresponds to 30% of Readiness. It measures human capital, access to information, communications and working environment.",
-        "format": "number",
-        "decimals": "2",
-        "unit": null,
-        "index": "readiness",
-        "sector": null,
-        "component": null
-    },
-    "capacity": {
-        "id": "capacity",
-        "name": "Capacity",
-        "description": "The availability of economic, social, and institutional resources to cope with and adapt to the impacts of climate change in specific sectors. Though related, this differs from readiness indicators in that it seeks to measure the current ability to increase resilience (or reduce vulnerability) in specific sectors, whereas Readiness measures a country’s ability to facilitate further increases in resilience.",
-        "format": "number",
-        "decimals": "2",
-        "unit": null,
-        "index": "vulnerability",
-        "sector": null,
-        "component": null
-    },
-    "ecosystems": {
-        "id": "ecosystems",
-        "name": "Ecosystems",
-        "description": "Ecosystem services are the multitude of processes that humans rely upon to support their lives and livelihoods.",
-        "format": "number",
-        "decimals": "2",
-        "unit": null,
-        "index": "vulnerability",
-        "sector": null,
-        "component": null,
+		"id": "biome_threat",
+		"name": "Projected Biome Threat",
+		"description": "The proportion of the land of a country on which the existing biome is no longer matched to the projected climate of the late 21st century.",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "vulnerability",
+		"sector": "ecosystems",
+		"component": "exposure",
+		"explanation": "",
+		"rationale": "",
+		"issues": "",
+		"source": [{
+			"name": "Gonzalez, et al. (2010), Global patterns in the vulnerability of ecosystems to vegetation shifts due to climate change. Global Ecology and Biogeography, 19: 755–768. doi: 10.1111/j.1466-8238.2010.00558.x Annex S3",
+			"link": "http://pgonzalez.home.igc.org/Gonzalez_et_al_2010_GEB_SI.pdf",
+			"name": "J. Hansen, et al., Global warming in the twenty-first century: An alternative scenario. Proc. Natl. Acad. Sci. 97, 9875-9880, doi:10.1073/pnas.170278997 (2000).",
+			"link": "http://pubs.giss.nasa.gov/docs/2000/2000_Hansen_etal_2.pdf"
+		}]
+	},
+	"finan": {
+		"id": "finan",
+		"name": "Financial freedom",
+		"description": "Banking efficiency, independence from government control and interference in the financial sector.",
+		"format": "number",
+		"decimals": "0",
+		"unit": null,
+		"index": "readiness",
+		"sector": null,
+		"component": "economic",
+		"explanation": "",
+		"rationale": "",
+		"issues": "",
+		"source": [{
+			"name": "Index of Economic Freedom",
+			"link": "http://www.heritage.org/index/explore"
+		}]
+	},
+	"fiscal": {
+		"id": "fiscal",
+		"name": "Fiscal freedom",
+		"description": "Tax burden imposed by government.",
+		"format": "number",
+		"decimals": "1",
+		"unit": null,
+		"index": "readiness",
+		"sector": null,
+		"component": "economic",
+		"explanation": "",
+		"rationale": "",
+		"issues": "",
+		"source": [{
+			"name": "Index of Economic Freedom",
+			"link": "http://www.heritage.org/index/explore"
+		}]
+	},
+	"food_capacity": {
+		"id": "food_capacity",
+		"name": "Food capacity",
+		"description": "Measure of agricultural technological capacity as the average of the 2 best scores from the use of fertilizers, the level of mechanization and the use of irrigation in agriculture.",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "vulnerability",
+		"sector": "food",
+		"component": "capacity",
+		"explanation": "This is a combination of three separate measures of agricultural technology: the amount of fertilizer used per ha, the number of tractors per area of arable land and the proportion of arable land with irrigation facilities.  The measure used here takes two of the above that give the best (i.e. least vulnerable) score.  This allows for missing data but also for situations such as where irrigation or fertilizer is less necessary because of rainfall or good quality soils",
+		"rationale": "",
+		"issues": "Even with three elements it does not capture the full range of relevant agricultural technologies. Also, many countries reached the best (least vulnerable) score.",
+		"source": [{
+			"name": "World Development Indicators - Fertilizer Consumption (kilograms per hectare of arable land)",
+			"link": "http://data.worldbank.org/indicator/AG.CON.FERT.ZS"
+		}, {
+			"name": "World Development Indicators - Agricultural Machinery (tractors per 100 sq. km of arable land)",
+			"link": "http://data.worldbank.org/indicator/AG.LND.TRAC.ZS"
+		}, {
+			"name": "World Development Indicators - Agricultural Irrigated Land (percent of total agricultural land)",
+			"link": "http://data.worldbank.org/indicator/AG.LND.IRIG.AG.ZS"
+		}]
+	},
+	"gdp": {
+		"id": "gdp",
+		"name": "GDP (PPP) per capita",
+		"description": "Gross domestic product per capita based on purchasing power parity, in units of constant 2005 international dollar.",
+		"format": "number",
+		"decimals": "2",
+		"unit": "%s USD",
+		"index": null,
+		"sector": null,
+		"component": null
+	},
+	"gov_spend": {
+		"id": "gov_spend",
+		"name": "Government spending",
+		"description": "Level of government expenditures as a percentage of GDP.",
+		"format": "number",
+		"decimals": "1",
+		"unit": null,
+		"index": "readiness",
+		"sector": null,
+		"component": "economic",
+		"explanation": "",
+		"rationale": "",
+		"issues": "",
+		"source": [{
+			"name": "Index of Economic Freedom",
+			"link": "http://www.heritage.org/index/explore"
+		}]
+	},
+	"health_disease": {
+		"id": "health_disease",
+		"name": "Disease mortality",
+		"description": "Percentage mortality due to infectious diseases.",
+		"format": "percent",
+		"decimals": "1",
+		"unit": "%s %",
+		"index": "vulnerability",
+		"sector": "health",
+		"component": "exposure",
+		"explanation": "",
+		"rationale": "",
+		"issues": "",
+		"source": [{
+			"name": "World Health Organization",
+			"link": "http://apps.who.int/ghodata/?vid=99001#"
+		}]
+	},
+	"imports": {
+		"id": "imports",
+		"name": "Food import dependency",
+		"description": "Proportion of cereal consumption obtained from entities not part of the country in question.",
+		"format": "percent",
+		"decimals": "0",
+		"unit": "%s %",
+		"index": "vulnerability",
+		"sector": "food",
+		"component": "sensitivity",
+		"explanation": "Proportion of cereal consumption obtained from imports. This is taken as a measure of the countries sensitivities to food shocks in the future.  Taken with the CV in national cereal yields, both internal and import dependent countries are covered to some degree.",
+		"rationale": "",
+		"issues": "Clearly the Coefficient of Variation (CV) in  of cereal yields and this measure interact and could be part of a more complex measure of food security.  This may produce a conceptually more satisfying model but would do less well against simplicity and transparency tests.",
+		"source": [{
+			"name": "FAO",
+			"link": "http://FAOStat.fao.org"
+		}]
+	},
+	"international_treaties": {
+		"id": "international_treaties",
+		"name": "International Environmental Conventions",
+		"description": "The country’s participation in international forums, which is taken as an indicator its capacity to engage in multilateral negotiations and to reach agreement on appropriate actions internally.",
+		"format": "number",
+		"decimals": "0",
+		"unit": null,
+		"index": "vulnerability",
+		"sector": "ecosystems",
+		"component": "capacity",
+		"explanation": "A measure based on the country’s participation in international forums, which is taken as an indicator its capacity to engage in multilateral negotiations and to reach agreement on appropriate actions internally.",
+		"rationale": "Although not a direct measure of capacity, the failure to take part in such forums is usually associated with either lack of technical capacity to deal with the issues and/or lack of political ability to reach decisions over appropriate engagement.",
+		"issues": "(i) The outcome for this measure is strongly dependent on the process of selecting the agreements to be included (Table 1).  We sought to include 'environmental treaties' in their broadest sense while avoiding any to do with military/warfare; gross marine pollution, safety at sea and other shipping controls.  We also excluded treaties directly setting up International organizations such as the World Bank etc.  We also excluded agreements with less than 20 signatories. (ii) Some agreements have a limited regional scope (e.g. dealing with Atlantic tuna).  We could have excluded them, but this would have limited the list (16 out of 54 have clear regional scope of application), but many are signed by countries beyond the region (e.g those with fishing fleets in the Atlantic).  Many (17 out of 54) also deal with the agreements on oceans and this may disadvantage land-locked countries, however, land-locked countries are sometimes signatories to such conventions (e.g. those relating to whaling).  It could similarly be argued that some agreements are not relevant to many countries on other grounds (e.g. those to do with desertification).  Thus we chose to retain a wide set of agreements rather than begin a culling process that would have reduced the list to only 10 to 20 or so.",
+		"source": [{
+			"name": "Environmental Treaties and Resource Indicators",
+			"link": "http://sedac.ciesin.columbia.edu/entri/index.jsp"
+		}]
+	},
+	"invest": {
+		"id": "invest",
+		"name": "Investment freedom",
+		"description": "Constraints on the flow of investment capital. Includes rules for foreign and domestic investment; restrictions on payments, transfers, and capital transactions; labor regulations, corruption, red tape, weak infrastructure, and political and security conditions.",
+		"format": "number",
+		"decimals": "0",
+		"unit": null,
+		"index": "readiness",
+		"sector": null,
+		"component": "economic",
+		"explanation": "",
+		"rationale": "",
+		"issues": "",
+		"source": [{
+			"name": "Index of Economic Freedom",
+			"link": "http://www.heritage.org/index/explore"
+		}]
+	},
+	"labor": {
+		"id": "labor",
+		"name": "Labor freedom",
+		"description": "Legal and regulatory framework of a country’s labor market.",
+		"format": "number",
+		"decimals": "1",
+		"unit": null,
+		"index": "readiness",
+		"sector": null,
+		"component": "social",
+		"explanation": "",
+		"rationale": "",
+		"issues": "",
+		"source": [{
+			"name": "Index of Economic Freedom",
+			"link": "http://www.heritage.org/index/explore"
+		}]
+	},
+	"life": {
+		"id": "life",
+		"name": "Life expectancy",
+		"description": "The number of years a newborn infant would live if prevailing patterns of mortality at the time of its birth were to stay the same throughout its life.",
+		"format": "number",
+		"decimals": "1",
+		"unit": null,
+		"index": "vulnerability",
+		"sector": "health",
+		"component": "capacity",
+		"explanation": "",
+		"rationale": "",
+		"issues": "",
+		"source": [{
+			"name": "World Development Indicators",
+			"link": "http://data.worldbank.org/indicator/SP.DYN.LE00.IN"
+		}]
+	},
+	"malnutr": {
+		"id": "malnutr",
+		"name": "Malnutrition",
+		"description": "Percent of under 5 year-olds with low weight for their height.",
+		"format": "number",
+		"decimals": "1",
+		"unit": "%s %",
+		"index": "vulnerability",
+		"sector": "food",
+		"component": "capacity",
+		"explanation": "A measure of malnutrition based on the percent of under 5 year-olds with a low weight for height ratio; usually taken as the best indicator of chronic malnutrition.  This is taken as an indication of the lack of capacity to deliver basic nutritional needs to the most sensitive group in society.",
+		"rationale": "This was chosen as it is considered a good measure of chronic malnutrition and it does nor greatly overlap with measures in the health or water sectors.",
+		"issues": "",
+		"source": [{
+			"name": "World Development Indicators",
+			"link": "http://data.worldbank.org/indicator/SH.STA.WAST.ZS"
+		}]
+	},
+	"matern": {
+		"id": "matern",
+		"name": "Maternal mortality",
+		"description": "Life time risk of maternal death is the probability that a 15-year-old female will die eventually from a maternal cause assuming that current levels of fertility and mortality (including maternal mortality) do not change in the future, taking into account competing causes of death.",
+		"format": "number",
+		"decimals": "0",
+		"unit": "%s %",
+		"index": "vulnerability",
+		"sector": "health",
+		"component": "capacity",
+		"explanation": "",
+		"rationale": "",
+		"issues": "",
+		"source": [{
+			"name": "World Development Indicators",
+			"link": "http://data.worldbank.org/indicator/SH.MMR.RISK.ZS"
+		}]
+	},
+	"mobiles": {
+		"id": "mobiles",
+		"name": "Mobile penetration",
+		"description": "Mobile telephone subscriptions per 100 people to a public mobile telephone service using cellular technology, which provide access to the public switched telephone network (post-paid and prepaid subscriptions are included).",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "readiness",
+		"sector": null,
+		"component": "social",
+		"explanation": "",
+		"rationale": "",
+		"issues": "",
+		"source": [{
+			"name": "World Development Indicators",
+			"link": "http://data.worldbank.org/indicator/IT.CEL.SETS.P2"
+		}]
+	},
+	"monetary": {
+		"id": "monetary",
+		"name": "Monetary freedom",
+		"description": "Price stability with an assessment of price controls.",
+		"format": "number",
+		"decimals": "1",
+		"unit": null,
+		"index": "readiness",
+		"sector": null,
+		"component": "economic",
+		"explanation": "",
+		"rationale": "",
+		"issues": "",
+		"source": [{
+			"name": "Index of Economic Freedom",
+			"link": "http://www.heritage.org/index/explore"
+		}]
+	},
+	"non_violence": {
+		"id": "non_violence",
+		"name": "Political stability & non-violence",
+		"description": "Perceptions of the likelihood that the government will be destabilized or overthrown by unconstitutional or violent means, including domestic violence and terrorism.",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "readiness",
+		"sector": null,
+		"component": "governance",
+		"explanation": "",
+		"rationale": "",
+		"issues": "",
+		"source": [{
+			"name": "Worldwide Governance Indicators",
+			"link": "http://info.worldbank.org/governance/wgi/index.asp"
+		}]
+	},
+	"pop": {
+		"id": "pop",
+		"name": "Population",
+		"description": "Total population.",
+		"format": "number",
+		"decimals": "0",
+		"unit": null,
+		"index": null,
+		"sector": null,
+		"component": null
+	},
+	"protected_biomes": {
+		"id": "protected_biomes",
+		"name": "Protected biomes",
+		"description": "The weighted percentage of biomes under protected status, where the weight is determined by the size of biomes within a country. Countries are not rewarded for protecting beyond 17% of any given biome (i.e., scores are capped at 17% per biome) so that higher levels of protection of some biomes cannot be used to offset lower levels of protection of other biomes.",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "vulnerability",
+		"sector": "ecosystems",
+		"component": "capacity",
+		"explanation": "Taken directly from the Yale Environmental Performance Index (EPI) which defines it as follows … 'The weighted percentage of biomes under protected status, where the weight is determined by the size of biomes within a country. Countries are not rewarded for protecting beyond 17% of any given biome (i.e., scores are capped at 17% per biome) so that higher levels of protection of some biomes cannot be used to offset lower levels of protection of other biomes.'",
+		"rationale": "Countries with good protection of their core ecosystem types are likely to have the capacity to implement a wider range of actions to continue to protect and manage ecosystem services under a changing climate.",
+		"issues": " (i) The measure does not take into account the quality of the management of the protected area.  The Yale team also acknowledges this and they are working towards gathering improved data.",
+		"source": [{
+			"name": "Emerson, J.W. et al. 2012: 2012 Environmental Performance Index and Pilot Trend Environmental Performance Index.",
+			"link": "http://epi.yale.edu/downloads"
+		}]
+	},
+	"road_floods": {
+		"id": "road_floods",
+		"name": "Road flooding",
+		"description": "Frequency of floods calculated as flood disasters per decade per 100,000 km2 of land area.",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "vulnerability",
+		"sector": "infrastructure",
+		"component": "exposure",
+		"explanation": "",
+		"rationale": "",
+		"issues": "",
+		"source": [{
+			"name": "World Development Indicators - Land area (sq. km)",
+			"link": "http://data.worldbank.org/indicator/AG.LND.TOTL.K2"
+		}, {
+			"name": "EM-DAT: The OFDA/CRED International Disaster Database - Floods.",
+			"link": "http://www.emdat.be/"
+		}]
+	},
+	"road_paved": {
+		"id": "road_paved",
+		"name": "Paved roads",
+		"description": "Roads surfaced with crushed stone (macadam) and hydrocarbon binder or bituminized agents, with concrete, or with cobblestones, as a percentage of all the country's roads, measured in length.",
+		"format": "number",
+		"decimals": "2",
+		"unit": "%s %",
+		"index": "vulnerability",
+		"sector": "infrastructure",
+		"component": "sensitivity",
+		"explanation": "",
+		"rationale": "",
+		"issues": "",
+		"source": [{
+			"name": "World Development Indicators",
+			"link": "http://data.worldbank.org/indicator/IS.ROD.PAVE.ZS"
+		}]
+	},
+	"rule_of_law": {
+		"id": "rule_of_law",
+		"name": "Rule of law",
+		"description": "Confidence in and abide by the rules of society, and in particular the quality of contract enforcement, property rights, the police, and the courts, as well as the likelihood of crime and violence.",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "readiness",
+		"sector": null,
+		"component": "social",
+		"explanation": "",
+		"rationale": "",
+		"issues": "",
+		"source": [{
+			"name": "Worldwide Governance Indicators",
+			"link": "http://info.worldbank.org/governance/wgi/sc_country.asp"
+		}]
+	},
+	"rural_popn": {
+		"id": "rural_popn",
+		"name": "Rural population",
+		"description": "Total rural population as a percent of the total population.",
+		"format": "number",
+		"decimals": "1",
+		"unit": "%s %",
+		"index": "vulnerability",
+		"sector": "food",
+		"component": "sensitivity",
+		"explanation": "",
+		"rationale": "",
+		"issues": "",
+		"source": [{
+			"name": "World Development Indicators - Rural Population",
+			"link": "http://data.worldbank.org/indicator/SP.RUR.TOTL"
+		}, {
+			"name": "World Development Indicators - Total Population",
+			"link": "http://data.worldbank.org/indicator/SP.POP.TOTL"
+		}]
+	},
+	"sanit": {
+		"id": "sanit",
+		"name": "Improved sanitation facilities",
+		"description": "The percentage of the population with at least adequate access to excreta disposal facilities that can effectively prevent human, animal, and insect contact with excreta.",
+		"format": "number",
+		"decimals": "1",
+		"unit": "%s %",
+		"index": "vulnerability",
+		"sector": "water",
+		"component": "capacity",
+		"explanation": "The percentage of the population with at least adequate access to excreta disposal facilities that can effectively prevent human, animal, and insect contact with excreta.",
+		"rationale": "High % indicates capacity to deliver sanitation and quality water to the population and hence lower vulnerability.",
+		"issues": "(i) Commonly used indicator.  However, it saturates quickly, although slightly slower than PIW%, with most countries with a GDP/cap of >$12000 having close to 100% coverage. (ii) Highly correlated with HDI (r2 = 75%) and with GDP/cap (r2 = 35% and r2 = 50% with Ln(GDP/cap)).  It is also correlated with PIS% (r2 = 60%) but there is still significant scatter among countries with low values of either variable.",
+		"source": [{
+			"name": "World Development Indicators",
+			"link": "http://data.worldbank.org/indicator/SH.STA.ACSN"
+		}]
+	},
+	"slums": {
+		"id": "slums",
+		"name": "Slums",
+		"description": "Urban Population Living in Slums.",
+		"format": "number",
+		"decimals": "2",
+		"unit": "%s %",
+		"index": "vulnerability",
+		"sector": "habitat",
+		"component": "sensitivity",
+		"explanation": "A slum household is defined as a group of individuals living under the same roof lacking one or more1 of the following conditions: Access to improved water; Access to improved sanitation; Sufficient-living area; Durability of housing (Tenure is included as a 5th element, but insufficient data is available).",
+		"rationale": "Slums impose a great challenge to successful adaptation especially in cities.",
+		"issues": "(i) This is an indirect estimate and includes some measures that overlap with those used elsewhere in the Index.  However correlation analysis shows that correlations are low.  It is related to GDP/cap but still conveys useful information especially at intermediate levels of GDP/cap (Fig 7). (ii) The assumption that wealthy countries (not estimated as part of the MDG) have no people in slums is probably technically correct by the UN MDG definition, but an underestimate in practice. ",
+		"source": [{
+			"name": "United Nations Indicators - Millenium Development Goals",
+			"link": "http://mdgs.un.org/unsd/mdg/SeriesDetail.aspx?srid=710"
+		}]
+	},
+	"staff": {
+		"id": "staff",
+		"name": "Health workers per capita",
+		"description": "Number of medical workers per 1000 people, based on (2 x Physicians) + (Nurses and Midwives).",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "vulnerability",
+		"sector": "health",
+		"component": "sensitivity",
+		"explanation": "",
+		"rationale": "",
+		"issues": "",
+		"source": [{
+			"name": "World Development Indicators - Physicians (per 1,000 people)",
+			"link": "http://data.worldbank.org/indicator/SH.MED.PHYS.ZS"
+		}, {
+			"name": "World Development Indicators - Nurses and midwives (per 1,000 people)",
+			"link": "http://data.worldbank.org/indicator/SH.MED.NUMW.P3"
+		}]
+	},
+	"threatened_species": {
+		"id": "threatened_species",
+		"name": "Threatened species",
+		"description": "Composite measure made up of (1) the percentage of mammal species recorded as threatened; (2) the percentage of plant species threatened; and (3) the number of bird species threatened.",
+		"format": "number",
+		"decimals": "2",
+		"unit": "%s %",
+		"index": "vulnerability",
+		"sector": "ecosystems",
+		"component": "sensitivity",
+		"explanation": "Composite measure made up of (1) the percentage of mammal species recorded as threatened; (2) the percentage of plant species threatened; and (3) the number of bird species threatened.  These three groups (mammals, plants and birds) represent a good, but incomplete, coverage of the state of ecosystems.  Birds have to be treated differently from mammals and plants because the number of bird species within a country is difficult to determine as many are migratory over long distances and the source of the threat of extinction may arise from causes far distant from the country.",
+		"rationale": "Threats of extinction arise from many pressures currently unrelated to climate change.  Further climate change is likely to exacerbate these pressures in many cases and thus this measure is an indication of the sensitivity of a country’s ecosystems services to change in the future.",
+		"issues": "(i) There is some overlap with a country’s capacity to manage its natural resources. (ii) The measure does not include species that have passed from threatened to extinct.  There are data that could be used but they would have to be rescaled to be incorporated.  Extinction data also raised issues of equity; for example regions recently settled by technological societies such as North America and Australia will score disproportionately high while extinctions for areas with longer settlement of this type (e.g. Europe and China) many extinction would go unrecorded.",
+		"source": [{
+			"name": "IUCN Red Book",
+			"link": "http://www.iucnredlist.org/"
+		}]
+	},
+	"trade": {
+		"id": "trade",
+		"name": "Trade freedom",
+		"description": "Absence of tariff and non-tariff barriers that affect imports and exports of goods and services.",
+		"format": "number",
+		"decimals": "1",
+		"unit": null,
+		"index": "readiness",
+		"sector": null,
+		"component": "economic",
+		"explanation": "",
+		"rationale": "",
+		"issues": "",
+		"source": [{
+			"name": "Index of Economic Freedom",
+			"link": "http://www.heritage.org/index/explore"
+		}]
+	},
+	"trade_transport": {
+		"id": "trade_transport",
+		"name": "Trade and transport infrastructure",
+		"description": "Logistics professionals' perception of country's quality of trade and transport related infrastructure (e.g. ports, railroads, roads, information technology), on a rating ranging from 1 (very low) to 5 (very high). Scores are averaged across all respondents.",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "vulnerability",
+		"sector": "habitat",
+		"component": "capacity",
+		"explanation": "Logistics professionals' perception of country's quality of trade and transport related infrastructure (e.g. ports, railroads, roads, information technology), on a rating ranging from 1 (very low) to 5 (very high). Scores are averaged across all respondents.",
+		"rationale": "The quality of this infrastructure is indicative of capacity to effectively supply and manage essential infrastructure by the public and private sectors.  It is assumed here that same capacity is indicative of a capacity to sustain that infrastructure in the face of future changes, including climate change.",
+		"issues": ":  (i) This measure is close to some of those used directly or indirectly in the Readiness axis, which is indicative of the overlap between ‘capacity’ and ‘readiness’ as we have discussed before.",
+		"source": [{
+			"name": "World Development Indicators -  Logistics Performance Index",
+			"link": "http://data.worldbank.org/indicator/LP.LPI.INFR.XQ"
+		}]
+	},
+	"urban_concentration": {
+		"id": "urban_concentration",
+		"name": "Urban concentration",
+		"description": "Percentage of the country population living in the largest city.",
+		"format": "number",
+		"decimals": "2",
+		"unit": "%s %",
+		"index": "vulnerability",
+		"sector": "habitat",
+		"component": "exposure",
+		"explanation": "Percentage of the population living in the largest city.",
+		"rationale": "A high concentration of people in one city creates challenges in adapting to climate change.  The concentration suggests stressed services, few choices for displaced rural poor and vulnerability to major losses in a single extreme climate event.",
+		"issues": ":  (i) An alternative measure is the proportion of the population living in cities with a population of 0.75 million or more (this is the threshold used by UNESA).  But this approach would exclude the 71 countries with no city reaching the UNESA threshold.",
+		"source": [{
+			"name": "World Development Indicators - Population in largest city",
+			"link": "http://data.worldbank.org/indicator/EN.URB.LCTY.UR.ZS"
+		}]
+	},
+	"urban_excess_growth": {
+		"id": "urban_excess_growth",
+		"name": "Urban excess growth",
+		"description": "Excess rate of population growth in urban centres compared with the population growth rate in the whole country (annual %).",
+		"format": "number",
+		"decimals": "2",
+		"unit": "%s %",
+		"index": "vulnerability",
+		"sector": "habitat",
+		"component": "sensitivity",
+		"explanation": " Excess rate of population growth in urban centres compared with the population growth rate in the whole country. Formulae: Expected urban popn growth = Urban popn * Country Popn growth . Excess urban popn growth = (Urban Popn * Urban Popn growth – Expected urban popn growth) / Expected urban popn growth",
+		"rationale": "If the urban population is growing considerably faster than the country as a whole, this is likely to be putting additional strain on urban services and making it difficult for city managers to also consider and plan for the effects of climate change.",
+		"issues": "None???",
+		"source": [{
+			"name": "World Development Indicators - Urban population growth",
+			"link": "http://data.worldbank.org/indicator/SP.URB.GROW",
+			"name": "World Development Indicators - Urban population",
+			"link": "http://data.worldbank.org/indicator/SP.URB.TOTL",
+			"name": "World Development Indicators - Population growth",
+			"link": "http://data.worldbank.org/indicator/SP.POP.GROW"
+		}]
+	},
+	"urban_risk": {
+		"id": "urban_risk",
+		"name": "Urban risk",
+		"description": "A natural disaster risk index for populations living in large cities (i.e. >0.75M people).",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "vulnerability",
+		"sector": "habitat",
+		"component": "exposure",
+		"explanation": "A natural disaster risk index for populations living in large cities (i.e. >0.75M people).",
+		"rationale": "The large cities of a country are the centres of attraction for rural to urban migration and the economic drivers in most countries.  Severe human suffering and social and economic disruption can occur if these cities are struck by natural disasters.  This measure seeks to capture that risk based on a data set from the UNESA statistical data.  See the Annex for a detailed description of its derivation.",
+		"issues": "(i) See the Annex for issues associated with its derivation. (ii)  The data used in this measure indirectly brings in information from the databases of recent frequency and impacts of disasters.  We have tried to exclude these data as much as possible from the GAIN Index as we wanted to maintain them as a largely independent source of corroborative data for assessing the validity of the Index. (ii) What value be given to should countries without a city of 0.75 million people?  Here the default is zero, since we are trying to measure the threat to large conurbations and all that depend on them.",
+		"source": [{
+			"name": "UN Dept Economic & Social Affairs;",
+			"link": "http://esa.un.org/unup/CD-ROM/Urban-Agglomerations.htm"
+		}]
+	},
+	"voice_accountability": {
+		"id": "voice_accountability",
+		"name": "Voice & accountability",
+		"description": "Participation in selecting the government, as well as freedom of expression, freedom of association, and a free media.",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "readiness",
+		"sector": null,
+		"component": "governance",
+		"explanation": "",
+		"rationale": "",
+		"issues": "",
+		"source": [{
+			"name": "Worldwide Governance Indicators",
+			"link": "http://info.worldbank.org/governance/wgi/sc_country.asp"
+		}]
+	},
+	"water_access": {
+		"id": "water_access",
+		"name": "Water access",
+		"description": "The percentage of the population with reasonable access to an adequate amount of water from an improved source, such as a household connection, public standpipe, borehole, protected well or spring, and rainwater collection.",
+		"format": "number",
+		"decimals": "1",
+		"unit": "%s %",
+		"index": "vulnerability",
+		"sector": "water",
+		"component": "capacity",
+		"explanation": "",
+		"rationale": "High % indicates capacity to deliver water to the population and hence lower vulnerability.",
+		"issues": "Commonly used indicator.  However, it saturates very quickly with most countries with a GDP/cap of >$5000 having close to 100% coverage.",
+		"source": [{
+			"name": "World Development Indicators",
+			"link": "http://data.worldbank.org/indicator/SH.H2O.SAFE.ZS"
+		}]
+	},
+	"water_disease": {
+		"id": "water_disease",
+		"name": "Water disease",
+		"description": "Water, sanitation & hygiene related deaths per 100,000  children under 5 years old.",
+		"format": "number",
+		"decimals": "0",
+		"unit": null,
+		"index": "vulnerability",
+		"sector": "water",
+		"component": "sensitivity",
+		"explanation": "Measured as “Water, sanitation & hygiene deaths per 100'000 children<5 yr” to capture the effects on the most sensitive portion of the population.",
+		"rationale": "",
+		"issues": "There are similar data for all people affected but we have chosen to focus on children as they bear the bulk of the burden.  There is obviously an overlap with health measures, but this reflects the strong links between vulnerability arising within the water and health sectors.",
+		"source": [{
+			"name": "WHO",
+			"link": "http://apps.who.int/ghodata/?vid=99001#"
+		}]
+	},
+	"water_use": {
+		"id": "water_use",
+		"name": "Water use",
+		"description": "Percent of total internal and external water withdrawn for all uses.",
+		"format": "number",
+		"decimals": "1",
+		"unit": "%s %",
+		"index": "vulnerability",
+		"sector": "water",
+		"component": "sensitivity",
+		"explanation": "An indication of how much of the nationally available water resource (originating internally or externally such as from inflowing rivers) is already being used. In the Index a high % extraction is taken as an indicator of vulnerability. ",
+		"rationale": "",
+		"issues": "(i) Some countries (especially arid) use well over 100% of their internal water as it is either supplemented by desalination for example.  These are capped to 100%. (ii) Could exclude external water, but this leads to the anomaly of countries such as Zambia, with major river systems flowing through them, show as very water scare.  Zambia uses only 2% of its total available water, but this greatly exceeds the amount of internally generated water.  Could also include the volume of dam storage to give some idea of buffering capacity.",
+		"source": [{
+			"name": "UN Food and Agriculture Organization / Aquastats",
+			"link": "http://www.fao.org/nr/water/aquastat/data/query/index.html?lang=en"
+		}]
+	},
+	"yield_cv": {
+		"id": "yield_cv",
+		"name": "Variation of cereal yield",
+		"description": "Coefficient of variation  (Stdev / mean) of cereal yield per hectare of harvested land, including wheat, rice, maize, barley, oats, rye, millet, sorghum, buckwheat, and mixed grains.",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "vulnerability",
+		"sector": "food",
+		"component": "exposure",
+		"explanation": "Based on reported year to year variation in cereal yields. High variability is taken as indicating inherent exposure of yields to climate and non-climate variables (e.g. prices affecting inputs to crops).  Cereals are the best available indicator of agricultural production for most countries, but clearly not valid or measurable for others.  For each country the 19xx to 20xx data was detrended via an exponential function to allow for technological increases in yield and then the standard deviation of the yield calculated to give an estimate of the CV (Stdev/mean).",
+		"rationale": "",
+		"issues": "The quality of data for some countries is poor; usually reporting almost constant or regularly increasing yields.  This will give these countries an artificially low vulnerability score.",
+		"source": [{
+			"name": "World Development Indicators",
+			"link": "http://data.worldbank.org/indicator/AG.YLD.CREL.KG"
+		}]
+	},
+	"yld_proj": {
+		"id": "yld_proj",
+		"name": "Yield change",
+		"description": "Projected percentage impact of climate change on agricultural yields.",
+		"format": "number",
+		"decimals": "2",
+		"unit": "%s %",
+		"index": "vulnerability",
+		"sector": "food",
+		"component": "exposure",
+		"explanation": "",
+		"rationale": "",
+		"issues": "",
+		"source": [{
+			"name": "Center for Global Development",
+			"link": "http://www.cgdev.org/content/publications/detail/1424986"
+		}]
+	},
+	"economic": {
+		"id": "economic",
+		"name": "Economic",
+		"description": "Corresponds to 40% of Readiness and equally weights 7 measures related to goverment regulations, taxes and business enabling environment.",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "readiness",
+		"sector": null,
+		"component": null
+	},
+	"governance": {
+		"id": "governance",
+		"name": "Governance",
+		"description": "Corresponds to 30% of Readiness, equally weighting 'Voice and Accountability', government 'Stability' and 'Control of corruption'.",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "readiness",
+		"sector": null,
+		"component": null
+	},
+	"readiness_delta": {
+		"id": "readiness_delta",
+		"name": "Readiness, adjusted for GDP",
+		"description": "GDP adjusted Readiness scores represent how far the actual Readiness score is from its expected value based on its GDP. A positive value means a country has a higher Readiness score than other countries of a similar GDP. A negative value means a country has a worse score.",
+		"map_caption": "Countries of the world by Readiness, adjusted for GDP. Higher scores are better.",
+		"ranking_caption": "World wide ranking by Readiness, adjusted for GDP. Higher scores are better.",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "readiness_delta",
+		"sector": null,
+		"component": null
+	},
+	"readiness": {
+		"id": "readiness",
+		"name": "Readiness",
+		"description": "A country's GAIN Index score is composed of a Vulnerability score and a Readiness score. Readiness targets those portions of the economy, governance and society that affect the speed and efficiency of absorption and implementation of Adaptation projects.",
+		"map_caption": "Countries of the world by Readiness, higher scores are better.",
+		"ranking_caption": "World wide ranking by Readiness, higher scores are better.",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "readiness",
+		"sector": null,
+		"component": null
+	},
+	"social": {
+		"id": "social",
+		"name": "Social readiness",
+		"description": "Corresponds to 30% of Readiness. It measures human capital, access to information, communications and working environment.",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "readiness",
+		"sector": null,
+		"component": null
+	},
+	"capacity": {
+		"id": "capacity",
+		"name": "Capacity",
+		"description": "The availability of economic, social, and institutional resources to cope with and adapt to the impacts of climate change in specific sectors. Though related, this differs from readiness indicators in that it seeks to measure the current ability to increase resilience (or reduce vulnerability) in specific sectors, whereas Readiness measures a country’s ability to facilitate further increases in resilience.",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "vulnerability",
+		"sector": null,
+		"component": null
+	},
+	"ecosystems": {
+		"id": "ecosystems",
+		"name": "Ecosystems",
+		"description": "Ecosystem services are the multitude of processes that humans rely upon to support their lives and livelihoods.",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "vulnerability",
+		"sector": null,
+		"component": null,
 		"explanation": "Ecosystem services are the multitude of processes that humans rely upon to support their lives and livelihoods.  These processes provide food and clean water, regulate the climate, support nutrient cycling and provide cultural experiences.  In developing the GAIN vulnerability measures we have sought to choose sets of measures that are tangible, simple but directly relevant to the concept to be captured.  It is obviously difficult to capture ecosystem services in six simple measures so the use of integrative, synthetic measures was also considered."
-    },
-    "exposure": {
-        "id": "exposure",
-        "name": "Exposure",
-        "description": "The nature and degree to which a system is exposed to significant climatic variations.",
-        "format": "number",
-        "decimals": "2",
-        "unit": null,
-        "index": "vulnerability",
-        "sector": null,
-        "component": null
-    },
-    "food": {
-        "id": "food",
-        "name": "Food",
-        "description": "The Food score summarizes a country's food production, nutrition and rural population.",
-        "format": "number",
-        "decimals": "2",
-        "unit": null,
-        "index": "vulnerability",
-        "sector": null,
-        "component": null
-    },
-    "habitat": {
-        "id": "habitat",
-        "name": "Habitat",
-        "description": "Habitat measures the stresses rapid economic, migration and population growth place on human settlements and urban areas.",
-        "format": "number",
-        "decimals": "2",
-        "unit": null,
-        "index": "vulnerability",
-        "sector": null,
-        "component": null,
-		"explanation" : "The urban sector is of particular importance in effective adaptation to a changing climate as it is also the focus of many other social and economic changes.  Internally generated rapid economic and population growth in cities is a challenge in its own right, but it is often exacerbated by substantial migration from rural areas driven as much by the poverty of rural regions as by the attractiveness and opportunities of the cities.  In selecting the measures and in seeking feedback from our technical advisors, we decided to modify our approach to recognize the ‘Human Habitat’ as a 5th life support sector. \n The measures selected do place more direct emphasis on urban habitats than rural.  However, many rural challenges are already covered in the other life support sectors and increasingly the challenge of the future will be creating sustainable cities in a changing world. Cities are usually the financial, administrative and intellectual hubs of society so disruption to their smooth running has significant flow on effects to the rest of the country."
-    },
-    "health": {
-        "id": "health",
-        "name": "Health",
-        "description": "The Health score summarizes a country's ability to provide health services.",
-        "format": "number",
-        "decimals": "2",
-        "unit": null,
-        "index": "vulnerability",
-        "sector": null,
-        "component": null
-    },
-    "infrastructure": {
-        "id": "infrastructure",
-        "name": "Infrastructure",
-        "description": "The Infrastructure score summarizes three factors impacting human well-being: coasts, energy and transportation.",
-        "format": "number",
-        "decimals": "2",
-        "unit": null,
-        "index": "vulnerability",
-        "sector": null,
-        "component": null
-    },
-    "sensitivity": {
-        "id": "sensitivity",
-        "name": "Sensitivity",
-        "description": "The degree to which a system is affected, either adversely or beneficially, by climate variability or change.",
-        "format": "number",
-        "decimals": "2",
-        "unit": null,
-        "index": "vulnerability",
-        "sector": null,
-        "component": null
-    },
-    "vulnerability_delta": {
-        "id": "vulnerability_delta",
-        "name": "Vulnerability, adjusted for GDP",
-        "description": "GDP adjusted Vulnerability scores represent how far the actual Vulnerability score of a country is from its expected Vulnerability score based on its GDP.  A positive value means a country has a higher Vulnerability score than other countries of a similar GDP. A negative value means a country has a worse score.",
-        "map_caption": "Countries of the world by Vulnerability, adjusted for GDP. Lower scores (green) are better.",
-        "ranking_caption": "World wide ranking by Vulnerability, adjusted for GDP. Lower scores (green) are better.",
-        "format": "number",
-        "decimals": "2",
-        "unit": null,
-        "index": "vulnerability_delta",
-        "sector": null,
-        "component": null
-    },
-    "vulnerability": {
-        "id": "vulnerability",
-        "name": "Vulnerability",
-        "description": "A country's GAIN Index score is composed of a Vulnerability score and a Readiness score. Vulnerability measures a country's exposure, sensitivity and ability to cope with climate related hazards, as well as accounting for the overall status of food, water, health and infrastructure within the nation.",
-        "map_caption": "Countries of the world by Vulnerability, lower scores (green) are better.",
-        "ranking_caption": "World wide ranking by Vulnerability, lower scores (green) are better.",
-        "format": "number",
-        "decimals": "2",
-        "unit": null,
-        "index": "vulnerability",
-        "sector": null,
-        "component": null
-    },
-    "water": {
-        "id": "water",
-        "name": "Water",
-        "description": "The Water score summarizes a country's current and future ability to provide clean water.",
-        "format": "number",
-        "decimals": "2",
-        "unit": null,
-        "index": "vulnerability",
-        "sector": null,
-        "component": null
-    }
+	},
+	"exposure": {
+		"id": "exposure",
+		"name": "Exposure",
+		"description": "The nature and degree to which a system is exposed to significant climatic variations.",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "vulnerability",
+		"sector": null,
+		"component": null
+	},
+	"food": {
+		"id": "food",
+		"name": "Food",
+		"description": "The Food score summarizes a country's food production, nutrition and rural population.",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "vulnerability",
+		"sector": null,
+		"component": null
+	},
+	"habitat": {
+		"id": "habitat",
+		"name": "Habitat",
+		"description": "Habitat measures the stresses rapid economic, migration and population growth place on human settlements and urban areas.",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "vulnerability",
+		"sector": null,
+		"component": null,
+		"explanation": "The urban sector is of particular importance in effective adaptation to a changing climate as it is also the focus of many other social and economic changes.  Internally generated rapid economic and population growth in cities is a challenge in its own right, but it is often exacerbated by substantial migration from rural areas driven as much by the poverty of rural regions as by the attractiveness and opportunities of the cities.  In selecting the measures and in seeking feedback from our technical advisors, we decided to modify our approach to recognize the ‘Human Habitat’ as a 5th life support sector. \n The measures selected do place more direct emphasis on urban habitats than rural.  However, many rural challenges are already covered in the other life support sectors and increasingly the challenge of the future will be creating sustainable cities in a changing world. Cities are usually the financial, administrative and intellectual hubs of society so disruption to their smooth running has significant flow on effects to the rest of the country."
+	},
+	"health": {
+		"id": "health",
+		"name": "Health",
+		"description": "The Health score summarizes a country's ability to provide health services.",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "vulnerability",
+		"sector": null,
+		"component": null
+	},
+	"infrastructure": {
+		"id": "infrastructure",
+		"name": "Infrastructure",
+		"description": "The Infrastructure score summarizes three factors impacting human well-being: coasts, energy and transportation.",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "vulnerability",
+		"sector": null,
+		"component": null
+	},
+	"sensitivity": {
+		"id": "sensitivity",
+		"name": "Sensitivity",
+		"description": "The degree to which a system is affected, either adversely or beneficially, by climate variability or change.",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "vulnerability",
+		"sector": null,
+		"component": null
+	},
+	"vulnerability_delta": {
+		"id": "vulnerability_delta",
+		"name": "Vulnerability, adjusted for GDP",
+		"description": "GDP adjusted Vulnerability scores represent how far the actual Vulnerability score of a country is from its expected Vulnerability score based on its GDP.  A positive value means a country has a higher Vulnerability score than other countries of a similar GDP. A negative value means a country has a worse score.",
+		"map_caption": "Countries of the world by Vulnerability, adjusted for GDP. Lower scores (green) are better.",
+		"ranking_caption": "World wide ranking by Vulnerability, adjusted for GDP. Lower scores (green) are better.",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "vulnerability_delta",
+		"sector": null,
+		"component": null
+	},
+	"vulnerability": {
+		"id": "vulnerability",
+		"name": "Vulnerability",
+		"description": "A country's GAIN Index score is composed of a Vulnerability score and a Readiness score. Vulnerability measures a country's exposure, sensitivity and ability to cope with climate related hazards, as well as accounting for the overall status of food, water, health and infrastructure within the nation.",
+		"map_caption": "Countries of the world by Vulnerability, lower scores (green) are better.",
+		"ranking_caption": "World wide ranking by Vulnerability, lower scores (green) are better.",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "vulnerability",
+		"sector": null,
+		"component": null
+	},
+	"water": {
+		"id": "water",
+		"name": "Water",
+		"description": "The Water score summarizes a country's current and future ability to provide clean water.",
+		"format": "number",
+		"decimals": "2",
+		"unit": null,
+		"index": "vulnerability",
+		"sector": null,
+		"component": null
+	}
 }
