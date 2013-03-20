@@ -1,4 +1,7 @@
-body{margin:0px;}
+body{
+	margin:0px;
+	padding-top: 40px;
+}
 
 #v-table {
   background-color: #FFFF66;
