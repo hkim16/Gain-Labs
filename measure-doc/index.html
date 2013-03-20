@@ -1,45 +1,28 @@
-<html>
-   
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+<title>Gain Measures documentation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="style.css" rel="stylesheet" media="screen">
 
-<style>
-body{margin:0px;}
-
-#v-table {
-  background-color: #FFFF66;
-}
-#r-table {
-  background-color: #FCCFA6;
-}
-
-.h,.v{stroke:black;stroke-dasharray:4 4;stroke-width:1;stroke-opacity:.5;}
-.axis path,
-.axis line {
-    fill: none;
-    stroke: black;
-    shape-rendering: crispEdges;
-}
-
-.axis text {
-    font-family: sans-serif;
-    font-size: 11px;
-}
-</style>
 
 
 </head>
 <body>
   
-<div class="yui3-skin-sam" id="intro">
- <div id="measure-table">
+<div class="yui3-skin-sam row" id="intro">
+ <div id="measure-table" class="span8">
 
     <table width="100%">
       	<tr align="center" >
-	        <td colspan="2" onclick="showMeasure('gain')"> Gain</td>
+	        <td colspan="2" onclick="showMeasure('gain')"> <abbr title="Partial Score">Gain</td>
 	      </tr>
 	<tr align="center" >
-        <td onclick="showMeasure('readiness')"> Readiness</td>
-        <td onclick="showMeasure('vulnerability')">Vulnerability</td>
+        <td onclick="showMeasure('readiness')"> <abbr title="Partial Score">Readiness</td>
+        <td onclick="showMeasure('vulnerability')"><abbr title="Partial Score">Vulnerability</td>
       </tr>
       <tr>
         <td>
@@ -47,81 +30,83 @@ body{margin:0px;}
 			<table id="r-table"  width="100%">
 			<tbody>
 			<tr>
-			  <td rowspan="7" onclick="showMeasure('economic')"> <b>Economic</b></td>
-			  <td onclick="showMeasure('business')"> <span title="IEF Business freedom">business</span></td>
+			  <td rowspan="7" onclick="showMeasure('economic')"> <b><abbr title="Partial Score">Economic</abbr></b></td>
+			  <td onclick="showMeasure('business')"> <abbr title="IEF Business freedom">business</abbr></td>
 			</tr>
 			<tr>
-			  <td onclick="showMeasure('trade')"> <span title="IEF Trade freedom">trade</span>
+			  <td onclick="showMeasure('trade')"> <abbr title="IEF Trade freedom">trade</abbr>
 			</td></tr>
 			<tr>
-			  <td onclick="showMeasure('fiscal')">  <span title="IEF Fiscal freedom">fiscal</span>
+			  <td onclick="showMeasure('fiscal')">  <abbr title="IEF Fiscal freedom">fiscal</abbr>
 			</td></tr>
 			<tr>
-			  <td onclick="showMeasure('gov_spend')"> <span title="IEF Government Spending">gov_spend</span>
+			  <td onclick="showMeasure('gov_spend')"> <abbr title="IEF Government Spending">gov_spend</abbr>
 			</td></tr>
 			<tr>
-			  <td onclick="showMeasure('monetary')"> <span title="IEF Monetary freedom">monetary</span></td></tr>
+			  <td onclick="showMeasure('monetary')"> <abbr title="IEF Monetary freedom">monetary</abbr></td> 
+			</tr>
 			<tr>
-			  <td onclick="showMeasure('invest')"> <span title="IEF Investment freedom">investment</span>
+			  <td onclick="showMeasure('invest')"> <abbr title="IEF Investment freedom">investment</abbr>
 			</td></tr>
 			<tr>
-			  <td onclick="showMeasure('finan')"> <span title="Financial freedom"> financial</span>
+			  <td onclick="showMeasure('finan')"> <abbr title="Financial freedom"> financial</abbr>
 			</td></tr>
 			<tr>
-			  <td rowspan="3" onclick="showMeasure('governance')"> <b>Governance</b> </td>
-			  <td onclick="showMeasure('voice_accountability')"> <span title="WGI Voice &amp; Accountability">accountability</span></td>
+			  <td rowspan="3" onclick="showMeasure('governance')"> <b><abbr title="Partial Score">Governance</abbr></b> </td>
+			  <td onclick="showMeasure('voice_accountability')"> <abbr title="WGI Voice &amp; Accountability">accountability</abbr></td>
 			</tr>
 			<tr>
-			  <td onclick="showMeasure('non_violence')"> <span title="WGI Political Stability &amp; Non-Violence">stability</span></td>
+			  <td onclick="showMeasure('non_violence')"> <abbr title="WGI Political Stability &amp; Non-Violence">stability</abbr></td>
 			</tr>
 			<tr>
-			  <td onclick="showMeasure('corruption')"> <span title="WGI Control of Corruption">corruption</span></td>
+			  <td onclick="showMeasure('corruption')"> <abbr title="WGI Control of Corruption">corruption</abbr></td>
 			</tr>
 			<tr>
-			  <td rowspan="4" onclick="showMeasure('social')"> <b>Social</b> </td>
-			  <td onclick="showMeasure('mobiles')">  <span title="Mobiles per 100 persons ">mobiles</span></td>
+			  <td rowspan="4" onclick="showMeasure('social')"> <b><abbr title="Partial Score">Social</b></abbr> </td>
+			  <td onclick="showMeasure('mobiles')">  <abbr title="Mobiles per 100 persons ">mobiles</abbr></td>
 			</tr>
 			<tr>
-			  <td onclick="showMeasure('labor')"> <span title="Labor freedom">labor</span></td></tr>
+			  <td onclick="showMeasure('labor')"> <abbr title="Labor freedom">labor</abbr></td></tr>
 			<tr>
-			  <td onclick="showMeasure('enrollment')"> <span title="Tertiary Education">enrollment</span></td>
+			  <td onclick="showMeasure('enrollment')"> <abbr title="Tertiary Education">enrollment</abbr></td>
 			</tr>
 			<tr>
-			 <td onclick="showMeasure('rule_of_law')"> <span title="WGI Rule of Law ">rule_of_law</span></td>
+			 <td onclick="showMeasure('rule_of_law')"> <abbr title="WGI Rule of Law ">rule_of_law</abbr></td>
 			</tr>
-			</tbody></table>
+			</tbody>
+			</table>
 	
-	</td>
+	    </td>
         <td>
         
           	<table id="v-table"  width="100%">
 			    <tbody><tr>
 			        <td colspan="2"></td>
 			        <td onclick="showMeasure('exposure')">	
-			                <b>Exposure </b>	
+			                <b><abbr title="Partial Score">Exposure </b>	
 			        </td>
 			        <td  onclick="showMeasure('sensitivity')">	
-			                <b>Sensitivity</b>	
+			                <b><abbr title="Partial Score">Sensitivity</b>	
 			        </td>
 			        <td onclick="showMeasure('capacity')">	
-			                <b>Capacity </b>	
+			                <b><abbr title="Partial Score">Capacity </b>	
 			        </td>
 			    </tr>
 			    <tr>
 			        <td rowspan="2" onclick="showMeasure('water')">	
-			                <b>Water</b>	
+			                <b><abbr title="Partial Score">Water</abbr></b>	
 			        </td>
 			        <td>	
 			                <b>Quant.</b>	
 			        </td>
 			        <td onclick="showMeasure('d-ppt')">	
-			                <span title="Projected change in precipitation">D-ppt</span>	
+			                <abbr title="Projected change in precipitation">D-ppt</abbr>	
 			        </td>
 			        <td onclick="showMeasure('water_use')">	
-			                <span title="% internal and external freshwater water extracted for all uses">water_use</span>	
+			                <abbr title="% internal and external freshwater water extracted for all uses">water_use</abbr>	
 			        </td>
 			        <td>	
-			                <span title="% Population with access to improved water supply">water_supply</span>	
+			                <abbr title="% Population with access to improved water supply">water_supply</abbr>	
 			        </td>
 			    </tr>
 			    <tr>
@@ -129,30 +114,30 @@ body{margin:0px;}
 			                <b>Qual.</b>	
 			        </td>
 			        <td onclick="showMeasure('d-temp')">	
-			                <span title="Projected change in temperature">d-Temp</span>	
+			                <abbr title="Projected change in temperature">d-Temp</abbr>	
 			        </td>
 			        <td onclick="showMeasure('water_disease')">	
-			                <span title="Mortality among under 5 yr.-olds due to water-borne diseases">water_disease</span>	
+			                <abbr title="Mortality among under 5 yr.-olds due to water-borne diseases">water_disease</abbr>	
 			        </td>
 			        <td onclick="showMeasure('sanit')">	
-			                <span title="% Population with access to improved sanitation">sanitation</span>	
+			                <abbr title="% Population with access to improved sanitation">sanitation</abbr>	
 			        </td>
 			    </tr>
 			    <tr>
 			        <td rowspan="2"  onclick="showMeasure('food')">	
-			                <b>Food</b>	
+			                <b><abbr title="Partial Score">Food</abbr></b>	
 			        </td>
 			        <td>	
 			                <b>Quant.</b>	
 			        </td>
 			        <td onclick="showMeasure('yld_proj')">	
-			                <span title="Projected change in agricultural (cereal) yield">yield_proj</span>	
+			                <abbr title="Projected change in agricultural (cereal) yield">yield_proj</abbr>	
 			        </td>
 			        <td onclick="showMeasure('rural_popn')">	
-			                <span title="% of population living in rural areas">rural_popn</span>	
+			                <abbr title="% of population living in rural areas">rural_popn</abbr>	
 			        </td>
 			        <td onclick="showMeasure('food_capacity')">	
-			                <span title="Agricultural capacity">food_capacity</span>	
+			                <abbr title="Agricultural capacity">food_capacity</abbr>	
 			        </td>
 			    </tr>
 			    <tr>
@@ -160,30 +145,30 @@ body{margin:0px;}
 			                <b>Qual.</b>	
 			        </td>
 			        <td onclick="showMeasure('yield_cv')">	
-			                <span title="Coefficient of variation in cereal crop yields">yield_cv</span>	
+			                <abbr title="Coefficient of variation in cereal crop yields">yield_cv</abbr>	
 			        </td>
 			        <td onclick="showMeasure('imports')">	
-			                <span title="Food import dependency">food_import</span>	
+			                <abbr title="Food import dependency">food_import</abbr>	
 			        </td>
 			        <td onclick="showMeasure('malnutr')">	
-			                <span title="Children under 5 suffering from malnutrition(%)">malnutrition</span>	
+			                <abbr title="Children under 5 suffering from malnutrition(%)">malnutrition</abbr>	
 			        </td>
 			    </tr>
 			    <tr>
 			        <td rowspan="2" onclick="showMeasure('health')">	
-			                <b>Health</b>	
+			                <b><abbr title="Partial Score">Health</abbr></b>	
 			        </td>
 			        <td>	
 			                <b>Quant.</b>	
 			        </td>
 			        <td onclick="showMeasure('daly')">	
-			                <span title="Estimated impact of future climate change on deaths from disease">daly</span>	
+			                <abbr title="Estimated impact of future climate change on deaths from disease">daly</abbr>	
 			        </td>
 			        <td onclick="showMeasure('staff')">	
-			                <span title="Health workers per capita">health_workers</span> 	
+			                <abbr title="Health workers per capita">health_workers</abbr> 	
 			        </td>
 			        <td onclick="showMeasure('life')">	
-			                <span title="Longevity">longevity</span>	
+			                <abbr title="Longevity">longevity</abbr>	
 			        </td>
 			    </tr>
 			    <tr>
@@ -191,30 +176,30 @@ body{margin:0px;}
 			                <b>Qual.</b>	
 			        </td>
 			        <td onclick="showMeasure('health_disease')">	
-			                <span title="Mortality due to communicable (infectious) diseases">infectious</span>	
+			                <abbr title="Mortality due to communicable (infectious) diseases">infectious</abbr>	
 			        </td>
 			        <td onclick="showMeasure('external')">	
-			                <span title="Health expenditure derived from external resources (%)">health_external</span>	
+			                <abbr title="Health expenditure derived from external resources (%)">health_external</abbr>	
 			        </td>
 			        <td onclick="showMeasure('matern')">	
-			                <span title="Maternal mortality">maternal_mortality</span>	
+			                <abbr title="Maternal mortality">maternal_mortality</abbr>	
 			        </td>
 			    </tr>
 			    <tr>
 			        <td rowspan="2" onclick="showMeasure('habitat')">	
-			                <b>Human Habitat</b>	
+			                <b><abbr title="Partial Score">Human Habitat</abbr></b>	
 			        </td>
 			        <td>	
 			                <b>Quant.</b>	
 			        </td>
 			        <td onclick="showMeasure('urban_concentration')">	
-			                <span title="Urban concentration in largest city">urban_concentration</span>	
+			                <abbr title="Urban concentration in largest city">urban_concentration</abbr>	
 			        </td>
 			        <td onclick="showMeasure('slums')">	
-			                <span title="Urban population living in Slums">slums</span>	
+			                <abbr title="Urban population living in Slums">slums</abbr>	
 			        </td>
 			        <td onclick="showMeasure('electrical_outages')">	
-			                <span title="Value lost due to electrical outages">outages</span>	
+			                <abbr title="Value lost due to electrical outages">outages</abbr>	
 			        </td>
 			    </tr>
 			    <tr>
@@ -222,30 +207,30 @@ body{margin:0px;}
 			                <b>Qual.</b>	
 			        </td>
 			        <td onclick="showMeasure('urban_risk')">	
-			                <span title="Urban Risk">urban_risk</span>	
+			                <abbr title="Urban Risk">urban_risk</abbr>	
 			        </td>
 			        <td onclick="showMeasure('urban_excess_growth')">	
-			                <span title="Excess urban growth">urban_growth</span>	
+			                <abbr title="Excess urban growth">urban_growth</abbr>	
 			        </td>
 			        <td onclick="showMeasure('trade_transport')">	
-			                <span title="Quality of trade and transport infrastructure">trade</span>	
+			                <abbr title="Quality of trade and transport infrastructure">trade</abbr>	
 			        </td>
 			    </tr>
 			    <tr>
 			        <td rowspan="2" onclick="showMeasure('ecosystems')" >	
-			                <b>Ecosystem Services</b>	
+			                <b><abbr title="Partial Score">Ecosystem Services</abbr></b>	
 			        </td>
 			        <td>	
 			                <b>Quant.</b>	
 			        </td>
 			        <td onclick="showMeasure('biome_threat')">	
-			                <span title="Projected Biome Threat">biome_threat</span>	
+			                <abbr title="Projected Biome Threat">biome_threat</abbr>	
 			        </td>
 			        <td onclick="showMeasure('ecological_footprint')">	
-			                <span title="Ecological Footprint">eco_footprint</span>	
+			                <abbr title="Ecological Footprint">eco_footprint</abbr>	
 			        </td>
 			        <td onclick="showMeasure('protected_biomes')">	
-			                <span title="Protected biomes">biomes</span>	
+			                <abbr title="Protected biomes">biomes</abbr>	
 			        </td>
 			    </tr>
 			    <tr>
@@ -253,30 +238,30 @@ body{margin:0px;}
 			                <b>Qual.</b>	
 			        </td>
 			        <td onclick="showMeasure('dependency_natural')">	
-			                <span title="Dependency on natural capital">dependency_natural</span>	
+			                <abbr title="Dependency on natural capital">dependency_natural</abbr>	
 			        </td>
 			        <td onclick="showMeasure('threatened_species')">	
-			                <span title="Threatened species">species</span>
+			                <abbr title="Threatened species">species</abbr>
 			        </td>
 			        <td onclick="showMeasure('international_treaties')">	
-			                <span title="International Environmental Conventions">international_treaties</span>	
+			                <abbr title="International Environmental Conventions">international_treaties</abbr>	
 			        </td>
 			    </tr>
 			    <tr>
 			        <td rowspan="3"  onclick="showMeasure('infrastructure')" >	
-			                <b>Infrastructure</b>	
+			                <b><abbr title="Partial Score">Infrastructure</abbr></b>	
 			        </td>
 			        <td>	
 			                <b>Coast</b>	
 			        </td>
 			        <td onclick="showMeasure('coast_area')">	
-			                <span title="Land less than 5 m above sea-level (%)">low_land</span>
+			                <abbr title="Land less than 5 m above sea-level (%)">low_land</abbr>
 			        </td>
 			        <td onclick="showMeasure('coast_popn')">	
-			                <span title="Population living less than 5 m above sea-level (%)">low_pop</span>	
+			                <abbr title="Population living less than 5 m above sea-level (%)">low_pop</abbr>	
 			        </td>
 			        <td rowspan="3">	
-			                <span title="On the Readiness Axis">N/A</span>
+			                <abbr title="On the Readiness Axis">N/A</abbr>
 			        </td>
 			    </tr>
 			    <tr>
@@ -284,10 +269,10 @@ body{margin:0px;}
 			                <b>Energy</b>	
 			        </td>
 			        <td onclick="showMeasure('energy_access')">	
-			                <span title="Population with access to reliable electricity (%)">access_elec</span>
+			                <abbr title="Population with access to reliable electricity (%)">access_elec</abbr>
 			        </td>
 			        <td onclick="showMeasure('energy_sensit')">	
-			                <span title="Energy at risk">energy_risk</span>
+			                <abbr title="Energy at risk">energy_risk</abbr>
 			        </td>
 			    </tr>
 			    <tr>
@@ -295,10 +280,10 @@ body{margin:0px;}
 			                <b>Transport</b>	
 			        </td>
 			        <td onclick="showMeasure('road_floods')">	
-			                <span title="Frequency of floods per unit area">floods</span>	
+			                <abbr title="Frequency of floods per unit area">floods</abbr>	
 			        </td>
 			        <td onclick="showMeasure('road_paved')">	
-			                <span title="% of roads paved">paved</span>	
+			                <abbr title="% of roads paved">paved</abbr>	
 			        </td>
 			    </tr>
 			</tbody></table>
@@ -315,13 +300,13 @@ body{margin:0px;}
  
   </div>
 </div>
+</div>
 
 
 <hr>
-<h2 id="m_name"> </h2> 
-It belongs to the <b id="m_index"></b> (<i id="m_component"></i>, <i id="m_sector"></i>) 
+<h2 id="m_name">[Click on a measure or type above] </h2> ( <b id="m_index"></b>, <i id="m_component"></i>, <i id="m_sector"></i>) 
 
-<p id="m_description"></p>
+<p class="lead" id="m_description"></p>
 
 <h3> Description </h3> 
 <p id="m_explanation"></p>
@@ -571,7 +556,8 @@ function scoreGraph(csv)
 
 </script>
 
-
+<script src="http://code.jquery.com/jquery.js"> //do I need this? </script> 
+<script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
