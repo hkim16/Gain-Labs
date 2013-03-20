@@ -12,7 +12,7 @@
 	<body >
 		<div class="navbar navbar-fixed-top">
 			<div class="navbar-inner">
-				<a class="brand" href="#">Gain Measures <span id="m_name"> documentation</span> <span class="label label-important">In development</span></a>
+				<a class="brand" href="#">Gain Measures <span name="m_name"> documentation</span> <span class="label label-important">In development</span></a>
 				<ul class="nav pull-right">
 					<li class="navbar-search">
 						<div class="yui3-skin-sam row">
@@ -343,31 +343,32 @@
 		</div>
 		<div class="span9">
 			<hr>
-			<h2 id="m_name">
+			<h2 name="m_name">
 				[Click on a measure or type above]
 			</h2>
 			<blockquote>
-				( <b id="m_index"></b>, <i id="m_component"></i>, <i id="m_sector"></i>)
+				( <b name="m_index"></b>, <i name="m_component"></i>, <i name="m_sector"></i>)
 			</blockquote>
-			<p class="lead" id="m_description"></p>
+			<p class="lead" name="m_description"></p>
 			<dl>
 				<dt>
 					Description
 				</dt>
 				<dd>
-					<p id="m_explanation"></p>
+					<p name="m_explanation"></p>
 				</dd>
 				<dt>
 					Rationale
 				</dt>
 				<dd>
-					<p id="m_rationale"></p>
+					<p name="m_rationale"></p>
 				</dd>
 				<dt>
 					Sources
 				</dt>
 				<dd>
-					<table id="m_sources_table"></table>
+					<table id="m_sources_table">
+					</table>
 				</dd>
 				<dt>
 					Data Stats
@@ -393,7 +394,7 @@
 				</dt>
 				<dd>
 					<blockquote>
-						<p id="m_issues"></p>
+						<p name="m_issues"></p>
 					</blockquote>
 				</dd>
 			</dl><script type="text/javascript" src="http://d3js.org/d3.v2.js">
@@ -475,7 +476,6 @@
 				updateText('m_'+prop,measures[id][prop]);
 
 				if (prop=="source"){
-				console.log("source");
 				createSourcesTable(measures[id][prop]);
 				}
 
@@ -485,12 +485,16 @@
 				}
 
 				function updateText(id,text){
-				try{
-				document.getElementById(id).innerHTML = text;
-				}catch(err)
-				{
-				console.log("cannot find the html id tag "+id)
-				}
+					//console.log(".."+document.getElementsByName(id).length);
+					for (var i=0;i<document.getElementsByName(id).length;i++){
+						try{
+							document.getElementsByName(id)[i].innerHTML = text;
+						}catch(err)
+						{
+							console.log("cannot find the html id tag "+id)
+						}
+					}
+				
 				}
 
 				function createSourcesTable(sources)
@@ -500,9 +504,14 @@
 
 				//clean row
 				rows=table.rows.length;
-				for (var i=0;i<rows;i++)
+				for (var i=0;i<rows-1;i++)
 				{
-				table.deleteRow(i);
+					try{
+						table.deleteRow(i);
+					}catch(err)
+					{
+						console.log("No Sources table")
+					}
 				}
 
 				for (var i=0, item; item=sources[i]; i++) {
@@ -554,7 +563,7 @@
 				for (i in ydata)
 				{
 				var arr=ydata[i];
-				console.log(ydata);
+				//console.log(ydata);
 				ydata_50.push(d3.median(arr));
 				ydata_10.push(d3.quantile(arr,10));
 				ydata_90.push(d3.quantile(arr,90));
