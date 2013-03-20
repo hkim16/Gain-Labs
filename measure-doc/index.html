@@ -311,23 +311,40 @@
 
 
 <hr>
-<h2 id="m_name">[Click on a measure or type above] </h2> ( <b id="m_index"></b>, <i id="m_component"></i>, <i id="m_sector"></i>) 
+<h2 id="m_name">[Click on a measure or type above] </h2> 
+<blockquote>
+	( <b id="m_index"></b>, <i id="m_component"></i>, <i id="m_sector"></i>) 
+</blockquote>
 
 <p class="lead" id="m_description"></p>
 
-<h3> Description </h3> 
-<p id="m_explanation"></p>
+<dl>
+  <dt>Description</dt>
+  <dd><p id="m_explanation"></p></dd>
+  
+  <dt> Rationale </dt> 
+  <dd><p id="m_rationale"></p></dd>
+  
+  <dt> Sources </dt> 
+  <dd><table id="m_sources_table"> </table></dd>
 
-<h3> Rationale </h3> 
-<p id="m_rationale"></p>
-
-<h3>Sources </h3>
-<table id="m_sources_table"> </table>
+  <dt> Data Stats </dt> 
+  <dd>
+	<dl class="dl-horizontal">
+	  <dt># of Countries</dt>
+	  <dd>TBD</dd>
+	  <dt>Median # of years</dt>
+	  <dd>TBD</dd>
+	</dl>
+	</dd>
 	
-<h3>Issues </h3>
-<p id="m_issues"></p>
-		
-</table>
+	<dt> Issues </dt> 
+	<dd><blockquote>
+		<p id="m_issues"></p>
+	</blockquote>
+	</dd>
+</dl>
+
 
 
 <script type="text/javascript" src="http://d3js.org/d3.v2.js"></script>
