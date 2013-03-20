@@ -504,10 +504,10 @@
 
 				//clean row
 				rows=table.rows.length;
-				for (var i=0;i<rows-1;i++)
+				for (var i=0;i<rows;i++)
 				{
 					try{
-						table.deleteRow(i);
+						table.deleteRow(0);
 					}catch(err)
 					{
 						console.log("No Sources table")
