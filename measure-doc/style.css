@@ -10,6 +10,10 @@ body{
   background-color: #FCCFA6;
 }
 
+.row-bottom {
+	border-bottom: 1px solid;
+}
+
 .h,.v{stroke:black;stroke-dasharray:4 4;stroke-width:1;stroke-opacity:.5;}
 .axis path,
 .axis line {
