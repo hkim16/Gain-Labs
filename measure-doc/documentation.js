@@ -264,10 +264,12 @@ function world_map_percentiles(csv) {
       svg = d3
               .select('#world_map')
               .append('svg:svg')
-			  .attr('width', 700),
+			  .attr('width', 700)
+		      .attr('height', 300),
       countries = svg
-                    .append('svg:g')
+					.insert('svg:g')
                     .attr('id', 'countries');
+//console.log(d3.select('#world_map'));
   var countries_data=read_countries_map();
 
   var data={};
