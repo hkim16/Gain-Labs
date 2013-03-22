@@ -116,6 +116,7 @@ function createSourcesTable(sources) {
 }
 
 function readAllData() {
+	//read documentation JSON
 	d3.json("measures-def.json", function(json) {
 		// Put the object into storage
 		localStorage.setItem('measures', JSON.stringify(json));
@@ -123,6 +124,7 @@ function readAllData() {
 		var retrievedObject = localStorage.getItem('measures');
 		console.log('Measures saved in local storage: ', JSON.parse(retrievedObject));
 	});
+	//read ISO3 to ISO2 conversion (for the map) )
 	d3.csv("ISO3-ISO2.csv", function(csv) {
 		data={};
 		for (country in csv){
@@ -130,10 +132,26 @@ function readAllData() {
 		}
 		localStorage.setItem('ISO3mapping', JSON.stringify(data));
 	});
+	//read path locations for loading measure data. Only for partials (non standard path
+	d3.csv("paths.csv", function(csv) {
+		data={};
+		for (measure in csv){
+			data[csv[measure]["id"]]=csv[measure]["path"];
+		}
+		localStorage.setItem('paths', JSON.stringify(data));
+	});
 }
 
 function readMeasureData(id) {
-	d3.csv("resources/indicators/" + id + "/score.csv", function(csv) {
+	var retrievedObject = localStorage.getItem('paths');
+	check_path=JSON.parse(retrievedObject);
+	path="resources/indicators/" + id + "/score.csv";
+	
+	if (id in check_path){
+		path=check_path[id];
+	}
+	
+	d3.csv(path, function(csv) {
 		scoreGraph(csv);
 		world_map_percentiles(csv);
 	})
