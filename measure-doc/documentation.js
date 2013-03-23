@@ -260,8 +260,14 @@ function world_map_percentiles(csv) {
       path = d3
               .geo
               .path()
-              .projection(xy),
-      svg = d3
+              .projection(xy)
+      
+	//remove old map
+	//d3.select('#world_map')
+	//       .select("svg:svg")
+	//	   .remove();
+	
+	var svg = d3
               .select('#world_map')
               .append('svg:svg')
 			  .attr('width', 700)
