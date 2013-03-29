@@ -1,16 +1,27 @@
 body{
 	margin:0px;
-	padding-top: 50px
+	padding-top: 50px;
+	background-color: #1d354c
+}
+
+.span9{
+	background-color: #ffffff	
 }
 
 #v-table {
   background-color: rgb(145, 235, 74);
+  width="100%";
+  max-width="100%"
 }
 #r-table {
   background-color: rgb(253, 253, 74);
+	width="100%";
+	max-width="100%"
 }
 #measure-table {
   background-color: rgb(197, 241, 243);
+	width="100%";
+	max-width="100%"
 }
 
 .row-bottom {
