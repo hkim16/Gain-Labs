@@ -24,9 +24,9 @@
 		"index": null,
 		"sector": null,
 		"component": null,
-		"explanation": "The GAIN Index captures a country's Vulnerability to climate change and other global challenges, and its Readiness to improve resilience.",
-		"rationale": "",
-		"issues": "",
+		"explanation": "The GAIN Index captures a country's Vulnerability to climate change and other global challenges, and its Readiness to improve resilience. The Vulnerability Axis measures the Exposure, Sensitivity and Adaptive Capacity in several sectors: Food, Water, Health, Ecosystem Services, Human Habitat and Infrastructure (Energy, Coast and Transportation). The Readiness Axis measures the Economic, Governance and Social aspects to successfully implement Adaptation investments. The Gain Index Score is made of V-R on a 100 points scale, where higher is better.",
+		"rationale": "On making the Gain Index we aim to create a pragmatic measure to elevate the conversation around Adaptation. We are not aiming to create an allocation metric. Thus, we aim to be scientifically relevant including all important aspects, but we also aim to produce simple pragmatic messages aimed for stakeholders such as goverments and private sector. We also provide comparators and source to enable depper conversation driven by available data.",
+		"issues": "The 2 Axis framework with a one dimensional Score seems to be most relevant option for communications, yet it entangles important concepts. E.g. (i) As discussed on the Readiness Section, there is much discussion wheter 'Adaptive Capacity' and 'Readiness' are actually overlapped, and we should split the framework into 3 axis, even when the can still create a 2 axis subproduct. (ii) Aggregating all measures into a single number poses many technical issues. Our current option to 'discount' Vulnerability to the current readiness might be misleading and inappropriate for several reasons. Some have indicated the need to switch into R+V where higher Score indicate more need for investments.",
 		"source": [{
 			"name": "Partial Score, see table for components",
 			"link": "#measure_table"
