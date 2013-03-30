@@ -9,7 +9,9 @@ body{
 	background-color: #203b54;
 }
 
-
+.navbar{
+	line-height:20px 
+}
 .span9{
 	background-color: #ffffff;	
 }
