@@ -1,5 +1,8 @@
-readAllData();
-addMeasureInput();
+
+function onLoadPage(){
+	readAllData();
+	addMeasureInput();
+}
 
 
 // Create a new YUI instance and populate it with the required modules.
