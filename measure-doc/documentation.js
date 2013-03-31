@@ -220,10 +220,12 @@ function scoreGraph(csv) {
 	.range([0, width]); // the pixel range of the x-axis
 	var y = d3.scale.linear().domain([0, 1]).range([height, 0]);
 
-	//clean previous svg if any
-	//TODO
+	
+    d3.select('#chart_removal_flag').remove(); //remove the old chart (if present) to make room for the new one
+
 	// the chart object, includes all margins
 	var chart = d3.select('#histogram').append('svg:svg').attr('width', width + margin.right + margin.left).attr('height', height + margin.top + margin.bottom).attr('class', 'chart')
+            .attr('id', 'chart_removal_flag'); //attribute flag so that chart can be removed if another chart is added (see above)
 
 	// the main object where the chart and axis will be drawn
 	var main = chart.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')').attr('width', width).attr('height', height).attr('class', 'main')
@@ -264,17 +266,15 @@ function world_map_percentiles(csv) {
               .geo
               .path()
               .projection(xy)
-      
-	//remove old map
-	//d3.select('#world_map')
-	//       .select("svg:svg")
-	//	   .remove();
+    
+    d3.select('#map_removal_flag').remove(); //remove the old map (if present) to make room for the new one
 	
 	var svg = d3
               .select('#world_map')
               .append('svg:svg')
 			  .attr('width', 700)
-		      .attr('height', 300),
+		      .attr('height', 300)
+              .attr('id', 'map_removal_flag'), //attribute flag so that map can be removed if another map is added (see above)
       countries = svg
 					.insert('svg:g')
                     .attr('id', 'countries');
