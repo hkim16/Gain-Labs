@@ -120,27 +120,23 @@ function createRanking(csv){ //populate the rankings table with country data for
 	var m_id = "m_ranking";
 	var table = document.getElementById(m_id);
 	
-	//clean table
-	rows = table.rows.length;
-	for (var i = 0; i < rows; i++) {
+	//TODO formatting to make the table actually look nice.  Also, the ability to sort by year (and possibly an aggregate average?)
+	
+	$(document).ready(function() {
+		var rank_Table = $('#m_ranking').dataTable();
+
+		//clean table
 		try {
-			table.deleteRow(0);
+			rank_Table.fnClearTable();
 		} catch (err) {
 			console.log("No Countries table")
 		}
-	}
-	
-	//TODO formatting to make the table actually look nice.  Also, the ability to sort by year (and possibly an aggregate average?)
-	
-	//populate table with relevant data
-	for (country in csv) {
-		var row = table.insertRow(-1);
-		var cell1 = row.insertCell(0);
-		cell1.innerHTML = csv[country]['Name']; //Country Name
-		var cell2 = row.insertCell(1);
-		cell2.innerHTML = csv[country]['2011']; //For now, data from year 2011
-		console.log(csv[country]);
-  }
+										
+		//populate table with relevant data
+		for (country in csv) {
+			rank_Table.fnAddData([csv[country]['Name'],csv[country]['2011']]);
+		}
+	});
 }
 
 function readAllData() {
