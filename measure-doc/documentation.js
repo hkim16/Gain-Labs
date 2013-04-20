@@ -69,17 +69,16 @@ function showMeasure(name) {
 		}
 	}
 
-	//update Measure  
+	//update Measure descriptors (Description,Rationale,Sources,Issues,Data Stats(In progress))
 	for (prop in measures[id]) {
 		updateText('m_' + prop, measures[id][prop]);
 
 		if (prop == "source") {
 			createSourcesTable(measures[id][prop]);
 		}
-
 	}
+	//update visuals (maps/histograms/rankings)
 	readMeasureData(id);
-
 }
 
 function updateText(id, text) {
@@ -115,7 +114,33 @@ function createSourcesTable(sources) {
 		cell1.innerHTML = i + 1 + ".-";
 		cell2.innerHTML = "<a href='" + item["link"] + "'>" + item["name"] + "<\/a>";
 	}
+}
 
+function createRanking(csv){ //populate the rankings table with country data for this specific measurement
+	var m_id = "m_ranking";
+	var table = document.getElementById(m_id);
+	
+	//clean table
+	rows = table.rows.length;
+	for (var i = 0; i < rows; i++) {
+		try {
+			table.deleteRow(0);
+		} catch (err) {
+			console.log("No Countries table")
+		}
+	}
+	
+	//TODO formatting to make the table actually look nice.  Also, the ability to sort by year (and possibly an aggregate average?)
+	
+	//populate table with relevant data
+	for (country in csv) {
+		var row = table.insertRow(-1);
+		var cell1 = row.insertCell(0);
+		cell1.innerHTML = csv[country]['Name']; //Country Name
+		var cell2 = row.insertCell(1);
+		cell2.innerHTML = csv[country]['2011']; //For now, data from year 2011
+		console.log(csv[country]);
+  }
 }
 
 function readAllData() {
@@ -153,12 +178,16 @@ function readMeasureData(id) {
 	if (id in check_path){
 		path=check_path[id];
 	}
-	
+
+		
 	d3.csv(path, function(csv) {
 		scoreGraph(csv);
 		world_map_percentiles(csv);
+		createRanking(csv);
 	})
+	
 }
+
 
 function scoreGraph(csv) {
 	var xdata = [1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012];
@@ -284,6 +313,7 @@ function world_map_percentiles(csv) {
   var data={};
   var data_vals=[];
   var year=2010;
+	//console.log(csv);
   for (country in csv) {
 	var val=csv[country][year];
 	var ISO2=ISO3toISO2map(csv[country]['ISO3']);
@@ -324,7 +354,7 @@ function ISO3toISO2map(iso3){
 
 function read_countries_map(){
 	
-	//Put this somewhereelse
+	//Put this somewhere else
 	var countries_data = {"type":"FeatureCollection","features":[
 	{"type":"Feature","geometry":{"type":"MultiPolygon","coordinates":[[[[74.92,37.24],[74.57,37.03],[72.56,36.82],[71.24,36.13],[71.65,35.42],[71.08,34.06],[69.91,34.04],[70.33,33.33],[69.51,33.03],[69.33,31.94],[66.72,31.21],[66.26,29.85],[62.48,29.41],[60.87,29.86],[61.85,31.02],[60.84,31.5],[60.58,33.07],[60.94,33.52],[60.51,34.14],[61.28,35.61],[62.72,35.25],[63.12,35.86],[64.5,36.28],[64.8,37.12],[66.54,37.37],[67.78,37.19],[69.32,37.12],[70.97,38.47],[71.59,37.9],[71.68,36.68],[73.31,37.46],[74.92,37.24]]]]},"properties":{"name":"Afghanistan"},"id":"AF"},
 	{"type":"Feature","geometry":{"type":"MultiPolygon","coordinates":[[[[19.44,41.02],[19.37,41.85],[19.65,42.62],[20.07,42.56],[20.59,41.88],[20.82,40.91],[20.98,40.86],[20.01,39.69],[19.29,40.42],[19.44,41.02]]]]},"properties":{"name":"Albania"},"id":"AL"},
