@@ -1,4 +1,3 @@
-
 function onLoadPage(){
 	readAllData();
 	addMeasureInput();
@@ -6,8 +5,6 @@ function onLoadPage(){
 
 
 // Create a new YUI instance and populate it with the required modules.
-
-
 function addMeasureInput() {
 	YUI().use("autocomplete", "autocomplete-filters", "autocomplete-highlighters", function(Y) {
 		//skin
@@ -31,7 +28,6 @@ function addMeasureInput() {
 		});
 	});
 };
-
 
 
 function checkEnter(e) {
@@ -119,9 +115,7 @@ function createSourcesTable(sources) {
 function createRanking(csv){ //populate the rankings table with country data for this specific measurement
 	var m_id = "m_ranking";
 	var table = document.getElementById(m_id);
-	
-	//TODO formatting to make the table actually look nice.  Also, the ability to sort by year (and possibly an aggregate average?)
-	
+		
 	$(document).ready(function() {
 		var rank_Table = $('#m_ranking').dataTable();
 
@@ -134,9 +128,45 @@ function createRanking(csv){ //populate the rankings table with country data for
 										
 		//populate table with relevant data
 		for (country in csv) {
-			rank_Table.fnAddData([csv[country]['Name'],csv[country]['2011']]);
+			rank_Table.fnAddData([csv[country]['Name'],
+														csv[country]['1995'],
+														csv[country]['1996'],
+														csv[country]['1997'],
+														csv[country]['1998'],
+														csv[country]['1999'],
+														csv[country]['2000'],
+														csv[country]['2001'],
+														csv[country]['2002'],
+														csv[country]['2003'],
+														csv[country]['2004'],
+														csv[country]['2005'],
+														csv[country]['2006'],
+														csv[country]['2007'],
+														csv[country]['2008'],
+														csv[country]['2009'],
+														csv[country]['2010'],
+														csv[country]['2011']]);
 		}
 	});
+	
+	showRankCol( '2011' ); //default year to show first is 2011
+	rank_table.fnAdjustColumnSizing();
+}
+
+function showRankCol( year )
+{
+	/* Get the DataTables object again - this is not a recreation, just a get of the object */
+	var oTable = $('#m_ranking').dataTable();
+	
+	var columns = oTable.fnSettings().aoColumns;
+		
+	// skip column 0 (country name)
+	for( var i=1; i<columns.length; i++) {
+		if(columns[i].sTitle == year) //sTitle == name of the column header (the year)
+			oTable.fnSetColumnVis( i, true);
+		else
+			oTable.fnSetColumnVis( i, false);
+	}
 }
 
 function readAllData() {
