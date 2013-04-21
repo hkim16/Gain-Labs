@@ -129,6 +129,7 @@ function createRanking(csv){ //populate the rankings table with country data for
 		//populate table with relevant data
 		for (country in csv) {
 			rank_Table.fnAddData([csv[country]['Name'],
+														"high",
 														csv[country]['1995'],
 														csv[country]['1996'],
 														csv[country]['1997'],
@@ -160,8 +161,8 @@ function showRankCol( year )
 	
 	var columns = oTable.fnSettings().aoColumns;
 		
-	// skip column 0 (country name)
-	for( var i=1; i<columns.length; i++) {
+	// skip column 0 (country name) & 1 (income group)
+	for( var i=2; i<columns.length; i++) {
 		if(columns[i].sTitle == year) //sTitle == name of the column header (the year)
 			oTable.fnSetColumnVis( i, true);
 		else
