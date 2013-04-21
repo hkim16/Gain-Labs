@@ -216,7 +216,7 @@ function readMeasureData(id) {
 
 
 function scoreGraph(csv) {
-	var xdata = [1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012];
+	var xdata = [1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011/*, 2012*/];
 	var ydata = {
 		1995: [],
 		1996: [],
@@ -234,8 +234,8 @@ function scoreGraph(csv) {
 		2008: [],
 		2009: [],
 		2010: [],
-		2011: [],
-		2012: []
+		2011: []//,
+		//2012: [] //there doesn't seem to be 2012 data in the csv file?  
 	};
 
 	//console.log(csv);
@@ -276,7 +276,7 @@ function scoreGraph(csv) {
 	var y = d3.scale.linear().domain([0, 1]).range([height, 0]);
 
 	
-    d3.select('#chart_removal_flag').remove(); //remove the old chart (if present) to make room for the new one
+	d3.select('#chart_removal_flag').remove(); //remove the old chart (if present) to make room for the new one
 
 	// the chart object, includes all margins
 	var chart = d3.select('#histogram').append('svg:svg').attr('width', width + margin.right + margin.left).attr('height', height + margin.top + margin.bottom).attr('class', 'chart')
